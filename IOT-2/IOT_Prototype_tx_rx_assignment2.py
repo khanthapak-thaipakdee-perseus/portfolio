@@ -19,8 +19,6 @@ from cayennelpp import LppFrame, LppUtil
 # Import random class
 import random 
 
-
-# 
 GPIO.setwarnings(False)
 BOARD.setup()
 
@@ -57,7 +55,6 @@ def retrieve_sensor_Cayenne(pin):
     msg_cayenne_lpp = bytes(frame)
     return msg_cayenne_lpp
     
-    
 
 def main():
     
@@ -79,7 +76,6 @@ def main():
         print("There was an exception of type", e.__class__.__name__)
         print("Error: expected an integer")
         sys.exit(2) #sys.exit(2) refers to incorrect type of input
-        
     
     # Pre-configured details for ABP
     devaddr = [0x26, 0x0B, 0xCA, 0x05]
@@ -145,8 +141,6 @@ def main():
         
         # Create a frame by setting the payload
         lora.set_tx_data(list((msg_cayenne_lpp)))
-        
-        
         
         assert(lora.get_agc_auto_on() == 1)
         
