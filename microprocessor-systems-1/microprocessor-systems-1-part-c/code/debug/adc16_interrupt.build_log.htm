@@ -1,0 +1,147 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: IT Services TheUniversityofLiverpool Flex license: MDK Professional 5.37 (Flex) (mdk_pro) Operation stops: 17 Aug 2024
+ 
+Tool Versions:
+Toolchain:       MDK Professional 5.37 (Flex)  Version: 5.37.0.0
+Toolchain Path:  C:\KEIL_V5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.12.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+F:\driver_examples\adc16\interrupt\mdk\adc16_interrupt.uvprojx
+Project File Date:  02/22/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\KEIL_V5\ARM\ARMCLANG\Bin'
+Build target 'adc16_interrupt debug'
+linking...
+Program Size: Code=5928 RO-data=1980 RW-data=16 ZI-data=2112  
+"debug\adc16_interrupt.out" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: NXP
+                https://mcuxpresso.nxp.com/cmsis_pack/repo/NXP.MK64F12_DFP.14.0.0.pack
+                NXP.MK64F12_DFP.14.0.0
+                Device Family Pack for MK64F12
+   * Component: MK64F12_header Version: 1.0.0
+   * Component: MK64F12_system Version: 1.0.0
+   * Component: adc Version: 2.2.0
+   * Component: clock Version: 2.5.1
+   * Component: common Version: 2.3.1
+   * Component: flash Version: 3.0.0
+   * Component: gpio Version: 2.5.3
+   * Component: lists Version: 1.0.0
+   * Component: port Version: 2.2.0
+   * Component: smc Version: 2.0.7
+   * Component: uart Version: 2.5.1
+   * Component: uart_adapter Version: 1.0.0
+   * Component: assert_lite Version: 1.0.0
+   * Component: debug_console_lite Version: 1.0.0
+   * Component: Startup Version: 1.1.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_adc16_interrupt_debug
+  C:/KEIL_V5/ARM/PACK/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/KEIL_V5/ARM/PACK/NXP/MK64F12_DFP/14.0.0
+  C:/KEIL_V5/ARM/PACK/NXP/MK64F12_DFP/14.0.0/components/lists
+  C:/KEIL_V5/ARM/PACK/NXP/MK64F12_DFP/14.0.0/components/uart
+  C:/KEIL_V5/ARM/PACK/NXP/MK64F12_DFP/14.0.0/drivers
+  C:/KEIL_V5/ARM/PACK/NXP/MK64F12_DFP/14.0.0/utilities/debug_console_lite
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: NXP::Device:CMSIS:MK64F12_header:1.0.0
+      Include file:  MK64F12_features.h
+      Include file:  fsl_device_registers.h
+      Include file:  MK64F12.h
+
+   * Component: NXP::Device:CMSIS:MK64F12_system:1.0.0
+      Include file:  system_MK64F12.h
+      Source file:   system_MK64F12.c
+
+   * Component: NXP::Device:SDK Drivers:adc:2.2.0
+      Source file:   drivers/fsl_adc16.c
+      Include file:  drivers/fsl_adc16.h
+
+   * Component: NXP::Device:SDK Drivers:clock:2.5.1
+      Source file:   drivers/fsl_clock.c
+      Include file:  drivers/fsl_clock.h
+
+   * Component: NXP::Device:SDK Drivers:common:2.3.1
+      Include file:  drivers/fsl_common.h
+      Source file:   drivers/fsl_common.c
+      Include file:  drivers/fsl_common_arm.h
+      Source file:   drivers/fsl_common_arm.c
+
+   * Component: NXP::Device:SDK Drivers:flash:3.0.0
+      Include file:  drivers/fsl_ftfx_adapter.h
+      Include file:  drivers/fsl_ftfx_utilities.h
+      Include file:  drivers/fsl_ftfx_features.h
+      Source file:   drivers/fsl_ftfx_controller.c
+      Include file:  drivers/fsl_ftfx_controller.h
+      Source file:   drivers/fsl_ftfx_cache.c
+      Include file:  drivers/fsl_ftfx_flexnvm.h
+      Include file:  drivers/fsl_ftfx_cache.h
+      Include file:  drivers/fsl_ftfx_flash.h
+      Include file:  drivers/fsl_flash.h
+      Source file:   drivers/fsl_ftfx_flexnvm.c
+      Source file:   drivers/fsl_ftfx_flash.c
+
+   * Component: NXP::Device:SDK Drivers:gpio:2.5.3
+      Source file:   drivers/fsl_gpio.c
+      Include file:  drivers/fsl_gpio.h
+
+   * Component: NXP::Device:SDK Drivers:lists:1.0.0
+      Source file:   components/lists/fsl_component_generic_list.c
+      Include file:  components/lists/fsl_component_generic_list.h
+
+   * Component: NXP::Device:SDK Drivers:port:2.2.0
+      Include file:  drivers/fsl_port.h
+
+   * Component: NXP::Device:SDK Drivers:smc:2.0.7
+      Include file:  drivers/fsl_smc.h
+      Source file:   drivers/fsl_smc.c
+
+   * Component: NXP::Device:SDK Drivers:uart:2.5.1
+      Include file:  drivers/fsl_uart.h
+      Source file:   drivers/fsl_uart.c
+
+   * Component: NXP::Device:SDK Drivers:uart_adapter:1.0.0
+      Include file:  components/uart/fsl_adapter_uart.h
+      Source file:   components/uart/fsl_adapter_uart.c
+
+   * Component: NXP::Device:SDK Utilities:assert_lite:1.0.0
+      Source file:   utilities/debug_console_lite/fsl_assert.c
+
+   * Component: NXP::Device:SDK Utilities:debug_console_lite:1.0.0
+      Source file:   utilities/debug_console_lite/fsl_debug_console.c
+      Include file:  utilities/debug_console_lite/fsl_debug_console.h
+
+   * Component: NXP::Device:Startup:1.1.0
+      Source file:   arm/startup_MK64F12.S
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"release\adc16_interrupt.o"
+"release\pin_mux.o"
+"release\board.o"
+"release\clock_config.o"
+"release\fsl_component_generic_list.o"
+"release\fsl_adapter_uart.o"
+"release\fsl_adc16.o"
+"release\fsl_clock.o"
+"release\fsl_common.o"
+"release\fsl_common_arm.o"
+"release\fsl_ftfx_cache.o"
+"release\fsl_ftfx_controller.o"
+"release\fsl_ftfx_flash.o"
+"release\fsl_ftfx_flexnvm.o"
+"release\fsl_gpio.o"
+"release\fsl_smc.o"
+"release\fsl_uart.o"
+"release\system_mk64f12.o"
+"release\fsl_assert.o"
+"release\fsl_debug_console.o"
+"release\startup_mk64f12.o"
+--library_type=microlib --nodebug --diag_suppress 6314 --strict --scatter "MK64FN1M0xxx12_flash.scf"
+--remove --keep=*(.FlashConfig) --entry=Reset_Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\output\adc16_interrupt.map" -o release\adc16_interrupt.out

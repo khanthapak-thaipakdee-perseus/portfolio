@@ -1,0 +1,1804 @@
+Component: Arm Compiler for Embedded 6.21 Tool: armlink [5ec1fa00]
+
+==============================================================================
+
+Section Cross References
+
+    adc16_interrupt.o(.ARM.exidx.text.delay) refers to adc16_interrupt.o(.text.delay) for [Anonymous Symbol]
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to fsl_gpio.o(.text.GPIO_PortClearInterruptFlags) for GPIO_PortClearInterruptFlags
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to fsl_adc16.o(.text.ADC16_SetChannelConfig) for ADC16_SetChannelConfig
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to fsl_adc16.o(.text.ADC16_GetChannelStatusFlags) for ADC16_GetChannelStatusFlags
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to dfltui.o(.text) for __aeabi_ui2d
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to dmul.o(.text) for __aeabi_dmul
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to d2f.o(.text) for __aeabi_d2f
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to f2d.o(.text) for __aeabi_f2d
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to adc16_interrupt.o(.bss.g_Adc16InterruptCounter) for g_Adc16InterruptCounter
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to adc16_interrupt.o(.rodata.str1.1) for [Anonymous Symbol]
+    adc16_interrupt.o(.text.PORTB_IRQHandler) refers to fsl_debug_console.o(.text.DbgConsole_Printf) for DbgConsole_Printf
+    adc16_interrupt.o(.ARM.exidx.text.PORTB_IRQHandler) refers to adc16_interrupt.o(.text.PORTB_IRQHandler) for [Anonymous Symbol]
+    adc16_interrupt.o(.text.main) refers to pin_mux.o(.text.BOARD_InitBootPins) for BOARD_InitBootPins
+    adc16_interrupt.o(.text.main) refers to clock_config.o(.text.BOARD_InitBootClocks) for BOARD_InitBootClocks
+    adc16_interrupt.o(.text.main) refers to board.o(.text.BOARD_InitDebugConsole) for BOARD_InitDebugConsole
+    adc16_interrupt.o(.text.main) refers to fsl_gpio.o(.text.GPIO_PinInit) for GPIO_PinInit
+    adc16_interrupt.o(.text.main) refers to fsl_adc16.o(.text.ADC16_GetDefaultConfig) for ADC16_GetDefaultConfig
+    adc16_interrupt.o(.text.main) refers to fsl_adc16.o(.text.ADC16_Init) for ADC16_Init
+    adc16_interrupt.o(.text.main) refers to fsl_adc16.o(.text.ADC16_DoAutoCalibration) for ADC16_DoAutoCalibration
+    adc16_interrupt.o(.text.main) refers to fsl_adc16.o(.text.ADC16_SetChannelConfig) for ADC16_SetChannelConfig
+    adc16_interrupt.o(.text.main) refers to fsl_adc16.o(.text.ADC16_GetChannelStatusFlags) for ADC16_GetChannelStatusFlags
+    adc16_interrupt.o(.text.main) refers to fsl_debug_console.o(.text.DbgConsole_Printf) for DbgConsole_Printf
+    adc16_interrupt.o(.text.main) refers to adc16_interrupt.o(.text.delay) for delay
+    adc16_interrupt.o(.text.main) refers to adc16_interrupt.o(.rodata.str1.1) for [Anonymous Symbol]
+    adc16_interrupt.o(.text.main) refers to adc16_interrupt.o(.bss.g_Adc16InterruptCounter) for g_Adc16InterruptCounter
+    adc16_interrupt.o(.ARM.exidx.text.main) refers to adc16_interrupt.o(.text.main) for [Anonymous Symbol]
+    pin_mux.o(.text.BOARD_InitBootPins) refers to pin_mux.o(.text.BOARD_InitPins) for BOARD_InitPins
+    pin_mux.o(.ARM.exidx.text.BOARD_InitBootPins) refers to pin_mux.o(.text.BOARD_InitBootPins) for [Anonymous Symbol]
+    pin_mux.o(.ARM.exidx.text.BOARD_InitPins) refers to pin_mux.o(.text.BOARD_InitPins) for [Anonymous Symbol]
+    board.o(.text.BOARD_InitDebugConsole) refers to fsl_clock.o(.text.CLOCK_GetCoreSysClkFreq) for CLOCK_GetCoreSysClkFreq
+    board.o(.text.BOARD_InitDebugConsole) refers to fsl_debug_console.o(.text.DbgConsole_Init) for DbgConsole_Init
+    board.o(.ARM.exidx.text.BOARD_InitDebugConsole) refers to board.o(.text.BOARD_InitDebugConsole) for [Anonymous Symbol]
+    clock_config.o(.text.BOARD_InitBootClocks) refers to clock_config.o(.text.BOARD_BootClockRUN) for BOARD_BootClockRUN
+    clock_config.o(.ARM.exidx.text.BOARD_InitBootClocks) refers to clock_config.o(.text.BOARD_InitBootClocks) for [Anonymous Symbol]
+    clock_config.o(.text.BOARD_BootClockRUN) refers to fsl_clock.o(.text.CLOCK_InitOsc0) for CLOCK_InitOsc0
+    clock_config.o(.text.BOARD_BootClockRUN) refers to fsl_clock.o(.text.CLOCK_SetInternalRefClkConfig) for CLOCK_SetInternalRefClkConfig
+    clock_config.o(.text.BOARD_BootClockRUN) refers to fsl_clock.o(.text.CLOCK_BootToPeeMode) for CLOCK_BootToPeeMode
+    clock_config.o(.text.BOARD_BootClockRUN) refers to fsl_clock.o(.text.CLOCK_SetSimConfig) for CLOCK_SetSimConfig
+    clock_config.o(.text.BOARD_BootClockRUN) refers to clock_config.o(.rodata.oscConfig_BOARD_BootClockRUN) for oscConfig_BOARD_BootClockRUN
+    clock_config.o(.text.BOARD_BootClockRUN) refers to fsl_clock.o(.bss..L_MergedGlobals.1) for g_xtal0Freq
+    clock_config.o(.text.BOARD_BootClockRUN) refers to clock_config.o(.rodata.mcgConfig_BOARD_BootClockRUN) for mcgConfig_BOARD_BootClockRUN
+    clock_config.o(.text.BOARD_BootClockRUN) refers to clock_config.o(.rodata.simConfig_BOARD_BootClockRUN) for simConfig_BOARD_BootClockRUN
+    clock_config.o(.text.BOARD_BootClockRUN) refers to system_mk64f12.o(.data.SystemCoreClock) for SystemCoreClock
+    clock_config.o(.ARM.exidx.text.BOARD_BootClockRUN) refers to clock_config.o(.text.BOARD_BootClockRUN) for [Anonymous Symbol]
+    clock_config.o(.text.BOARD_BootClockVLPR) refers to fsl_clock.o(.text.CLOCK_BootToBlpiMode) for CLOCK_BootToBlpiMode
+    clock_config.o(.text.BOARD_BootClockVLPR) refers to fsl_clock.o(.text.CLOCK_SetSimConfig) for CLOCK_SetSimConfig
+    clock_config.o(.text.BOARD_BootClockVLPR) refers to fsl_smc.o(.text.SMC_SetPowerModeVlpr) for SMC_SetPowerModeVlpr
+    clock_config.o(.text.BOARD_BootClockVLPR) refers to clock_config.o(.rodata.simConfig_BOARD_BootClockVLPR) for simConfig_BOARD_BootClockVLPR
+    clock_config.o(.text.BOARD_BootClockVLPR) refers to system_mk64f12.o(.data.SystemCoreClock) for SystemCoreClock
+    clock_config.o(.ARM.exidx.text.BOARD_BootClockVLPR) refers to clock_config.o(.text.BOARD_BootClockVLPR) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_Init) refers to fsl_component_generic_list.o(.text.LIST_Init) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetList) refers to fsl_component_generic_list.o(.text.LIST_GetList) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_AddTail) refers to fsl_component_generic_list.o(.text.LIST_AddTail) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_AddHead) refers to fsl_component_generic_list.o(.text.LIST_AddHead) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_RemoveHead) refers to fsl_component_generic_list.o(.text.LIST_RemoveHead) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetHead) refers to fsl_component_generic_list.o(.text.LIST_GetHead) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetNext) refers to fsl_component_generic_list.o(.text.LIST_GetNext) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetPrev) refers to fsl_component_generic_list.o(.text.LIST_GetPrev) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_RemoveElement) refers to fsl_component_generic_list.o(.text.LIST_RemoveElement) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_AddPrevElement) refers to fsl_component_generic_list.o(.text.LIST_AddPrevElement) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetSize) refers to fsl_component_generic_list.o(.text.LIST_GetSize) for [Anonymous Symbol]
+    fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetAvailableSize) refers to fsl_component_generic_list.o(.text.LIST_GetAvailableSize) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.text.HAL_UartInit) refers to fsl_uart.o(.text.UART_GetDefaultConfig) for UART_GetDefaultConfig
+    fsl_adapter_uart.o(.text.HAL_UartInit) refers to fsl_uart.o(.text.UART_Init) for UART_Init
+    fsl_adapter_uart.o(.text.HAL_UartInit) refers to fsl_adapter_uart.o(.rodata.s_UartAdapterBase) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartInit) refers to fsl_adapter_uart.o(.text.HAL_UartInit) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.text.HAL_UartDeinit) refers to fsl_uart.o(.text.UART_Deinit) for UART_Deinit
+    fsl_adapter_uart.o(.text.HAL_UartDeinit) refers to fsl_adapter_uart.o(.rodata.s_UartAdapterBase) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartDeinit) refers to fsl_adapter_uart.o(.text.HAL_UartDeinit) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.text.HAL_UartReceiveBlocking) refers to fsl_uart.o(.text.UART_ReadBlocking) for UART_ReadBlocking
+    fsl_adapter_uart.o(.text.HAL_UartReceiveBlocking) refers to fsl_adapter_uart.o(.rodata.s_UartAdapterBase) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartReceiveBlocking) refers to fsl_adapter_uart.o(.text.HAL_UartReceiveBlocking) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.text.HAL_UartSendBlocking) refers to fsl_uart.o(.text.UART_WriteBlocking) for UART_WriteBlocking
+    fsl_adapter_uart.o(.text.HAL_UartSendBlocking) refers to fsl_adapter_uart.o(.rodata.s_UartAdapterBase) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartSendBlocking) refers to fsl_adapter_uart.o(.text.HAL_UartSendBlocking) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartEnterLowpower) refers to fsl_adapter_uart.o(.text.HAL_UartEnterLowpower) for [Anonymous Symbol]
+    fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartExitLowpower) refers to fsl_adapter_uart.o(.text.HAL_UartExitLowpower) for [Anonymous Symbol]
+    fsl_adc16.o(.text.ADC16_Init) refers to fsl_adc16.o(.text.ADC16_GetInstance) for ADC16_GetInstance
+    fsl_adc16.o(.text.ADC16_Init) refers to fsl_adc16.o(.text.ADC16_SetHardwareAverage) for ADC16_SetHardwareAverage
+    fsl_adc16.o(.text.ADC16_Init) refers to fsl_adc16.o(.rodata.cst8) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_Init) refers to fsl_adc16.o(.text.ADC16_Init) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_GetInstance) refers to fsl_adc16.o(.text.ADC16_GetInstance) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_SetHardwareAverage) refers to fsl_adc16.o(.text.ADC16_SetHardwareAverage) for [Anonymous Symbol]
+    fsl_adc16.o(.text.ADC16_Deinit) refers to fsl_adc16.o(.text.ADC16_GetInstance) for ADC16_GetInstance
+    fsl_adc16.o(.text.ADC16_Deinit) refers to fsl_adc16.o(.rodata.cst8) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_Deinit) refers to fsl_adc16.o(.text.ADC16_Deinit) for [Anonymous Symbol]
+    fsl_adc16.o(.text.ADC16_GetDefaultConfig) refers to memset.o(.text) for memset
+    fsl_adc16.o(.ARM.exidx.text.ADC16_GetDefaultConfig) refers to fsl_adc16.o(.text.ADC16_GetDefaultConfig) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_DoAutoCalibration) refers to fsl_adc16.o(.text.ADC16_DoAutoCalibration) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_GetChannelStatusFlags) refers to fsl_adc16.o(.text.ADC16_GetChannelStatusFlags) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_GetStatusFlags) refers to fsl_adc16.o(.text.ADC16_GetStatusFlags) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_SetChannelMuxMode) refers to fsl_adc16.o(.text.ADC16_SetChannelMuxMode) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_SetHardwareCompareConfig) refers to fsl_adc16.o(.text.ADC16_SetHardwareCompareConfig) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_ClearStatusFlags) refers to fsl_adc16.o(.text.ADC16_ClearStatusFlags) for [Anonymous Symbol]
+    fsl_adc16.o(.ARM.exidx.text.ADC16_SetChannelConfig) refers to fsl_adc16.o(.text.ADC16_SetChannelConfig) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetOsc0ErClkFreq) refers to fsl_clock.o(.bss..L_MergedGlobals.1) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetOsc0ErClkFreq) refers to fsl_clock.o(.text.CLOCK_GetOsc0ErClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetEr32kClkFreq) refers to fsl_clock.o(.bss..L_MergedGlobals.1) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetEr32kClkFreq) refers to fsl_clock.o(.text.CLOCK_GetEr32kClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetPllFllSelClkFreq) refers to fsl_clock.o(.text.CLOCK_GetFllFreq) for CLOCK_GetFllFreq
+    fsl_clock.o(.text.CLOCK_GetPllFllSelClkFreq) refers to fsl_clock.o(.text.CLOCK_GetPll0Freq) for CLOCK_GetPll0Freq
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetPllFllSelClkFreq) refers to fsl_clock.o(.text.CLOCK_GetPllFllSelClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetFllFreq) refers to fsl_clock.o(.text.CLOCK_GetFllRefClkFreq) for CLOCK_GetFllRefClkFreq
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetFllFreq) refers to fsl_clock.o(.text.CLOCK_GetFllFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetPll0Freq) refers to fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq) for CLOCK_GetMcgExtClkFreq
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetPll0Freq) refers to fsl_clock.o(.text.CLOCK_GetPll0Freq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetPlatClkFreq) refers to fsl_clock.o(.text.CLOCK_GetOutClkFreq) for CLOCK_GetOutClkFreq
+    fsl_clock.o(.text.CLOCK_GetPlatClkFreq) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetPlatClkFreq) refers to fsl_clock.o(.text.CLOCK_GetPlatClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetOutClkFreq) refers to fsl_clock.o(.text.CLOCK_GetFllFreq) for CLOCK_GetFllFreq
+    fsl_clock.o(.text.CLOCK_GetOutClkFreq) refers to fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq) for CLOCK_GetMcgExtClkFreq
+    fsl_clock.o(.text.CLOCK_GetOutClkFreq) refers to fsl_clock.o(.text.CLOCK_GetPll0Freq) for CLOCK_GetPll0Freq
+    fsl_clock.o(.text.CLOCK_GetOutClkFreq) refers to fsl_clock.o(.text.CLOCK_GetInternalRefClkSelectFreq) for CLOCK_GetInternalRefClkSelectFreq
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetOutClkFreq) refers to fsl_clock.o(.text.CLOCK_GetOutClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetFlashClkFreq) refers to fsl_clock.o(.text.CLOCK_GetOutClkFreq) for CLOCK_GetOutClkFreq
+    fsl_clock.o(.text.CLOCK_GetFlashClkFreq) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetFlashClkFreq) refers to fsl_clock.o(.text.CLOCK_GetFlashClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetFlexBusClkFreq) refers to fsl_clock.o(.text.CLOCK_GetOutClkFreq) for CLOCK_GetOutClkFreq
+    fsl_clock.o(.text.CLOCK_GetFlexBusClkFreq) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetFlexBusClkFreq) refers to fsl_clock.o(.text.CLOCK_GetFlexBusClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetBusClkFreq) refers to fsl_clock.o(.text.CLOCK_GetOutClkFreq) for CLOCK_GetOutClkFreq
+    fsl_clock.o(.text.CLOCK_GetBusClkFreq) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetBusClkFreq) refers to fsl_clock.o(.text.CLOCK_GetBusClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetCoreSysClkFreq) refers to fsl_clock.o(.text.CLOCK_GetOutClkFreq) for CLOCK_GetOutClkFreq
+    fsl_clock.o(.text.CLOCK_GetCoreSysClkFreq) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetCoreSysClkFreq) refers to fsl_clock.o(.text.CLOCK_GetCoreSysClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.CLOCK_GetOutClkFreq) for CLOCK_GetOutClkFreq
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.CLOCK_GetPllFllSelClkFreq) for CLOCK_GetPllFllSelClkFreq
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.CLOCK_GetEr32kClkFreq) for CLOCK_GetEr32kClkFreq
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.CLOCK_GetFixedFreqClkFreq) for CLOCK_GetFixedFreqClkFreq
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.CLOCK_GetInternalRefClkFreq) for CLOCK_GetInternalRefClkFreq
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.CLOCK_GetFllFreq) for CLOCK_GetFllFreq
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.CLOCK_GetPll0Freq) for CLOCK_GetPll0Freq
+    fsl_clock.o(.text.CLOCK_GetFreq) refers to fsl_clock.o(.bss..L_MergedGlobals.1) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetFreq) refers to fsl_clock.o(.text.CLOCK_GetFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetFixedFreqClkFreq) refers to fsl_clock.o(.text.CLOCK_GetFllRefClkFreq) for CLOCK_GetFllRefClkFreq
+    fsl_clock.o(.text.CLOCK_GetFixedFreqClkFreq) refers to fsl_clock.o(.text.CLOCK_GetOutClkFreq) for CLOCK_GetOutClkFreq
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetFixedFreqClkFreq) refers to fsl_clock.o(.text.CLOCK_GetFixedFreqClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetInternalRefClkFreq) refers to fsl_clock.o(.text.CLOCK_GetInternalRefClkSelectFreq) for CLOCK_GetInternalRefClkSelectFreq
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetInternalRefClkFreq) refers to fsl_clock.o(.text.CLOCK_GetInternalRefClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetSimConfig) refers to fsl_clock.o(.text.CLOCK_SetSimConfig) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_EnableUsbfs0Clock) refers to fsl_clock.o(.text.CLOCK_EnableUsbfs0Clock) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetInternalRefClkSelectFreq) refers to fsl_clock.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetInternalRefClkSelectFreq) refers to fsl_clock.o(.text.CLOCK_GetInternalRefClkSelectFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq) refers to fsl_clock.o(.bss..L_MergedGlobals.1) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetMcgExtClkFreq) refers to fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_GetFllRefClkFreq) refers to fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq) for CLOCK_GetMcgExtClkFreq
+    fsl_clock.o(.text.CLOCK_GetFllRefClkFreq) refers to fsl_clock.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetFllRefClkFreq) refers to fsl_clock.o(.text.CLOCK_GetFllRefClkFreq) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetExternalRefClkConfig) refers to fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetInternalRefClkConfig) refers to fsl_clock.o(.text.CLOCK_SetInternalRefClkConfig) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_CalcPllDiv) refers to fsl_clock.o(.text.CLOCK_CalcPllDiv) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_EnablePll0) refers to fsl_clock.o(.text.CLOCK_EnablePll0) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetOsc0MonitorMode) refers to fsl_clock.o(.text.CLOCK_SetOsc0MonitorMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetRtcOscMonitorMode) refers to fsl_clock.o(.text.CLOCK_SetRtcOscMonitorMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetPll0MonitorMode) refers to fsl_clock.o(.text.CLOCK_SetPll0MonitorMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetStatusFlags) refers to fsl_clock.o(.text.CLOCK_GetStatusFlags) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_ClearStatusFlags) refers to fsl_clock.o(.text.CLOCK_ClearStatusFlags) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_InitOsc0) refers to fsl_clock.o(.text.CLOCK_InitOsc0) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_DeinitOsc0) refers to fsl_clock.o(.text.CLOCK_DeinitOsc0) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_SetSlowIrcFreq) refers to fsl_clock.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetSlowIrcFreq) refers to fsl_clock.o(.text.CLOCK_SetSlowIrcFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_SetFastIrcFreq) refers to fsl_clock.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetFastIrcFreq) refers to fsl_clock.o(.text.CLOCK_SetFastIrcFreq) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_TrimInternalRefClk) refers to fsl_clock.o(.rodata.cst16) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_TrimInternalRefClk) refers to fsl_clock.o(.data..L_MergedGlobals) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_TrimInternalRefClk) refers to fsl_clock.o(.text.CLOCK_TrimInternalRefClk) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_GetMode) refers to fsl_clock.o(.text.CLOCK_GetMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetFeiMode) refers to fsl_clock.o(.text.CLOCK_SetFeiMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetFeeMode) refers to fsl_clock.o(.text.CLOCK_SetFeeMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetFbiMode) refers to fsl_clock.o(.text.CLOCK_SetFbiMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetFbeMode) refers to fsl_clock.o(.text.CLOCK_SetFbeMode) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_SetBlpiMode) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_3) for OUTLINED_FUNCTION_3
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetBlpiMode) refers to fsl_clock.o(.text.CLOCK_SetBlpiMode) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_SetBlpeMode) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_3) for OUTLINED_FUNCTION_3
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetBlpeMode) refers to fsl_clock.o(.text.CLOCK_SetBlpeMode) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_SetPbeMode) refers to fsl_clock.o(.text.CLOCK_EnablePll0) for CLOCK_EnablePll0
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetPbeMode) refers to fsl_clock.o(.text.CLOCK_SetPbeMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetPeeMode) refers to fsl_clock.o(.text.CLOCK_SetPeeMode) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_ExternalModeToFbeModeQuick) refers to fsl_clock.o(.text.CLOCK_ExternalModeToFbeModeQuick) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_InternalModeToFbiModeQuick) refers to fsl_clock.o(.text.CLOCK_InternalModeToFbiModeQuick) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_BootToFeiMode) refers to fsl_clock.o(.text.CLOCK_SetFeiMode) for CLOCK_SetFeiMode
+    fsl_clock.o(.ARM.exidx.text.CLOCK_BootToFeiMode) refers to fsl_clock.o(.text.CLOCK_BootToFeiMode) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_BootToFeeMode) refers to fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig) for CLOCK_SetExternalRefClkConfig
+    fsl_clock.o(.text.CLOCK_BootToFeeMode) refers to fsl_clock.o(.text.CLOCK_SetFeeMode) for CLOCK_SetFeeMode
+    fsl_clock.o(.ARM.exidx.text.CLOCK_BootToFeeMode) refers to fsl_clock.o(.text.CLOCK_BootToFeeMode) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_BootToBlpiMode) refers to fsl_clock.o(.text.CLOCK_SetInternalRefClkConfig) for CLOCK_SetInternalRefClkConfig
+    fsl_clock.o(.text.CLOCK_BootToBlpiMode) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_clock.o(.ARM.exidx.text.CLOCK_BootToBlpiMode) refers to fsl_clock.o(.text.CLOCK_BootToBlpiMode) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_BootToBlpeMode) refers to fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig) for CLOCK_SetExternalRefClkConfig
+    fsl_clock.o(.text.CLOCK_BootToBlpeMode) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_clock.o(.ARM.exidx.text.CLOCK_BootToBlpeMode) refers to fsl_clock.o(.text.CLOCK_BootToBlpeMode) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_BootToPeeMode) refers to fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig) for CLOCK_SetExternalRefClkConfig
+    fsl_clock.o(.text.CLOCK_BootToPeeMode) refers to fsl_clock.o(.text.CLOCK_SetPbeMode) for CLOCK_SetPbeMode
+    fsl_clock.o(.ARM.exidx.text.CLOCK_BootToPeeMode) refers to fsl_clock.o(.text.CLOCK_BootToPeeMode) for [Anonymous Symbol]
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_ExternalModeToFbeModeQuick) for CLOCK_ExternalModeToFbeModeQuick
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetFeiMode) for CLOCK_SetFeiMode
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig) for CLOCK_SetExternalRefClkConfig
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetInternalRefClkConfig) for CLOCK_SetInternalRefClkConfig
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_GetMode) for CLOCK_GetMode
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetFbiMode) for CLOCK_SetFbiMode
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetFeeMode) for CLOCK_SetFeeMode
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetFbeMode) for CLOCK_SetFbeMode
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetPbeMode) for CLOCK_SetPbeMode
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetPeeMode) for CLOCK_SetPeeMode
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_EnablePll0) for CLOCK_EnablePll0
+    fsl_clock.o(.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_FllStableDelay) for CLOCK_FllStableDelay
+    fsl_clock.o(.ARM.exidx.text.CLOCK_SetMcgConfig) refers to fsl_clock.o(.text.CLOCK_SetMcgConfig) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.CLOCK_FllStableDelay) refers to fsl_clock.o(.text.CLOCK_FllStableDelay) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_1) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.OUTLINED_FUNCTION_2) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_2) for [Anonymous Symbol]
+    fsl_clock.o(.ARM.exidx.text.OUTLINED_FUNCTION_3) refers to fsl_clock.o(.text.OUTLINED_FUNCTION_3) for [Anonymous Symbol]
+    fsl_common.o(.text.SDK_Malloc) refers to malloc2.o(i.__malloc$2region) for malloc
+    fsl_common.o(.ARM.exidx.text.SDK_Malloc) refers to fsl_common.o(.text.SDK_Malloc) for [Anonymous Symbol]
+    fsl_common.o(.text.SDK_Free) refers to malloc2.o(i.__free$2region) for free
+    fsl_common.o(.ARM.exidx.text.SDK_Free) refers to fsl_common.o(.text.SDK_Free) for [Anonymous Symbol]
+    fsl_common_arm.o(.text.SDK_DelayAtLeastUs) refers to uldiv.o(.text) for __aeabi_uldivmod
+    fsl_common_arm.o(.ARM.exidx.text.SDK_DelayAtLeastUs) refers to fsl_common_arm.o(.text.SDK_DelayAtLeastUs) for [Anonymous Symbol]
+    fsl_ftfx_cache.o(.text.FTFx_CACHE_Init) refers to memcpy.o(.text) for memcpy
+    fsl_ftfx_cache.o(.text.FTFx_CACHE_Init) refers to fsl_ftfx_cache.o(.bss.s_ftfxCommonBitOperation) for [Anonymous Symbol]
+    fsl_ftfx_cache.o(.text.FTFx_CACHE_Init) refers to fsl_ftfx_cache.o(.rodata.s_ftfxCommonBitOperationFunctionCode) for [Anonymous Symbol]
+    fsl_ftfx_cache.o(.ARM.exidx.text.FTFx_CACHE_Init) refers to fsl_ftfx_cache.o(.text.FTFx_CACHE_Init) for [Anonymous Symbol]
+    fsl_ftfx_cache.o(.text.FTFx_CACHE_ClearCachePrefetchSpeculation) refers to fsl_ftfx_cache.o(.text.fmc_flash_cache_clear) for fmc_flash_cache_clear
+    fsl_ftfx_cache.o(.text.FTFx_CACHE_ClearCachePrefetchSpeculation) refers to fsl_ftfx_cache.o(.text.fmc_flash_prefetch_speculation_clear) for fmc_flash_prefetch_speculation_clear
+    fsl_ftfx_cache.o(.ARM.exidx.text.FTFx_CACHE_ClearCachePrefetchSpeculation) refers to fsl_ftfx_cache.o(.text.FTFx_CACHE_ClearCachePrefetchSpeculation) for [Anonymous Symbol]
+    fsl_ftfx_cache.o(.ARM.exidx.text.fmc_flash_cache_clear) refers to fsl_ftfx_cache.o(.text.fmc_flash_cache_clear) for [Anonymous Symbol]
+    fsl_ftfx_cache.o(.ARM.exidx.text.fmc_flash_prefetch_speculation_clear) refers to fsl_ftfx_cache.o(.text.fmc_flash_prefetch_speculation_clear) for [Anonymous Symbol]
+    fsl_ftfx_cache.o(.ARM.exidx.text.FTFx_CACHE_PflashSetPrefetchSpeculation) refers to fsl_ftfx_cache.o(.text.FTFx_CACHE_PflashSetPrefetchSpeculation) for [Anonymous Symbol]
+    fsl_ftfx_cache.o(.text.FTFx_CACHE_PflashGetPrefetchSpeculation) refers to memset.o(.text) for memset
+    fsl_ftfx_cache.o(.ARM.exidx.text.FTFx_CACHE_PflashGetPrefetchSpeculation) refers to fsl_ftfx_cache.o(.text.FTFx_CACHE_PflashGetPrefetchSpeculation) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_API_Init) refers to memcpy.o(.text) for memcpy
+    fsl_ftfx_controller.o(.text.FTFx_API_Init) refers to fsl_ftfx_controller.o(.bss.s_ftfxRunCommand) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_API_Init) refers to fsl_ftfx_controller.o(.rodata.s_ftfxRunCommandFunctionCode) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_API_Init) refers to fsl_ftfx_controller.o(.text.FTFx_API_Init) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_Erase) refers to fsl_ftfx_controller.o(.text.ftfx_check_mem_range) for ftfx_check_mem_range
+    fsl_ftfx_controller.o(.text.FTFx_CMD_Erase) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_Erase) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_Erase) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.ARM.exidx.text.ftfx_check_mem_range) refers to fsl_ftfx_controller.o(.text.ftfx_check_mem_range) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.ARM.exidx.text.ftfx_command_sequence) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_EraseSectorNonBlocking) refers to fsl_ftfx_controller.o(.text.ftfx_check_mem_range) for ftfx_check_mem_range
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_EraseSectorNonBlocking) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_EraseSectorNonBlocking) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_EraseAll) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_EraseAll) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_EraseAll) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_EraseAllExecuteOnlySegments) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_EraseAllExecuteOnlySegments) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_EraseAllExecuteOnlySegments) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_Program) refers to fsl_ftfx_controller.o(.text.ftfx_check_mem_range) for ftfx_check_mem_range
+    fsl_ftfx_controller.o(.text.FTFx_CMD_Program) refers to fsl_ftfx_controller.o(.text.ftfx_read_word_from_byte_address) for ftfx_read_word_from_byte_address
+    fsl_ftfx_controller.o(.text.FTFx_CMD_Program) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.text.FTFx_CMD_Program) refers to fsl_ftfx_controller.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_Program) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_Program) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.ARM.exidx.text.ftfx_read_word_from_byte_address) refers to fsl_ftfx_controller.o(.text.ftfx_read_word_from_byte_address) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramOnce) refers to fsl_ftfx_controller.o(.text.ftfx_read_word_from_byte_address) for ftfx_read_word_from_byte_address
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramOnce) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_ProgramOnce) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramOnce) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramSection) refers to fsl_ftfx_controller.o(.text.ftfx_check_mem_range) for ftfx_check_mem_range
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramSection) refers to memcpy.o(.text) for memcpy
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramSection) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_ProgramSection) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramSection) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ReadOnce) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ReadOnce) refers to fsl_ftfx_controller.o(.text.ftfx_write_word_to_byte_address) for ftfx_write_word_to_byte_address
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_ReadOnce) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ReadOnce) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.ARM.exidx.text.ftfx_write_word_to_byte_address) refers to fsl_ftfx_controller.o(.text.ftfx_write_word_to_byte_address) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ReadResource) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ReadResource) refers to fsl_ftfx_controller.o(.text.ftfx_write_word_to_byte_address) for ftfx_write_word_to_byte_address
+    fsl_ftfx_controller.o(.text.FTFx_CMD_ReadResource) refers to fsl_ftfx_controller.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_ReadResource) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ReadResource) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyErase) refers to fsl_ftfx_controller.o(.text.ftfx_check_mem_range) for ftfx_check_mem_range
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyErase) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyErase) refers to fsl_ftfx_controller.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_VerifyErase) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyErase) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyEraseAll) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_VerifyEraseAll) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyEraseAll) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyEraseAllExecuteOnlySegments) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_VerifyEraseAllExecuteOnlySegments) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyEraseAllExecuteOnlySegments) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyProgram) refers to fsl_ftfx_controller.o(.text.ftfx_check_mem_range) for ftfx_check_mem_range
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyProgram) refers to fsl_ftfx_controller.o(.text.ftfx_read_word_from_byte_address) for ftfx_read_word_from_byte_address
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyProgram) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyProgram) refers to fsl_ftfx_controller.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_VerifyProgram) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyProgram) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_SecurityBypass) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_SecurityBypass) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_SecurityBypass) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_REG_GetSecurityState) refers to fsl_ftfx_controller.o(.text.FTFx_REG_GetSecurityState) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.text.FTFx_CMD_SwapControl) refers to fsl_ftfx_controller.o(.text.ftfx_command_sequence) for ftfx_command_sequence
+    fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_SwapControl) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_SwapControl) for [Anonymous Symbol]
+    fsl_ftfx_controller.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to fsl_ftfx_controller.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_Init) refers to fsl_ftfx_controller.o(.text.FTFx_API_Init) for FTFx_API_Init
+    fsl_ftfx_flash.o(.text.FLASH_Init) refers to fsl_ftfx_flash.o(.rodata.kPFlashDensities) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_Init) refers to fsl_ftfx_flash.o(.text.FLASH_Init) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_Erase) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_ftfx_flash.o(.text.FLASH_Erase) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_ftfx_flash.o(.text.FLASH_Erase) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_Erase) for FTFx_CMD_Erase
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_Erase) refers to fsl_ftfx_flash.o(.text.FLASH_Erase) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.ARM.exidx.text.flash_check_range_to_get_index) refers to fsl_ftfx_flash.o(.text.flash_check_range_to_get_index) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_EraseSectorNonBlocking) refers to fsl_ftfx_flash.o(.text.flash_check_range_to_get_index) for flash_check_range_to_get_index
+    fsl_ftfx_flash.o(.text.FLASH_EraseSectorNonBlocking) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_EraseSectorNonBlocking) for FTFx_CMD_EraseSectorNonBlocking
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_EraseSectorNonBlocking) refers to fsl_ftfx_flash.o(.text.FLASH_EraseSectorNonBlocking) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_EraseAll) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_EraseAll) for FTFx_CMD_EraseAll
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_EraseAll) refers to fsl_ftfx_flash.o(.text.FLASH_EraseAll) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_Program) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_ftfx_flash.o(.text.FLASH_Program) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_ftfx_flash.o(.text.FLASH_Program) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_Program) for FTFx_CMD_Program
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_Program) refers to fsl_ftfx_flash.o(.text.FLASH_Program) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_ProgramOnce) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramOnce) for FTFx_CMD_ProgramOnce
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_ProgramOnce) refers to fsl_ftfx_flash.o(.text.FLASH_ProgramOnce) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_ProgramSection) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_ftfx_flash.o(.text.FLASH_ProgramSection) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_ftfx_flash.o(.text.FLASH_ProgramSection) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramSection) for FTFx_CMD_ProgramSection
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_ProgramSection) refers to fsl_ftfx_flash.o(.text.FLASH_ProgramSection) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_ReadResource) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ReadResource) for FTFx_CMD_ReadResource
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_ReadResource) refers to fsl_ftfx_flash.o(.text.FLASH_ReadResource) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_ReadOnce) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ReadOnce) for FTFx_CMD_ReadOnce
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_ReadOnce) refers to fsl_ftfx_flash.o(.text.FLASH_ReadOnce) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_VerifyErase) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_ftfx_flash.o(.text.FLASH_VerifyErase) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_ftfx_flash.o(.text.FLASH_VerifyErase) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyErase) for FTFx_CMD_VerifyErase
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_VerifyErase) refers to fsl_ftfx_flash.o(.text.FLASH_VerifyErase) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_VerifyEraseAll) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyEraseAll) for FTFx_CMD_VerifyEraseAll
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_VerifyEraseAll) refers to fsl_ftfx_flash.o(.text.FLASH_VerifyEraseAll) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_VerifyProgram) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_ftfx_flash.o(.text.FLASH_VerifyProgram) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyProgram) for FTFx_CMD_VerifyProgram
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_VerifyProgram) refers to fsl_ftfx_flash.o(.text.FLASH_VerifyProgram) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_GetSecurityState) refers to fsl_ftfx_controller.o(.text.FTFx_REG_GetSecurityState) for FTFx_REG_GetSecurityState
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_GetSecurityState) refers to fsl_ftfx_flash.o(.text.FLASH_GetSecurityState) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_SecurityBypass) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_SecurityBypass) for FTFx_CMD_SecurityBypass
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_SecurityBypass) refers to fsl_ftfx_flash.o(.text.FLASH_SecurityBypass) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_Swap) refers to fsl_ftfx_flash.o(.text.flash_check_range_to_get_index) for flash_check_range_to_get_index
+    fsl_ftfx_flash.o(.text.FLASH_Swap) refers to memset.o(.text) for memset
+    fsl_ftfx_flash.o(.text.FLASH_Swap) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_SwapControl) for FTFx_CMD_SwapControl
+    fsl_ftfx_flash.o(.text.FLASH_Swap) refers to fsl_ftfx_controller.o(.text.FTFx_CMD_ReadResource) for FTFx_CMD_ReadResource
+    fsl_ftfx_flash.o(.text.FLASH_Swap) refers to fsl_ftfx_flash.o(.text.FLASH_Erase) for FLASH_Erase
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_Swap) refers to fsl_ftfx_flash.o(.text.FLASH_Swap) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.FLASH_IsProtected) refers to fsl_ftfx_flash.o(.text.flash_check_range_to_get_index) for flash_check_range_to_get_index
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_IsProtected) refers to fsl_ftfx_flash.o(.text.FLASH_IsProtected) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_PflashSetProtection) refers to fsl_ftfx_flash.o(.text.FLASH_PflashSetProtection) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_PflashGetProtection) refers to fsl_ftfx_flash.o(.text.FLASH_PflashGetProtection) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_GetProperty) refers to fsl_ftfx_flash.o(.text.FLASH_GetProperty) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_GetCommandState) refers to fsl_ftfx_flash.o(.text.FLASH_GetCommandState) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_1) refers to fsl_ftfx_flash.o(.text.flash_check_range_to_get_index) for flash_check_range_to_get_index
+    fsl_ftfx_flash.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_1) for [Anonymous Symbol]
+    fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_2) refers to fsl_ftfx_flash.o(.text.flash_check_range_to_get_index) for flash_check_range_to_get_index
+    fsl_ftfx_flash.o(.ARM.exidx.text.OUTLINED_FUNCTION_2) refers to fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_2) for [Anonymous Symbol]
+    fsl_gpio.o(.ARM.exidx.text.GPIO_PinInit) refers to fsl_gpio.o(.text.GPIO_PinInit) for [Anonymous Symbol]
+    fsl_gpio.o(.text.GPIO_PortGetInterruptFlags) refers to fsl_gpio.o(.text.GPIO_GetInstance) for GPIO_GetInstance
+    fsl_gpio.o(.text.GPIO_PortGetInterruptFlags) refers to fsl_gpio.o(.rodata.s_portBases) for [Anonymous Symbol]
+    fsl_gpio.o(.ARM.exidx.text.GPIO_PortGetInterruptFlags) refers to fsl_gpio.o(.text.GPIO_PortGetInterruptFlags) for [Anonymous Symbol]
+    fsl_gpio.o(.ARM.exidx.text.GPIO_GetInstance) refers to fsl_gpio.o(.text.GPIO_GetInstance) for [Anonymous Symbol]
+    fsl_gpio.o(.text.GPIO_PortClearInterruptFlags) refers to fsl_gpio.o(.text.GPIO_GetInstance) for GPIO_GetInstance
+    fsl_gpio.o(.text.GPIO_PortClearInterruptFlags) refers to fsl_gpio.o(.rodata.s_portBases) for [Anonymous Symbol]
+    fsl_gpio.o(.ARM.exidx.text.GPIO_PortClearInterruptFlags) refers to fsl_gpio.o(.text.GPIO_PortClearInterruptFlags) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_PreEnterStopModes) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_3) for OUTLINED_FUNCTION_3
+    fsl_smc.o(.text.SMC_PreEnterStopModes) refers to fsl_smc.o(.bss.g_savedPrimask) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_PreEnterStopModes) refers to fsl_smc.o(.text.SMC_PreEnterStopModes) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_PostExitStopModes) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_3) for OUTLINED_FUNCTION_3
+    fsl_smc.o(.text.SMC_PostExitStopModes) refers to fsl_smc.o(.bss.g_savedPrimask) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_PostExitStopModes) refers to fsl_smc.o(.text.SMC_PostExitStopModes) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_PreEnterWaitModes) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_3) for OUTLINED_FUNCTION_3
+    fsl_smc.o(.text.SMC_PreEnterWaitModes) refers to fsl_smc.o(.bss.g_savedPrimask) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_PreEnterWaitModes) refers to fsl_smc.o(.text.SMC_PreEnterWaitModes) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_PostExitWaitModes) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_3) for OUTLINED_FUNCTION_3
+    fsl_smc.o(.text.SMC_PostExitWaitModes) refers to fsl_smc.o(.bss.g_savedPrimask) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_PostExitWaitModes) refers to fsl_smc.o(.text.SMC_PostExitWaitModes) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeRun) refers to fsl_smc.o(.text.SMC_SetPowerModeRun) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_SetPowerModeWait) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeWait) refers to fsl_smc.o(.text.SMC_SetPowerModeWait) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_SetPowerModeStop) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_4) for OUTLINED_FUNCTION_4
+    fsl_smc.o(.text.SMC_SetPowerModeStop) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_smc.o(.text.SMC_SetPowerModeStop) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_smc.o(.text.SMC_SetPowerModeStop) refers to fsl_smc.o(.data.s_stopRamFuncArray) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeStop) refers to fsl_smc.o(.text.SMC_SetPowerModeStop) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeVlpr) refers to fsl_smc.o(.text.SMC_SetPowerModeVlpr) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_SetPowerModeVlpw) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeVlpw) refers to fsl_smc.o(.text.SMC_SetPowerModeVlpw) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_SetPowerModeVlps) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_4) for OUTLINED_FUNCTION_4
+    fsl_smc.o(.text.SMC_SetPowerModeVlps) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_smc.o(.text.SMC_SetPowerModeVlps) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_smc.o(.text.SMC_SetPowerModeVlps) refers to fsl_smc.o(.data.s_stopRamFuncArray) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeVlps) refers to fsl_smc.o(.text.SMC_SetPowerModeVlps) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_SetPowerModeLls) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_4) for OUTLINED_FUNCTION_4
+    fsl_smc.o(.text.SMC_SetPowerModeLls) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_smc.o(.text.SMC_SetPowerModeLls) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_smc.o(.text.SMC_SetPowerModeLls) refers to fsl_smc.o(.data.s_stopRamFuncArray) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeLls) refers to fsl_smc.o(.text.SMC_SetPowerModeLls) for [Anonymous Symbol]
+    fsl_smc.o(.text.SMC_SetPowerModeVlls) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_smc.o(.text.SMC_SetPowerModeVlls) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_smc.o(.text.SMC_SetPowerModeVlls) refers to fsl_smc.o(.data.s_stopRamFuncArray) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeVlls) refers to fsl_smc.o(.text.SMC_SetPowerModeVlls) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_1) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_2) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_2) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_3) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_3) for [Anonymous Symbol]
+    fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_4) refers to fsl_smc.o(.text.OUTLINED_FUNCTION_4) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_GetInstance) refers to fsl_uart.o(.text.UART_GetInstance) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferGetRxRingBufferLength) refers to fsl_uart.o(.text.UART_TransferGetRxRingBufferLength) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_Init) refers to fsl_uart.o(.text.UART_GetInstance) for UART_GetInstance
+    fsl_uart.o(.text.UART_Init) refers to fsl_uart.o(.rodata.s_uartClock) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_Init) refers to fsl_uart.o(.text.UART_Init) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_Deinit) refers to fsl_uart.o(.text.UART_GetInstance) for UART_GetInstance
+    fsl_uart.o(.text.UART_Deinit) refers to fsl_uart.o(.rodata.s_uartClock) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_Deinit) refers to fsl_uart.o(.text.UART_Deinit) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_GetDefaultConfig) refers to memset.o(.text) for memset
+    fsl_uart.o(.ARM.exidx.text.UART_GetDefaultConfig) refers to fsl_uart.o(.text.UART_GetDefaultConfig) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_SetBaudRate) refers to fsl_uart.o(.text.UART_SetBaudRate) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_Enable9bitMode) refers to fsl_uart.o(.text.UART_Enable9bitMode) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_SendAddress) refers to fsl_uart.o(.text.UART_SendAddress) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_EnableInterrupts) refers to fsl_uart.o(.text.UART_EnableInterrupts) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_DisableInterrupts) refers to fsl_uart.o(.text.UART_DisableInterrupts) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_GetEnabledInterrupts) refers to fsl_uart.o(.text.UART_GetEnabledInterrupts) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_GetStatusFlags) refers to fsl_uart.o(.text.UART_GetStatusFlags) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_ClearStatusFlags) refers to fsl_uart.o(.text.UART_GetStatusFlags) for UART_GetStatusFlags
+    fsl_uart.o(.ARM.exidx.text.UART_ClearStatusFlags) refers to fsl_uart.o(.text.UART_ClearStatusFlags) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_WriteBlocking) refers to fsl_uart.o(.text.UART_WriteBlocking) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_ReadBlocking) refers to fsl_uart.o(.text.UART_GetStatusFlags) for UART_GetStatusFlags
+    fsl_uart.o(.text.UART_ReadBlocking) refers to fsl_uart.o(.text.UART_ClearStatusFlags) for UART_ClearStatusFlags
+    fsl_uart.o(.ARM.exidx.text.UART_ReadBlocking) refers to fsl_uart.o(.text.UART_ReadBlocking) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_TransferCreateHandle) refers to memset.o(.text) for memset
+    fsl_uart.o(.text.UART_TransferCreateHandle) refers to fsl_uart.o(.text.UART_GetInstance) for UART_GetInstance
+    fsl_uart.o(.text.UART_TransferCreateHandle) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART_TransferCreateHandle) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.text.UART_TransferCreateHandle) refers to fsl_uart.o(.text.UART_TransferHandleIRQ) for UART_TransferHandleIRQ
+    fsl_uart.o(.text.UART_TransferCreateHandle) refers to fsl_uart.o(.rodata.s_uartIRQ) for s_uartIRQ
+    fsl_uart.o(.ARM.exidx.text.UART_TransferCreateHandle) refers to fsl_uart.o(.text.UART_TransferCreateHandle) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.UART_GetStatusFlags) for UART_GetStatusFlags
+    fsl_uart.o(.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_5) for OUTLINED_FUNCTION_5
+    fsl_uart.o(.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_9) for OUTLINED_FUNCTION_9
+    fsl_uart.o(.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_8) for OUTLINED_FUNCTION_8
+    fsl_uart.o(.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_2) for OUTLINED_FUNCTION_2
+    fsl_uart.o(.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_4) for OUTLINED_FUNCTION_4
+    fsl_uart.o(.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_6) for OUTLINED_FUNCTION_6
+    fsl_uart.o(.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.UART_TransferIsRxRingBufferFull) for UART_TransferIsRxRingBufferFull
+    fsl_uart.o(.ARM.exidx.text.UART_TransferHandleIRQ) refers to fsl_uart.o(.text.UART_TransferHandleIRQ) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_TransferStartRingBuffer) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_7) for OUTLINED_FUNCTION_7
+    fsl_uart.o(.ARM.exidx.text.UART_TransferStartRingBuffer) refers to fsl_uart.o(.text.UART_TransferStartRingBuffer) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferStopRingBuffer) refers to fsl_uart.o(.text.UART_TransferStopRingBuffer) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferSendNonBlocking) refers to fsl_uart.o(.text.UART_TransferSendNonBlocking) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferAbortSend) refers to fsl_uart.o(.text.UART_TransferAbortSend) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferGetSendCount) refers to fsl_uart.o(.text.UART_TransferGetSendCount) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_TransferReceiveNonBlocking) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_7) for OUTLINED_FUNCTION_7
+    fsl_uart.o(.ARM.exidx.text.UART_TransferReceiveNonBlocking) refers to fsl_uart.o(.text.UART_TransferReceiveNonBlocking) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferAbortReceive) refers to fsl_uart.o(.text.UART_TransferAbortReceive) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferGetReceiveCount) refers to fsl_uart.o(.text.UART_TransferGetReceiveCount) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_EnableTxFIFO) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_3) for OUTLINED_FUNCTION_3
+    fsl_uart.o(.ARM.exidx.text.UART_EnableTxFIFO) refers to fsl_uart.o(.text.UART_EnableTxFIFO) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART_EnableRxFIFO) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_3) for OUTLINED_FUNCTION_3
+    fsl_uart.o(.ARM.exidx.text.UART_EnableRxFIFO) refers to fsl_uart.o(.text.UART_EnableRxFIFO) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_ReadNonBlocking) refers to fsl_uart.o(.text.UART_ReadNonBlocking) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferIsRxRingBufferFull) refers to fsl_uart.o(.text.UART_TransferIsRxRingBufferFull) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.UART_TransferHandleErrorIRQ) refers to fsl_uart.o(.text.UART_TransferHandleErrorIRQ) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART0_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_uart.o(.text.UART0_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART0_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART0_DriverIRQHandler) refers to fsl_uart.o(.text.UART0_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART0_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_uart.o(.text.UART0_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART0_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART0_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.UART0_RX_TX_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART1_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_uart.o(.text.UART1_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART1_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART1_DriverIRQHandler) refers to fsl_uart.o(.text.UART1_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART1_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_uart.o(.text.UART1_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART1_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART1_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.UART1_RX_TX_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART2_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_uart.o(.text.UART2_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART2_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART2_DriverIRQHandler) refers to fsl_uart.o(.text.UART2_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART2_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_uart.o(.text.UART2_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART2_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART2_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.UART2_RX_TX_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART3_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_uart.o(.text.UART3_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART3_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART3_DriverIRQHandler) refers to fsl_uart.o(.text.UART3_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART3_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_uart.o(.text.UART3_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART3_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART3_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.UART3_RX_TX_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART4_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_uart.o(.text.UART4_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART4_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART4_DriverIRQHandler) refers to fsl_uart.o(.text.UART4_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART4_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_uart.o(.text.UART4_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART4_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART4_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.UART4_RX_TX_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART5_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    fsl_uart.o(.text.UART5_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART5_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART5_DriverIRQHandler) refers to fsl_uart.o(.text.UART5_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.bss.s_uartHandle) for s_uartHandle
+    fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.data.s_uartIsr) for s_uartIsr
+    fsl_uart.o(.ARM.exidx.text.UART5_RX_TX_DriverIRQHandler) refers to fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_1) for [Anonymous Symbol]
+    fsl_uart.o(.text.OUTLINED_FUNCTION_2) refers to fsl_uart.o(.text.UART_ReadNonBlocking) for UART_ReadNonBlocking
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_2) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_2) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_3) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_3) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_4) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_4) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_5) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_5) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_6) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_6) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_7) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_7) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_8) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_8) for [Anonymous Symbol]
+    fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_9) refers to fsl_uart.o(.text.OUTLINED_FUNCTION_9) for [Anonymous Symbol]
+    fsl_uart.o(.data.s_uartIsr) refers to startup_mk64f12.o(.text) for DefaultISR
+    system_mk64f12.o(.text.SystemInit) refers to system_mk64f12.o(.text.SystemInitHook) for SystemInitHook
+    system_mk64f12.o(.ARM.exidx.text.SystemInit) refers to system_mk64f12.o(.text.SystemInit) for [Anonymous Symbol]
+    system_mk64f12.o(.ARM.exidx.text.SystemInitHook) refers to system_mk64f12.o(.text.SystemInitHook) for [Anonymous Symbol]
+    system_mk64f12.o(.text.SystemCoreClockUpdate) refers to system_mk64f12.o(.data.SystemCoreClock) for SystemCoreClock
+    system_mk64f12.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_mk64f12.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_Init) refers to fsl_adapter_uart.o(.text.HAL_UartInit) for HAL_UartInit
+    fsl_debug_console.o(.text.DbgConsole_Init) refers to fsl_debug_console.o(.bss.s_debugConsole) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_Init) refers to fsl_adapter_uart.o(.text.HAL_UartReceiveBlocking) for HAL_UartReceiveBlocking
+    fsl_debug_console.o(.text.DbgConsole_Init) refers to fsl_adapter_uart.o(.text.HAL_UartSendBlocking) for HAL_UartSendBlocking
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Init) refers to fsl_debug_console.o(.text.DbgConsole_Init) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_Deinit) refers to fsl_adapter_uart.o(.text.HAL_UartDeinit) for HAL_UartDeinit
+    fsl_debug_console.o(.text.DbgConsole_Deinit) refers to fsl_debug_console.o(.bss.s_debugConsole) for [Anonymous Symbol]
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Deinit) refers to fsl_debug_console.o(.text.DbgConsole_Deinit) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_Printf) refers to fsl_debug_console.o(.text.DbgConsole_Vprintf) for DbgConsole_Vprintf
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Printf) refers to fsl_debug_console.o(.text.DbgConsole_Printf) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_Vprintf) refers to fsl_debug_console.o(.text.DbgConsole_Putchar) for DbgConsole_Putchar
+    fsl_debug_console.o(.text.DbgConsole_Vprintf) refers to fsl_debug_console.o(.text.DbgConsole_ConvertRadixNumToString) for DbgConsole_ConvertRadixNumToString
+    fsl_debug_console.o(.text.DbgConsole_Vprintf) refers to memcpy.o(.text) for memcpy
+    fsl_debug_console.o(.text.DbgConsole_Vprintf) refers to fsl_debug_console.o(.text.DbgConsole_PrintfPaddingCharacter) for DbgConsole_PrintfPaddingCharacter
+    fsl_debug_console.o(.text.DbgConsole_Vprintf) refers to strlen.o(.text) for strlen
+    fsl_debug_console.o(.text.DbgConsole_Vprintf) refers to fsl_debug_console.o(.bss.s_debugConsole) for [Anonymous Symbol]
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Vprintf) refers to fsl_debug_console.o(.text.DbgConsole_Vprintf) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_Putchar) refers to fsl_debug_console.o(.bss.s_debugConsole) for [Anonymous Symbol]
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Putchar) refers to fsl_debug_console.o(.text.DbgConsole_Putchar) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_Scanf) refers to fsl_debug_console.o(.text.DbgConsole_Getchar) for DbgConsole_Getchar
+    fsl_debug_console.o(.text.DbgConsole_Scanf) refers to fsl_debug_console.o(.text.DbgConsole_ScanIgnoreWhiteSpace) for DbgConsole_ScanIgnoreWhiteSpace
+    fsl_debug_console.o(.text.DbgConsole_Scanf) refers to fsl_debug_console.o(.bss.s_debugConsole) for [Anonymous Symbol]
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Scanf) refers to fsl_debug_console.o(.text.DbgConsole_Scanf) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_Getchar) refers to fsl_debug_console.o(.bss.s_debugConsole) for [Anonymous Symbol]
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Getchar) refers to fsl_debug_console.o(.text.DbgConsole_Getchar) for [Anonymous Symbol]
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_ConvertRadixNumToString) refers to fsl_debug_console.o(.text.DbgConsole_ConvertRadixNumToString) for [Anonymous Symbol]
+    fsl_debug_console.o(.text.DbgConsole_PrintfPaddingCharacter) refers to fsl_debug_console.o(.text.DbgConsole_Putchar) for DbgConsole_Putchar
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_PrintfPaddingCharacter) refers to fsl_debug_console.o(.text.DbgConsole_PrintfPaddingCharacter) for [Anonymous Symbol]
+    fsl_debug_console.o(.ARM.exidx.text.DbgConsole_ScanIgnoreWhiteSpace) refers to fsl_debug_console.o(.text.DbgConsole_ScanIgnoreWhiteSpace) for [Anonymous Symbol]
+    startup_mk64f12.o(.text) refers to startup_mk64f12.o(.isr_vector) for __Vectors
+    startup_mk64f12.o(.text) refers to system_mk64f12.o(.text.SystemInit) for SystemInit
+    startup_mk64f12.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    startup_mk64f12.o(.text) refers to fsl_uart.o(.text.UART0_RX_TX_DriverIRQHandler) for UART0_RX_TX_DriverIRQHandler
+    startup_mk64f12.o(.text) refers to fsl_uart.o(.text.UART1_RX_TX_DriverIRQHandler) for UART1_RX_TX_DriverIRQHandler
+    startup_mk64f12.o(.text) refers to fsl_uart.o(.text.UART2_RX_TX_DriverIRQHandler) for UART2_RX_TX_DriverIRQHandler
+    startup_mk64f12.o(.text) refers to fsl_uart.o(.text.UART3_RX_TX_DriverIRQHandler) for UART3_RX_TX_DriverIRQHandler
+    startup_mk64f12.o(.text) refers to fsl_uart.o(.text.UART4_RX_TX_DriverIRQHandler) for UART4_RX_TX_DriverIRQHandler
+    startup_mk64f12.o(.text) refers to fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler) for UART5_RX_TX_DriverIRQHandler
+    startup_mk64f12.o(.isr_vector) refers to startup_mk64f12.o(.text) for Reset_Handler
+    startup_mk64f12.o(.isr_vector) refers to adc16_interrupt.o(.text.PORTB_IRQHandler) for PORTB_IRQHandler
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry4.o(.ARM.Collect$$$$00000003) for _main_stk
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    malloc2.o(i.__free$2region) refers to mvars.o(.data) for __microlib_freelist
+    malloc2.o(i.__malloc$2region) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloc2.o(i.__malloc$2region) refers to mvars.o(.data) for __microlib_freelist
+    mallocr2.o(i.__free$realloc$2region) refers to mvars.o(.data) for __microlib_freelist
+    mallocr2.o(i.__malloc$realloc$2region) refers to mallocr2.o(i.internal_alloc) for internal_alloc
+    mallocr2.o(i.__malloc$realloc$2region) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocr2.o(i.__malloc$realloc$2region) refers to mvars.o(.data) for __microlib_freelist
+    mallocr2.o(i.__realloc$2region) refers to mallocr2.o(i.__free$realloc$2region) for __free$realloc$2region
+    mallocr2.o(i.__realloc$2region) refers to mallocr2.o(i.internal_alloc) for internal_alloc
+    mallocr2.o(i.__realloc$2region) refers to mallocr2.o(i.__malloc$realloc$2region) for __malloc$realloc$2region
+    mallocr2.o(i.__realloc$2region) refers to mvars.o(.data) for __microlib_freelist
+    mallocr2.o(i.internal_alloc) refers to memcpy.o(.text) for __aeabi_memcpy
+    mallocr2.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca2.o(i.__aligned_malloc$2region) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloca2.o(i.__aligned_malloc$2region) refers to mvars.o(.data) for __microlib_freelist
+    malloca2.o(i.__free$memalign$2region) refers to mvars.o(.data) for __microlib_freelist
+    malloca2.o(i.__malloc$memalign$2region) refers to malloca2.o(i.__aligned_malloc$2region) for __aligned_malloc$2region
+    mallocra2.o(i.__aligned_malloc$realloc$2region) refers to mallocra2.o(i.internal_alloc) for internal_alloc
+    mallocra2.o(i.__aligned_malloc$realloc$2region) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocra2.o(i.__aligned_malloc$realloc$2region) refers to mvars.o(.data) for __microlib_freelist
+    mallocra2.o(i.__free$realloc$memalign$2region) refers to mvars.o(.data) for __microlib_freelist
+    mallocra2.o(i.__malloc$realloc$memalign$2region) refers to mallocra2.o(i.__aligned_malloc$realloc$2region) for __aligned_malloc$realloc$2region
+    mallocra2.o(i.__realloc$memalign$2region) refers to mallocra2.o(i.__free$realloc$memalign$2region) for __free$realloc$memalign$2region
+    mallocra2.o(i.__realloc$memalign$2region) refers to mallocra2.o(i.internal_alloc) for internal_alloc
+    mallocra2.o(i.__realloc$memalign$2region) refers to mallocra2.o(i.__malloc$realloc$memalign$2region) for __malloc$realloc$memalign$2region
+    mallocra2.o(i.__realloc$memalign$2region) refers to mvars.o(.data) for __microlib_freelist
+    mallocra2.o(i.internal_alloc) refers to memcpy.o(.text) for __aeabi_memcpy
+    mallocra2.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    entry4.o(.ARM.Collect$$$$00000003) refers to entry4.o(.ARM.Collect$$$$00002714) for __lit__00000000
+    entry4.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to adc16_interrupt.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to adc16_interrupt.o(.text.main) for main
+    fepilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing adc16_interrupt.o(.text), (0 bytes).
+    Removing adc16_interrupt.o(.ARM.exidx.text.delay), (8 bytes).
+    Removing adc16_interrupt.o(.ARM.exidx.text.PORTB_IRQHandler), (8 bytes).
+    Removing adc16_interrupt.o(.ARM.exidx.text.main), (8 bytes).
+    Removing adc16_interrupt.o(.rodata.g_Adc16_12bitFullRange), (4 bytes).
+    Removing adc16_interrupt.o(.ARM.use_no_argv), (4 bytes).
+    Removing pin_mux.o(.text), (0 bytes).
+    Removing pin_mux.o(.ARM.exidx.text.BOARD_InitBootPins), (8 bytes).
+    Removing pin_mux.o(.ARM.exidx.text.BOARD_InitPins), (8 bytes).
+    Removing board.o(.text), (0 bytes).
+    Removing board.o(.ARM.exidx.text.BOARD_InitDebugConsole), (8 bytes).
+    Removing clock_config.o(.text), (0 bytes).
+    Removing clock_config.o(.ARM.exidx.text.BOARD_InitBootClocks), (8 bytes).
+    Removing clock_config.o(.ARM.exidx.text.BOARD_BootClockRUN), (8 bytes).
+    Removing clock_config.o(.text.BOARD_BootClockVLPR), (76 bytes).
+    Removing clock_config.o(.ARM.exidx.text.BOARD_BootClockVLPR), (8 bytes).
+    Removing clock_config.o(.rodata.mcgConfig_BOARD_BootClockVLPR), (11 bytes).
+    Removing clock_config.o(.rodata.simConfig_BOARD_BootClockVLPR), (8 bytes).
+    Removing clock_config.o(.rodata.oscConfig_BOARD_BootClockVLPR), (8 bytes).
+    Removing fsl_component_generic_list.o(.text), (0 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_Init), (12 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_Init), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_GetList), (4 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetList), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_AddTail), (52 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_AddTail), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_AddHead), (48 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_AddHead), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_RemoveHead), (46 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_RemoveHead), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_GetHead), (4 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetHead), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_GetNext), (4 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetNext), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_GetPrev), (4 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetPrev), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_RemoveElement), (62 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_RemoveElement), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_AddPrevElement), (82 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_AddPrevElement), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_GetSize), (4 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetSize), (8 bytes).
+    Removing fsl_component_generic_list.o(.text.LIST_GetAvailableSize), (8 bytes).
+    Removing fsl_component_generic_list.o(.ARM.exidx.text.LIST_GetAvailableSize), (8 bytes).
+    Removing fsl_adapter_uart.o(.text), (0 bytes).
+    Removing fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartInit), (8 bytes).
+    Removing fsl_adapter_uart.o(.text.HAL_UartDeinit), (24 bytes).
+    Removing fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartDeinit), (8 bytes).
+    Removing fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartReceiveBlocking), (8 bytes).
+    Removing fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartSendBlocking), (8 bytes).
+    Removing fsl_adapter_uart.o(.text.HAL_UartEnterLowpower), (4 bytes).
+    Removing fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartEnterLowpower), (8 bytes).
+    Removing fsl_adapter_uart.o(.text.HAL_UartExitLowpower), (4 bytes).
+    Removing fsl_adapter_uart.o(.ARM.exidx.text.HAL_UartExitLowpower), (8 bytes).
+    Removing fsl_adc16.o(.text), (0 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_Init), (8 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_GetInstance), (8 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_SetHardwareAverage), (8 bytes).
+    Removing fsl_adc16.o(.text.ADC16_Deinit), (44 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_Deinit), (8 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_GetDefaultConfig), (8 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_DoAutoCalibration), (8 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_GetChannelStatusFlags), (8 bytes).
+    Removing fsl_adc16.o(.text.ADC16_GetStatusFlags), (16 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_GetStatusFlags), (8 bytes).
+    Removing fsl_adc16.o(.text.ADC16_SetChannelMuxMode), (16 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_SetChannelMuxMode), (8 bytes).
+    Removing fsl_adc16.o(.text.ADC16_SetHardwareCompareConfig), (60 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_SetHardwareCompareConfig), (8 bytes).
+    Removing fsl_adc16.o(.text.ADC16_ClearStatusFlags), (14 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_ClearStatusFlags), (8 bytes).
+    Removing fsl_adc16.o(.ARM.exidx.text.ADC16_SetChannelConfig), (8 bytes).
+    Removing fsl_clock.o(.text), (0 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetOsc0ErClkFreq), (28 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetOsc0ErClkFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetEr32kClkFreq), (76 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetEr32kClkFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetPllFllSelClkFreq), (44 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetPllFllSelClkFreq), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetFllFreq), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetPll0Freq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetPlatClkFreq), (16 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetPlatClkFreq), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetOutClkFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetFlashClkFreq), (24 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetFlashClkFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetFlexBusClkFreq), (24 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetFlexBusClkFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetBusClkFreq), (24 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetBusClkFreq), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetCoreSysClkFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetFreq), (188 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetFixedFreqClkFreq), (26 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetFixedFreqClkFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetInternalRefClkFreq), (20 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetInternalRefClkFreq), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetSimConfig), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_EnableUsbfs0Clock), (136 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_EnableUsbfs0Clock), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetInternalRefClkSelectFreq), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetMcgExtClkFreq), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetFllRefClkFreq), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetExternalRefClkConfig), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetInternalRefClkConfig), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_CalcPllDiv), (184 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_CalcPllDiv), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_EnablePll0), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetOsc0MonitorMode), (56 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetOsc0MonitorMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetRtcOscMonitorMode), (32 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetRtcOscMonitorMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetPll0MonitorMode), (44 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetPll0MonitorMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetStatusFlags), (48 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetStatusFlags), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_ClearStatusFlags), (36 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_ClearStatusFlags), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_InitOsc0), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_DeinitOsc0), (28 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_DeinitOsc0), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetSlowIrcFreq), (12 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetSlowIrcFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetFastIrcFreq), (12 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetFastIrcFreq), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_TrimInternalRefClk), (168 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_TrimInternalRefClk), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_GetMode), (84 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_GetMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetFeiMode), (80 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetFeiMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetFeeMode), (108 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetFeeMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetFbiMode), (88 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetFbiMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetFbeMode), (112 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetFbeMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetBlpiMode), (12 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetBlpiMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetBlpeMode), (12 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetBlpeMode), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetPbeMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetPeeMode), (28 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetPeeMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_ExternalModeToFbeModeQuick), (52 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_ExternalModeToFbeModeQuick), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_InternalModeToFbiModeQuick), (40 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_InternalModeToFbiModeQuick), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_BootToFeiMode), (10 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_BootToFeiMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_BootToFeeMode), (28 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_BootToFeeMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_BootToBlpiMode), (44 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_BootToBlpiMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_BootToBlpeMode), (56 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_BootToBlpeMode), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_BootToPeeMode), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_SetMcgConfig), (344 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_SetMcgConfig), (8 bytes).
+    Removing fsl_clock.o(.text.CLOCK_FllStableDelay), (24 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.CLOCK_FllStableDelay), (8 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
+    Removing fsl_clock.o(.text.OUTLINED_FUNCTION_1), (6 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
+    Removing fsl_clock.o(.text.OUTLINED_FUNCTION_2), (12 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.OUTLINED_FUNCTION_2), (8 bytes).
+    Removing fsl_clock.o(.text.OUTLINED_FUNCTION_3), (12 bytes).
+    Removing fsl_clock.o(.ARM.exidx.text.OUTLINED_FUNCTION_3), (8 bytes).
+    Removing fsl_clock.o(.rodata.cst16), (16 bytes).
+    Removing fsl_common.o(.text), (0 bytes).
+    Removing fsl_common.o(.text.SDK_Malloc), (64 bytes).
+    Removing fsl_common.o(.ARM.exidx.text.SDK_Malloc), (8 bytes).
+    Removing fsl_common.o(.text.SDK_Free), (24 bytes).
+    Removing fsl_common.o(.ARM.exidx.text.SDK_Free), (8 bytes).
+    Removing fsl_common_arm.o(.text), (0 bytes).
+    Removing fsl_common_arm.o(.text.SDK_DelayAtLeastUs), (32 bytes).
+    Removing fsl_common_arm.o(.ARM.exidx.text.SDK_DelayAtLeastUs), (8 bytes).
+    Removing fsl_ftfx_cache.o(.text), (0 bytes).
+    Removing fsl_ftfx_cache.o(.text.FTFx_CACHE_Init), (40 bytes).
+    Removing fsl_ftfx_cache.o(.ARM.exidx.text.FTFx_CACHE_Init), (8 bytes).
+    Removing fsl_ftfx_cache.o(.text.FTFx_CACHE_ClearCachePrefetchSpeculation), (24 bytes).
+    Removing fsl_ftfx_cache.o(.ARM.exidx.text.FTFx_CACHE_ClearCachePrefetchSpeculation), (8 bytes).
+    Removing fsl_ftfx_cache.o(.text.fmc_flash_cache_clear), (36 bytes).
+    Removing fsl_ftfx_cache.o(.ARM.exidx.text.fmc_flash_cache_clear), (8 bytes).
+    Removing fsl_ftfx_cache.o(.text.fmc_flash_prefetch_speculation_clear), (36 bytes).
+    Removing fsl_ftfx_cache.o(.ARM.exidx.text.fmc_flash_prefetch_speculation_clear), (8 bytes).
+    Removing fsl_ftfx_cache.o(.text.FTFx_CACHE_PflashSetPrefetchSpeculation), (52 bytes).
+    Removing fsl_ftfx_cache.o(.ARM.exidx.text.FTFx_CACHE_PflashSetPrefetchSpeculation), (8 bytes).
+    Removing fsl_ftfx_cache.o(.text.FTFx_CACHE_PflashGetPrefetchSpeculation), (44 bytes).
+    Removing fsl_ftfx_cache.o(.ARM.exidx.text.FTFx_CACHE_PflashGetPrefetchSpeculation), (8 bytes).
+    Removing fsl_ftfx_cache.o(.bss.s_ftfxCommonBitOperation), (64 bytes).
+    Removing fsl_ftfx_cache.o(.rodata.s_ftfxCommonBitOperationFunctionCode), (28 bytes).
+    Removing fsl_ftfx_controller.o(.text), (0 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_API_Init), (72 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_API_Init), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_Erase), (112 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_Erase), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.ftfx_check_mem_range), (44 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.ftfx_check_mem_range), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.ftfx_command_sequence), (60 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.ftfx_command_sequence), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_EraseSectorNonBlocking), (72 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_EraseSectorNonBlocking), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_EraseAll), (36 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_EraseAll), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_EraseAllExecuteOnlySegments), (36 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_EraseAllExecuteOnlySegments), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_Program), (140 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_Program), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.ftfx_read_word_from_byte_address), (30 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.ftfx_read_word_from_byte_address), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramOnce), (116 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_ProgramOnce), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_ProgramSection), (200 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_ProgramSection), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_ReadOnce), (124 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_ReadOnce), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.ftfx_write_word_to_byte_address), (26 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.ftfx_write_word_to_byte_address), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_ReadResource), (220 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_ReadResource), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyErase), (128 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_VerifyErase), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyEraseAll), (28 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_VerifyEraseAll), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyEraseAllExecuteOnlySegments), (28 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_VerifyEraseAllExecuteOnlySegments), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_VerifyProgram), (128 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_VerifyProgram), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_SecurityBypass), (56 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_SecurityBypass), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_REG_GetSecurityState), (64 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_REG_GetSecurityState), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.FTFx_CMD_SwapControl), (108 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.FTFx_CMD_SwapControl), (8 bytes).
+    Removing fsl_ftfx_controller.o(.text.OUTLINED_FUNCTION_0), (6 bytes).
+    Removing fsl_ftfx_controller.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
+    Removing fsl_ftfx_controller.o(.bss.s_ftfxRunCommand), (64 bytes).
+    Removing fsl_ftfx_controller.o(.rodata.s_ftfxRunCommandFunctionCode), (12 bytes).
+    Removing fsl_ftfx_flash.o(.text), (0 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_Init), (156 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_Init), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_Erase), (30 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_Erase), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.flash_check_range_to_get_index), (36 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.flash_check_range_to_get_index), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_EraseSectorNonBlocking), (50 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_EraseSectorNonBlocking), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_EraseAll), (4 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_EraseAll), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_Program), (32 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_Program), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_ProgramOnce), (4 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_ProgramOnce), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_ProgramSection), (32 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_ProgramSection), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_ReadResource), (12 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_ReadResource), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_ReadOnce), (4 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_ReadOnce), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_VerifyErase), (30 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_VerifyErase), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_VerifyEraseAll), (4 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_VerifyEraseAll), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_VerifyProgram), (58 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_VerifyProgram), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_GetSecurityState), (4 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_GetSecurityState), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_SecurityBypass), (4 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_SecurityBypass), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_Swap), (240 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_Swap), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_IsProtected), (200 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_IsProtected), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_PflashSetProtection), (44 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_PflashSetProtection), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_PflashGetProtection), (32 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_PflashGetProtection), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_GetProperty), (90 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_GetProperty), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.FLASH_GetCommandState), (48 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.FLASH_GetCommandState), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_0), (20 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_1), (10 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
+    Removing fsl_ftfx_flash.o(.text.OUTLINED_FUNCTION_2), (10 bytes).
+    Removing fsl_ftfx_flash.o(.ARM.exidx.text.OUTLINED_FUNCTION_2), (8 bytes).
+    Removing fsl_ftfx_flash.o(.rodata.kPFlashDensities), (30 bytes).
+    Removing fsl_ftfx_flexnvm.o(.text), (0 bytes).
+    Removing fsl_gpio.o(.text), (0 bytes).
+    Removing fsl_gpio.o(.ARM.exidx.text.GPIO_PinInit), (8 bytes).
+    Removing fsl_gpio.o(.text.GPIO_PortGetInterruptFlags), (24 bytes).
+    Removing fsl_gpio.o(.ARM.exidx.text.GPIO_PortGetInterruptFlags), (8 bytes).
+    Removing fsl_gpio.o(.ARM.exidx.text.GPIO_GetInstance), (8 bytes).
+    Removing fsl_gpio.o(.ARM.exidx.text.GPIO_PortClearInterruptFlags), (8 bytes).
+    Removing fsl_smc.o(.text), (0 bytes).
+    Removing fsl_smc.o(.text.SMC_PreEnterStopModes), (20 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_PreEnterStopModes), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_PostExitStopModes), (16 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_PostExitStopModes), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_PreEnterWaitModes), (20 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_PreEnterWaitModes), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_PostExitWaitModes), (16 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_PostExitWaitModes), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_SetPowerModeRun), (12 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeRun), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_SetPowerModeWait), (12 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeWait), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_SetPowerModeStop), (32 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeStop), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_SetPowerModeVlpr), (24 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeVlpr), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_SetPowerModeVlpw), (12 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeVlpw), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_SetPowerModeVlps), (36 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeVlps), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_SetPowerModeLls), (36 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeLls), (8 bytes).
+    Removing fsl_smc.o(.text.SMC_SetPowerModeVlls), (72 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.SMC_SetPowerModeVlls), (8 bytes).
+    Removing fsl_smc.o(.text.OUTLINED_FUNCTION_0), (14 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
+    Removing fsl_smc.o(.text.OUTLINED_FUNCTION_1), (22 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
+    Removing fsl_smc.o(.text.OUTLINED_FUNCTION_2), (12 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_2), (8 bytes).
+    Removing fsl_smc.o(.text.OUTLINED_FUNCTION_3), (6 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_3), (8 bytes).
+    Removing fsl_smc.o(.text.OUTLINED_FUNCTION_4), (10 bytes).
+    Removing fsl_smc.o(.ARM.exidx.text.OUTLINED_FUNCTION_4), (8 bytes).
+    Removing fsl_smc.o(.bss.g_savedPrimask), (4 bytes).
+    Removing fsl_smc.o(.data.s_stopRamFuncArray), (24 bytes).
+    Removing fsl_uart.o(.text), (0 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_GetInstance), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferGetRxRingBufferLength), (16 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferGetRxRingBufferLength), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_Init), (8 bytes).
+    Removing fsl_uart.o(.text.UART_Deinit), (60 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_Deinit), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_GetDefaultConfig), (8 bytes).
+    Removing fsl_uart.o(.text.UART_SetBaudRate), (96 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_SetBaudRate), (8 bytes).
+    Removing fsl_uart.o(.text.UART_Enable9bitMode), (22 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_Enable9bitMode), (8 bytes).
+    Removing fsl_uart.o(.text.UART_SendAddress), (20 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_SendAddress), (8 bytes).
+    Removing fsl_uart.o(.text.UART_EnableInterrupts), (44 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_EnableInterrupts), (8 bytes).
+    Removing fsl_uart.o(.text.UART_DisableInterrupts), (50 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_DisableInterrupts), (8 bytes).
+    Removing fsl_uart.o(.text.UART_GetEnabledInterrupts), (32 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_GetEnabledInterrupts), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_GetStatusFlags), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_ClearStatusFlags), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_WriteBlocking), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_ReadBlocking), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferCreateHandle), (108 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferCreateHandle), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferHandleIRQ), (712 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferHandleIRQ), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferStartRingBuffer), (44 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferStartRingBuffer), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferStopRingBuffer), (60 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferStopRingBuffer), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferSendNonBlocking), (52 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferSendNonBlocking), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferAbortSend), (28 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferAbortSend), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferGetSendCount), (26 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferGetSendCount), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferReceiveNonBlocking), (248 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferReceiveNonBlocking), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferAbortReceive), (56 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferAbortReceive), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferGetReceiveCount), (30 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferGetReceiveCount), (8 bytes).
+    Removing fsl_uart.o(.text.UART_EnableTxFIFO), (46 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_EnableTxFIFO), (8 bytes).
+    Removing fsl_uart.o(.text.UART_EnableRxFIFO), (42 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_EnableRxFIFO), (8 bytes).
+    Removing fsl_uart.o(.text.UART_ReadNonBlocking), (14 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_ReadNonBlocking), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferIsRxRingBufferFull), (26 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferIsRxRingBufferFull), (8 bytes).
+    Removing fsl_uart.o(.text.UART_TransferHandleErrorIRQ), (2 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART_TransferHandleErrorIRQ), (8 bytes).
+    Removing fsl_uart.o(.text.UART0_DriverIRQHandler), (32 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART0_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART0_RX_TX_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.text.UART1_DriverIRQHandler), (32 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART1_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART1_RX_TX_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.text.UART2_DriverIRQHandler), (32 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART2_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART2_RX_TX_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.text.UART3_DriverIRQHandler), (32 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART3_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART3_RX_TX_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.text.UART4_DriverIRQHandler), (32 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART4_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART4_RX_TX_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.text.UART5_DriverIRQHandler), (32 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART5_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.UART5_RX_TX_DriverIRQHandler), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_1), (6 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_2), (44 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_2), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_3), (24 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_3), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_4), (22 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_4), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_5), (10 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_5), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_6), (12 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_6), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_7), (16 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_7), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_8), (8 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_8), (8 bytes).
+    Removing fsl_uart.o(.text.OUTLINED_FUNCTION_9), (14 bytes).
+    Removing fsl_uart.o(.ARM.exidx.text.OUTLINED_FUNCTION_9), (8 bytes).
+    Removing fsl_uart.o(.rodata.s_uartIRQ), (6 bytes).
+    Removing system_mk64f12.o(.text), (0 bytes).
+    Removing system_mk64f12.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_mk64f12.o(.ARM.exidx.text.SystemInitHook), (8 bytes).
+    Removing system_mk64f12.o(.text.SystemCoreClockUpdate), (336 bytes).
+    Removing system_mk64f12.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing fsl_assert.o(.text), (0 bytes).
+    Removing fsl_debug_console.o(.text), (0 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Init), (8 bytes).
+    Removing fsl_debug_console.o(.text.DbgConsole_Deinit), (28 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Deinit), (8 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Printf), (8 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Vprintf), (8 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Putchar), (8 bytes).
+    Removing fsl_debug_console.o(.text.DbgConsole_Scanf), (840 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Scanf), (8 bytes).
+    Removing fsl_debug_console.o(.text.DbgConsole_Getchar), (36 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_Getchar), (8 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_ConvertRadixNumToString), (8 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_PrintfPaddingCharacter), (8 bytes).
+    Removing fsl_debug_console.o(.text.DbgConsole_ScanIgnoreWhiteSpace), (48 bytes).
+    Removing fsl_debug_console.o(.ARM.exidx.text.DbgConsole_ScanIgnoreWhiteSpace), (8 bytes).
+
+446 unused section(s) (total 12335 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry4.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloc2.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocr2.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca2.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocra2.o ABSOLUTE
+    ../clib/microlib/malloc/mvars.c          0x00000000   Number         0  mvars.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpy.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyc.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memset.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
+    ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltui.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    adc16_interrupt.c                        0x00000000   Number         0  adc16_interrupt.o ABSOLUTE
+    board.c                                  0x00000000   Number         0  board.o ABSOLUTE
+    clock_config.c                           0x00000000   Number         0  clock_config.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    fsl_adapter_uart.c                       0x00000000   Number         0  fsl_adapter_uart.o ABSOLUTE
+    fsl_adc16.c                              0x00000000   Number         0  fsl_adc16.o ABSOLUTE
+    fsl_assert.c                             0x00000000   Number         0  fsl_assert.o ABSOLUTE
+    fsl_clock.c                              0x00000000   Number         0  fsl_clock.o ABSOLUTE
+    fsl_common.c                             0x00000000   Number         0  fsl_common.o ABSOLUTE
+    fsl_common_arm.c                         0x00000000   Number         0  fsl_common_arm.o ABSOLUTE
+    fsl_component_generic_list.c             0x00000000   Number         0  fsl_component_generic_list.o ABSOLUTE
+    fsl_debug_console.c                      0x00000000   Number         0  fsl_debug_console.o ABSOLUTE
+    fsl_ftfx_cache.c                         0x00000000   Number         0  fsl_ftfx_cache.o ABSOLUTE
+    fsl_ftfx_controller.c                    0x00000000   Number         0  fsl_ftfx_controller.o ABSOLUTE
+    fsl_ftfx_flash.c                         0x00000000   Number         0  fsl_ftfx_flash.o ABSOLUTE
+    fsl_ftfx_flexnvm.c                       0x00000000   Number         0  fsl_ftfx_flexnvm.o ABSOLUTE
+    fsl_gpio.c                               0x00000000   Number         0  fsl_gpio.o ABSOLUTE
+    fsl_smc.c                                0x00000000   Number         0  fsl_smc.o ABSOLUTE
+    fsl_uart.c                               0x00000000   Number         0  fsl_uart.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    pin_mux.c                                0x00000000   Number         0  pin_mux.o ABSOLUTE
+    system_MK64F12.c                         0x00000000   Number         0  system_mk64f12.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x00000410   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000003                 0x00000410   Section        4  entry4.o(.ARM.Collect$$$$00000003)
+    .ARM.Collect$$$$00000004                 0x00000414   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000418   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000418   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000418   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x00000420   Data           4  entry4.o(.ARM.Collect$$$$00002714)
+    .ARM.Collect$$$$0000000D                 0x00000420   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000420   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002714                 0x00000420   Section        4  entry4.o(.ARM.Collect$$$$00002714)
+    .text                                    0x000005ec   Section        0  memcpy.o(.text)
+    .text                                    0x00000614   Section        0  memset.o(.text)
+    .text                                    0x00000626   Section        0  strlen.o(.text)
+    .text                                    0x00000634   Section        0  dmul.o(.text)
+    .text                                    0x00000718   Section        0  dfltui.o(.text)
+    .text                                    0x00000732   Section        0  f2d.o(.text)
+    .text                                    0x00000758   Section        0  d2f.o(.text)
+    .text                                    0x00000790   Section        0  llshl.o(.text)
+    .text                                    0x000007ae   Section        0  llushr.o(.text)
+    .text                                    0x000007ce   Section        0  iusefp.o(.text)
+    .text                                    0x000007ce   Section        0  fepilogue.o(.text)
+    .text                                    0x0000083c   Section        0  depilogue.o(.text)
+    .text                                    0x000008f8   Section       48  init.o(.text)
+    [Anonymous Symbol]                       0x00000928   Section        0  fsl_adc16.o(.text.ADC16_DoAutoCalibration)
+    [Anonymous Symbol]                       0x000009ac   Section        0  fsl_adc16.o(.text.ADC16_GetChannelStatusFlags)
+    [Anonymous Symbol]                       0x000009b8   Section        0  fsl_adc16.o(.text.ADC16_GetDefaultConfig)
+    __arm_cp.4_0                             0x000009d8   Number         4  fsl_adc16.o(.text.ADC16_GetDefaultConfig)
+    ADC16_GetInstance                        0x000009dd   Thumb Code    24  fsl_adc16.o(.text.ADC16_GetInstance)
+    [Anonymous Symbol]                       0x000009dc   Section        0  fsl_adc16.o(.text.ADC16_GetInstance)
+    s_adc16Bases                             0x000009f4   Number         0  fsl_adc16.o(.text.ADC16_GetInstance)
+    [Anonymous Symbol]                       0x000009fc   Section        0  fsl_adc16.o(.text.ADC16_Init)
+    __arm_cp.0_0                             0x00000a8c   Number         4  fsl_adc16.o(.text.ADC16_Init)
+    __arm_cp.0_1                             0x00000a90   Number         4  fsl_adc16.o(.text.ADC16_Init)
+    [Anonymous Symbol]                       0x00000a94   Section        0  fsl_adc16.o(.text.ADC16_SetChannelConfig)
+    [Anonymous Symbol]                       0x00000ab2   Section        0  fsl_adc16.o(.text.ADC16_SetHardwareAverage)
+    [Anonymous Symbol]                       0x00000acc   Section        0  clock_config.o(.text.BOARD_BootClockRUN)
+    __arm_cp.1_1                             0x00000b14   Number         4  clock_config.o(.text.BOARD_BootClockRUN)
+    __arm_cp.1_2                             0x00000b18   Number         4  clock_config.o(.text.BOARD_BootClockRUN)
+    __arm_cp.1_3                             0x00000b1c   Number         4  clock_config.o(.text.BOARD_BootClockRUN)
+    __arm_cp.1_5                             0x00000b20   Number         4  clock_config.o(.text.BOARD_BootClockRUN)
+    __arm_cp.1_6                             0x00000b24   Number         4  clock_config.o(.text.BOARD_BootClockRUN)
+    __arm_cp.1_7                             0x00000b28   Number         4  clock_config.o(.text.BOARD_BootClockRUN)
+    __arm_cp.1_8                             0x00000b2c   Number         4  clock_config.o(.text.BOARD_BootClockRUN)
+    [Anonymous Symbol]                       0x00000b30   Section        0  clock_config.o(.text.BOARD_InitBootClocks)
+    [Anonymous Symbol]                       0x00000b34   Section        0  pin_mux.o(.text.BOARD_InitBootPins)
+    [Anonymous Symbol]                       0x00000b38   Section        0  board.o(.text.BOARD_InitDebugConsole)
+    [Anonymous Symbol]                       0x00000b50   Section        0  pin_mux.o(.text.BOARD_InitPins)
+    __arm_cp.1_0                             0x00000b9c   Number         4  pin_mux.o(.text.BOARD_InitPins)
+    __arm_cp.1_1                             0x00000ba0   Number         4  pin_mux.o(.text.BOARD_InitPins)
+    [Anonymous Symbol]                       0x00000ba4   Section        0  fsl_clock.o(.text.CLOCK_BootToPeeMode)
+    [Anonymous Symbol]                       0x00000bcc   Section        0  fsl_clock.o(.text.CLOCK_EnablePll0)
+    [Anonymous Symbol]                       0x00000bfc   Section        0  fsl_clock.o(.text.CLOCK_GetCoreSysClkFreq)
+    __arm_cp.10_0                            0x00000c08   Number         4  fsl_clock.o(.text.CLOCK_GetCoreSysClkFreq)
+    [Anonymous Symbol]                       0x00000c0c   Section        0  fsl_clock.o(.text.CLOCK_GetFllFreq)
+    __arm_cp.3_0                             0x00000c40   Number         4  fsl_clock.o(.text.CLOCK_GetFllFreq)
+    CLOCK_GetFllFreq.fllFactorTable          0x00000c44   Number         0  fsl_clock.o(.text.CLOCK_GetFllFreq)
+    CLOCK_GetFllRefClkFreq                   0x00000c55   Thumb Code    68  fsl_clock.o(.text.CLOCK_GetFllRefClkFreq)
+    [Anonymous Symbol]                       0x00000c54   Section        0  fsl_clock.o(.text.CLOCK_GetFllRefClkFreq)
+    CLOCK_GetInternalRefClkSelectFreq        0x00000c99   Thumb Code    32  fsl_clock.o(.text.CLOCK_GetInternalRefClkSelectFreq)
+    [Anonymous Symbol]                       0x00000c98   Section        0  fsl_clock.o(.text.CLOCK_GetInternalRefClkSelectFreq)
+    __arm_cp.16_1                            0x00000cb8   Number         4  fsl_clock.o(.text.CLOCK_GetInternalRefClkSelectFreq)
+    CLOCK_GetMcgExtClkFreq                   0x00000cbd   Thumb Code    40  fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq)
+    [Anonymous Symbol]                       0x00000cbc   Section        0  fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq)
+    __arm_cp.17_1                            0x00000ce4   Number         4  fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq)
+    __arm_cp.17_2                            0x00000ce8   Number         4  fsl_clock.o(.text.CLOCK_GetMcgExtClkFreq)
+    [Anonymous Symbol]                       0x00000cec   Section        0  fsl_clock.o(.text.CLOCK_GetOutClkFreq)
+    __arm_cp.6_0                             0x00000d0c   Number         4  fsl_clock.o(.text.CLOCK_GetOutClkFreq)
+    [Anonymous Symbol]                       0x00000d10   Section        0  fsl_clock.o(.text.CLOCK_GetPll0Freq)
+    __arm_cp.4_0                             0x00000d3c   Number         4  fsl_clock.o(.text.CLOCK_GetPll0Freq)
+    [Anonymous Symbol]                       0x00000d40   Section        0  fsl_clock.o(.text.CLOCK_InitOsc0)
+    __arm_cp.28_0                            0x00000d98   Number         4  fsl_clock.o(.text.CLOCK_InitOsc0)
+    __arm_cp.28_1                            0x00000d9c   Number         4  fsl_clock.o(.text.CLOCK_InitOsc0)
+    __arm_cp.28_2                            0x00000da0   Number         4  fsl_clock.o(.text.CLOCK_InitOsc0)
+    [Anonymous Symbol]                       0x00000da4   Section        0  fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig)
+    __arm_cp.19_0                            0x00000dd0   Number         4  fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig)
+    __arm_cp.19_1                            0x00000dd4   Number         4  fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig)
+    [Anonymous Symbol]                       0x00000dd8   Section        0  fsl_clock.o(.text.CLOCK_SetInternalRefClkConfig)
+    [Anonymous Symbol]                       0x00000e50   Section        0  fsl_clock.o(.text.CLOCK_SetPbeMode)
+    __arm_cp.40_0                            0x00000e98   Number         4  fsl_clock.o(.text.CLOCK_SetPbeMode)
+    [Anonymous Symbol]                       0x00000e9c   Section        0  fsl_clock.o(.text.CLOCK_SetSimConfig)
+    __arm_cp.14_0                            0x00000ebc   Number         4  fsl_clock.o(.text.CLOCK_SetSimConfig)
+    __arm_cp.14_1                            0x00000ec0   Number         4  fsl_clock.o(.text.CLOCK_SetSimConfig)
+    DbgConsole_ConvertRadixNumToString       0x00000ec5   Thumb Code    60  fsl_debug_console.o(.text.DbgConsole_ConvertRadixNumToString)
+    [Anonymous Symbol]                       0x00000ec4   Section        0  fsl_debug_console.o(.text.DbgConsole_ConvertRadixNumToString)
+    [Anonymous Symbol]                       0x00000f00   Section        0  fsl_debug_console.o(.text.DbgConsole_Init)
+    __arm_cp.0_1                             0x00000f34   Number         4  fsl_debug_console.o(.text.DbgConsole_Init)
+    __arm_cp.0_2                             0x00000f38   Number         4  fsl_debug_console.o(.text.DbgConsole_Init)
+    __arm_cp.0_3                             0x00000f3c   Number         4  fsl_debug_console.o(.text.DbgConsole_Init)
+    [Anonymous Symbol]                       0x00000f40   Section        0  fsl_debug_console.o(.text.DbgConsole_Printf)
+    DbgConsole_PrintfPaddingCharacter        0x00000f59   Thumb Code    30  fsl_debug_console.o(.text.DbgConsole_PrintfPaddingCharacter)
+    [Anonymous Symbol]                       0x00000f58   Section        0  fsl_debug_console.o(.text.DbgConsole_PrintfPaddingCharacter)
+    [Anonymous Symbol]                       0x00000f78   Section        0  fsl_debug_console.o(.text.DbgConsole_Putchar)
+    [Anonymous Symbol]                       0x00000f98   Section        0  fsl_debug_console.o(.text.DbgConsole_Vprintf)
+    __arm_cp.3_0                             0x000011ac   Number         4  fsl_debug_console.o(.text.DbgConsole_Vprintf)
+    GPIO_GetInstance                         0x000011b1   Thumb Code    24  fsl_gpio.o(.text.GPIO_GetInstance)
+    [Anonymous Symbol]                       0x000011b0   Section        0  fsl_gpio.o(.text.GPIO_GetInstance)
+    s_gpioBases                              0x000011c8   Number         0  fsl_gpio.o(.text.GPIO_GetInstance)
+    [Anonymous Symbol]                       0x000011dc   Section        0  fsl_gpio.o(.text.GPIO_PinInit)
+    [Anonymous Symbol]                       0x00001208   Section        0  fsl_gpio.o(.text.GPIO_PortClearInterruptFlags)
+    __arm_cp.3_0                             0x00001220   Number         4  fsl_gpio.o(.text.GPIO_PortClearInterruptFlags)
+    [Anonymous Symbol]                       0x00001224   Section        0  fsl_adapter_uart.o(.text.HAL_UartInit)
+    [Anonymous Symbol]                       0x000012b4   Section        0  fsl_adapter_uart.o(.text.HAL_UartReceiveBlocking)
+    [Anonymous Symbol]                       0x000012cc   Section        0  fsl_adapter_uart.o(.text.HAL_UartSendBlocking)
+    __arm_cp.3_0                             0x000012e0   Number         4  fsl_adapter_uart.o(.text.HAL_UartSendBlocking)
+    OUTLINED_FUNCTION_0                      0x000012e5   Thumb Code    14  fsl_clock.o(.text.OUTLINED_FUNCTION_0)
+    [Anonymous Symbol]                       0x000012e4   Section        0  fsl_clock.o(.text.OUTLINED_FUNCTION_0)
+    OUTLINED_FUNCTION_0                      0x000012f3   Thumb Code    10  fsl_uart.o(.text.OUTLINED_FUNCTION_0)
+    [Anonymous Symbol]                       0x000012f2   Section        0  fsl_uart.o(.text.OUTLINED_FUNCTION_0)
+    [Anonymous Symbol]                       0x00001300   Section        0  adc16_interrupt.o(.text.PORTB_IRQHandler)
+    __arm_cp.1_0                             0x00001378   Number         4  adc16_interrupt.o(.text.PORTB_IRQHandler)
+    __arm_cp.1_1                             0x0000137c   Number         4  adc16_interrupt.o(.text.PORTB_IRQHandler)
+    __arm_cp.1_2                             0x00001380   Number         4  adc16_interrupt.o(.text.PORTB_IRQHandler)
+    __arm_cp.1_4                             0x00001398   Number         4  adc16_interrupt.o(.text.PORTB_IRQHandler)
+    __arm_cp.1_5                             0x0000139c   Number         4  adc16_interrupt.o(.text.PORTB_IRQHandler)
+    [Anonymous Symbol]                       0x000013d4   Section        0  system_mk64f12.o(.text.SystemInit)
+    __arm_cp.0_0                             0x000013f8   Number         4  system_mk64f12.o(.text.SystemInit)
+    __arm_cp.0_1                             0x000013fc   Number         4  system_mk64f12.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x00001400   Section        0  system_mk64f12.o(.text.SystemInitHook)
+    [Anonymous Symbol]                       0x00001404   Section        0  fsl_uart.o(.text.UART0_RX_TX_DriverIRQHandler)
+    __arm_cp.31_2                            0x00001418   Number         4  fsl_uart.o(.text.UART0_RX_TX_DriverIRQHandler)
+    [Anonymous Symbol]                       0x0000141c   Section        0  fsl_uart.o(.text.UART1_RX_TX_DriverIRQHandler)
+    __arm_cp.33_2                            0x00001430   Number         4  fsl_uart.o(.text.UART1_RX_TX_DriverIRQHandler)
+    [Anonymous Symbol]                       0x00001434   Section        0  fsl_uart.o(.text.UART2_RX_TX_DriverIRQHandler)
+    __arm_cp.35_2                            0x00001448   Number         4  fsl_uart.o(.text.UART2_RX_TX_DriverIRQHandler)
+    [Anonymous Symbol]                       0x0000144c   Section        0  fsl_uart.o(.text.UART3_RX_TX_DriverIRQHandler)
+    __arm_cp.37_2                            0x00001460   Number         4  fsl_uart.o(.text.UART3_RX_TX_DriverIRQHandler)
+    [Anonymous Symbol]                       0x00001464   Section        0  fsl_uart.o(.text.UART4_RX_TX_DriverIRQHandler)
+    __arm_cp.39_2                            0x00001478   Number         4  fsl_uart.o(.text.UART4_RX_TX_DriverIRQHandler)
+    [Anonymous Symbol]                       0x0000147c   Section        0  fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler)
+    __arm_cp.41_0                            0x00001490   Number         4  fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler)
+    __arm_cp.41_1                            0x00001494   Number         4  fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler)
+    __arm_cp.41_2                            0x00001498   Number         4  fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler)
+    [Anonymous Symbol]                       0x0000149c   Section        0  fsl_uart.o(.text.UART_ClearStatusFlags)
+    [Anonymous Symbol]                       0x000014d2   Section        0  fsl_uart.o(.text.UART_GetDefaultConfig)
+    [Anonymous Symbol]                       0x000014f4   Section        0  fsl_uart.o(.text.UART_GetInstance)
+    s_uartBases                              0x0000150c   Number         0  fsl_uart.o(.text.UART_GetInstance)
+    [Anonymous Symbol]                       0x00001524   Section        0  fsl_uart.o(.text.UART_GetStatusFlags)
+    [Anonymous Symbol]                       0x0000153c   Section        0  fsl_uart.o(.text.UART_Init)
+    __arm_cp.2_0                             0x0000163c   Number         4  fsl_uart.o(.text.UART_Init)
+    __arm_cp.2_1                             0x00001640   Number         4  fsl_uart.o(.text.UART_Init)
+    [Anonymous Symbol]                       0x00001644   Section        0  fsl_uart.o(.text.UART_ReadBlocking)
+    [Anonymous Symbol]                       0x000016ce   Section        0  fsl_uart.o(.text.UART_WriteBlocking)
+    [Anonymous Symbol]                       0x000016f0   Section        0  adc16_interrupt.o(.text.delay)
+    __arm_cp.0_0                             0x00001710   Number         4  adc16_interrupt.o(.text.delay)
+    [Anonymous Symbol]                       0x00001714   Section        0  adc16_interrupt.o(.text.main)
+    __arm_cp.2_0                             0x000017c8   Number         4  adc16_interrupt.o(.text.main)
+    __arm_cp.2_1                             0x000017cc   Number         4  adc16_interrupt.o(.text.main)
+    __arm_cp.2_2                             0x000017d0   Number         4  adc16_interrupt.o(.text.main)
+    __arm_cp.2_4                             0x000017f8   Number         4  adc16_interrupt.o(.text.main)
+    __arm_cp.2_5                             0x000017fc   Number         4  adc16_interrupt.o(.text.main)
+    __arm_cp.2_6                             0x00001800   Number         4  adc16_interrupt.o(.text.main)
+    __arm_cp.2_7                             0x00001804   Number         4  adc16_interrupt.o(.text.main)
+    __arm_cp.2_11                            0x0000186c   Number         4  adc16_interrupt.o(.text.main)
+    __arm_cp.2_12                            0x00001870   Number         4  adc16_interrupt.o(.text.main)
+    i.__scatterload_copy                     0x00001874   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00001882   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00001884   Section       14  handlers.o(i.__scatterload_zeroinit)
+    s_adc16Clocks                            0x00001894   Data           8  fsl_adc16.o(.rodata.cst8)
+    [Anonymous Symbol]                       0x00001894   Section        0  fsl_adc16.o(.rodata.cst8)
+    s_UartAdapterBase                        0x000018b0   Data          24  fsl_adapter_uart.o(.rodata.s_UartAdapterBase)
+    [Anonymous Symbol]                       0x000018b0   Section        0  fsl_adapter_uart.o(.rodata.s_UartAdapterBase)
+    s_portBases                              0x000018c8   Data          20  fsl_gpio.o(.rodata.s_portBases)
+    [Anonymous Symbol]                       0x000018c8   Section        0  fsl_gpio.o(.rodata.s_portBases)
+    s_uartClock                              0x000018dc   Data          24  fsl_uart.o(.rodata.s_uartClock)
+    [Anonymous Symbol]                       0x000018dc   Section        0  fsl_uart.o(.rodata.s_uartClock)
+    [Anonymous Symbol]                       0x000018fc   Section        0  adc16_interrupt.o(.rodata.str1.1)
+    s_slowIrcFreq                            0x20000000   Data           4  fsl_clock.o(.data..L_MergedGlobals)
+    [Anonymous Symbol]                       0x20000000   Section        0  fsl_clock.o(.data..L_MergedGlobals)
+    s_fastIrcFreq                            0x20000004   Data           4  fsl_clock.o(.data..L_MergedGlobals)
+    [Anonymous Symbol]                       0x20000010   Section        0  fsl_clock.o(.bss..L_MergedGlobals.1)
+    s_debugConsole                           0x2000001c   Data          20  fsl_debug_console.o(.bss.s_debugConsole)
+    [Anonymous Symbol]                       0x2000001c   Section        0  fsl_debug_console.o(.bss.s_debugConsole)
+    VTOR                                     0xe000ed08   Number         0  startup_mk64f12.o ABSOLUTE
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Number      1024  startup_mk64f12.o(.isr_vector)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __main                                   0x00000411   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000411   Thumb Code     0  entry4.o(.ARM.Collect$$$$00000003)
+    _main_scatterload                        0x00000415   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000419   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000419   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000419   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000419   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000421   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000421   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x00000425   Thumb Code    40  startup_mk64f12.o(.text)
+    ADC0_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    ADC1_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    BusFault_Handler                         0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    CAN0_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    CMP0_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    CMP1_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    CMP2_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    CMT_IRQHandler                           0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DAC0_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DAC1_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA0_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA10_DriverIRQHandler                   0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA11_DriverIRQHandler                   0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA12_DriverIRQHandler                   0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA13_DriverIRQHandler                   0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA14_DriverIRQHandler                   0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA15_DriverIRQHandler                   0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA1_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA2_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA3_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA4_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA5_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA6_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA7_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA8_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA9_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA_Error_DriverIRQHandler               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DebugMon_Handler                         0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    DefaultISR                               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    ENET_1588_Timer_DriverIRQHandler         0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    ENET_Error_DriverIRQHandler              0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    ENET_Receive_DriverIRQHandler            0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    ENET_Transmit_DriverIRQHandler           0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    FTFE_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    FTM0_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    FTM1_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    FTM2_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    FTM3_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    I2C0_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    I2C1_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    I2C2_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    I2S0_Rx_DriverIRQHandler                 0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    I2S0_Tx_DriverIRQHandler                 0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    LLWU_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    LPTMR0_IRQHandler                        0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    LVD_LVW_IRQHandler                       0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    MCG_IRQHandler                           0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    MCM_IRQHandler                           0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    MemManage_Handler                        0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PDB0_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PIT0_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PIT1_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PIT2_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PIT3_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PORTA_IRQHandler                         0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PORTC_IRQHandler                         0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PORTD_IRQHandler                         0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    PORTE_IRQHandler                         0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    RNG_IRQHandler                           0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    RTC_IRQHandler                           0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    RTC_Seconds_IRQHandler                   0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    Read_Collision_IRQHandler                0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    Reserved71_IRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    SDHC_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    SPI0_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    SPI1_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    SPI2_DriverIRQHandler                    0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    SWI_IRQHandler                           0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    UART0_ERR_DriverIRQHandler               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    UART0_LON_DriverIRQHandler               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    UART1_ERR_DriverIRQHandler               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    UART2_ERR_DriverIRQHandler               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    UART3_ERR_DriverIRQHandler               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    UART4_ERR_DriverIRQHandler               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    UART5_ERR_DriverIRQHandler               0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    USB0_IRQHandler                          0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    USBDCD_IRQHandler                        0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    UsageFault_Handler                       0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    WDOG_EWM_IRQHandler                      0x0000044d   Thumb Code     4  startup_mk64f12.o(.text)
+    NMI_Handler                              0x00000451   Thumb Code     4  startup_mk64f12.o(.text)
+    HardFault_Handler                        0x00000455   Thumb Code     4  startup_mk64f12.o(.text)
+    SVC_Handler                              0x00000459   Thumb Code     4  startup_mk64f12.o(.text)
+    PendSV_Handler                           0x0000045d   Thumb Code     4  startup_mk64f12.o(.text)
+    SysTick_Handler                          0x00000461   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA0_IRQHandler                          0x00000465   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA1_IRQHandler                          0x00000469   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA2_IRQHandler                          0x0000046d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA3_IRQHandler                          0x00000471   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA4_IRQHandler                          0x00000475   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA5_IRQHandler                          0x00000479   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA6_IRQHandler                          0x0000047d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA7_IRQHandler                          0x00000481   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA8_IRQHandler                          0x00000485   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA9_IRQHandler                          0x00000489   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA10_IRQHandler                         0x0000048d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA11_IRQHandler                         0x00000491   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA12_IRQHandler                         0x00000495   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA13_IRQHandler                         0x00000499   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA14_IRQHandler                         0x0000049d   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA15_IRQHandler                         0x000004a1   Thumb Code     4  startup_mk64f12.o(.text)
+    DMA_Error_IRQHandler                     0x000004a5   Thumb Code     4  startup_mk64f12.o(.text)
+    I2C0_IRQHandler                          0x000004a9   Thumb Code     4  startup_mk64f12.o(.text)
+    I2C1_IRQHandler                          0x000004ad   Thumb Code     4  startup_mk64f12.o(.text)
+    SPI0_IRQHandler                          0x000004b1   Thumb Code     4  startup_mk64f12.o(.text)
+    SPI1_IRQHandler                          0x000004b5   Thumb Code     4  startup_mk64f12.o(.text)
+    I2S0_Tx_IRQHandler                       0x000004b9   Thumb Code     4  startup_mk64f12.o(.text)
+    I2S0_Rx_IRQHandler                       0x000004bd   Thumb Code     4  startup_mk64f12.o(.text)
+    UART0_LON_IRQHandler                     0x000004c1   Thumb Code     4  startup_mk64f12.o(.text)
+    UART0_RX_TX_IRQHandler                   0x000004c5   Thumb Code     4  startup_mk64f12.o(.text)
+    UART0_ERR_IRQHandler                     0x000004c9   Thumb Code     4  startup_mk64f12.o(.text)
+    UART1_RX_TX_IRQHandler                   0x000004cd   Thumb Code     4  startup_mk64f12.o(.text)
+    UART1_ERR_IRQHandler                     0x000004d1   Thumb Code     4  startup_mk64f12.o(.text)
+    UART2_RX_TX_IRQHandler                   0x000004d5   Thumb Code     4  startup_mk64f12.o(.text)
+    UART2_ERR_IRQHandler                     0x000004d9   Thumb Code     4  startup_mk64f12.o(.text)
+    UART3_RX_TX_IRQHandler                   0x000004dd   Thumb Code     4  startup_mk64f12.o(.text)
+    UART3_ERR_IRQHandler                     0x000004e1   Thumb Code     4  startup_mk64f12.o(.text)
+    SPI2_IRQHandler                          0x000004e5   Thumb Code     4  startup_mk64f12.o(.text)
+    UART4_RX_TX_IRQHandler                   0x000004e9   Thumb Code     4  startup_mk64f12.o(.text)
+    UART4_ERR_IRQHandler                     0x000004ed   Thumb Code     4  startup_mk64f12.o(.text)
+    UART5_RX_TX_IRQHandler                   0x000004f1   Thumb Code     4  startup_mk64f12.o(.text)
+    UART5_ERR_IRQHandler                     0x000004f5   Thumb Code     4  startup_mk64f12.o(.text)
+    I2C2_IRQHandler                          0x000004f9   Thumb Code     4  startup_mk64f12.o(.text)
+    CAN0_ORed_Message_buffer_IRQHandler      0x000004fd   Thumb Code     4  startup_mk64f12.o(.text)
+    CAN0_Bus_Off_IRQHandler                  0x00000501   Thumb Code     4  startup_mk64f12.o(.text)
+    CAN0_Error_IRQHandler                    0x00000505   Thumb Code     4  startup_mk64f12.o(.text)
+    CAN0_Tx_Warning_IRQHandler               0x00000509   Thumb Code     4  startup_mk64f12.o(.text)
+    CAN0_Rx_Warning_IRQHandler               0x0000050d   Thumb Code     4  startup_mk64f12.o(.text)
+    CAN0_Wake_Up_IRQHandler                  0x00000511   Thumb Code     4  startup_mk64f12.o(.text)
+    SDHC_IRQHandler                          0x00000515   Thumb Code     4  startup_mk64f12.o(.text)
+    ENET_1588_Timer_IRQHandler               0x00000519   Thumb Code     4  startup_mk64f12.o(.text)
+    ENET_Transmit_IRQHandler                 0x0000051d   Thumb Code     4  startup_mk64f12.o(.text)
+    ENET_Receive_IRQHandler                  0x00000521   Thumb Code     4  startup_mk64f12.o(.text)
+    ENET_Error_IRQHandler                    0x00000525   Thumb Code     4  startup_mk64f12.o(.text)
+    ___aeabi_memcpy4$ret                     0x000005ed   Thumb Code     0  memcpy.o(.text)
+    ___aeabi_memcpy8$ret                     0x000005ed   Thumb Code     0  memcpy.o(.text)
+    __aeabi_memcpy                           0x000005ed   Thumb Code    40  memcpy.o(.text)
+    memcpy                                   0x000005ed   Thumb Code     0  memcpy.o(.text)
+    memset                                   0x00000615   Thumb Code    18  memset.o(.text)
+    strlen                                   0x00000627   Thumb Code    14  strlen.o(.text)
+    __aeabi_dmul                             0x00000635   Thumb Code   228  dmul.o(.text)
+    __aeabi_ui2d                             0x00000719   Thumb Code    26  dfltui.o(.text)
+    __aeabi_f2d                              0x00000733   Thumb Code    38  f2d.o(.text)
+    __aeabi_d2f                              0x00000759   Thumb Code    56  d2f.o(.text)
+    __aeabi_llsl                             0x00000791   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x00000791   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x000007af   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x000007af   Thumb Code     0  llushr.o(.text)
+    __I$use$fp                               0x000007cf   Thumb Code     0  iusefp.o(.text)
+    _float_round                             0x000007cf   Thumb Code    18  fepilogue.o(.text)
+    _float_epilogue                          0x000007e1   Thumb Code    92  fepilogue.o(.text)
+    _double_round                            0x0000083d   Thumb Code    30  depilogue.o(.text)
+    _double_epilogue                         0x0000085b   Thumb Code   156  depilogue.o(.text)
+    __scatterload                            0x000008f9   Thumb Code    38  init.o(.text)
+    __scatterload_rt2                        0x000008f9   Thumb Code     0  init.o(.text)
+    ADC16_DoAutoCalibration                  0x00000929   Thumb Code   132  fsl_adc16.o(.text.ADC16_DoAutoCalibration)
+    ADC16_GetChannelStatusFlags              0x000009ad   Thumb Code    10  fsl_adc16.o(.text.ADC16_GetChannelStatusFlags)
+    ADC16_GetDefaultConfig                   0x000009b9   Thumb Code    32  fsl_adc16.o(.text.ADC16_GetDefaultConfig)
+    ADC16_Init                               0x000009fd   Thumb Code   144  fsl_adc16.o(.text.ADC16_Init)
+    ADC16_SetChannelConfig                   0x00000a95   Thumb Code    30  fsl_adc16.o(.text.ADC16_SetChannelConfig)
+    ADC16_SetHardwareAverage                 0x00000ab3   Thumb Code    24  fsl_adc16.o(.text.ADC16_SetHardwareAverage)
+    BOARD_BootClockRUN                       0x00000acd   Thumb Code    72  clock_config.o(.text.BOARD_BootClockRUN)
+    BOARD_InitBootClocks                     0x00000b31   Thumb Code     4  clock_config.o(.text.BOARD_InitBootClocks)
+    BOARD_InitBootPins                       0x00000b35   Thumb Code     4  pin_mux.o(.text.BOARD_InitBootPins)
+    BOARD_InitDebugConsole                   0x00000b39   Thumb Code    24  board.o(.text.BOARD_InitDebugConsole)
+    BOARD_InitPins                           0x00000b51   Thumb Code    76  pin_mux.o(.text.BOARD_InitPins)
+    CLOCK_BootToPeeMode                      0x00000ba5   Thumb Code    40  fsl_clock.o(.text.CLOCK_BootToPeeMode)
+    CLOCK_EnablePll0                         0x00000bcd   Thumb Code    48  fsl_clock.o(.text.CLOCK_EnablePll0)
+    CLOCK_GetCoreSysClkFreq                  0x00000bfd   Thumb Code    12  fsl_clock.o(.text.CLOCK_GetCoreSysClkFreq)
+    CLOCK_GetFllFreq                         0x00000c0d   Thumb Code    52  fsl_clock.o(.text.CLOCK_GetFllFreq)
+    CLOCK_GetOutClkFreq                      0x00000ced   Thumb Code    32  fsl_clock.o(.text.CLOCK_GetOutClkFreq)
+    CLOCK_GetPll0Freq                        0x00000d11   Thumb Code    44  fsl_clock.o(.text.CLOCK_GetPll0Freq)
+    CLOCK_InitOsc0                           0x00000d41   Thumb Code    88  fsl_clock.o(.text.CLOCK_InitOsc0)
+    CLOCK_SetExternalRefClkConfig            0x00000da5   Thumb Code    44  fsl_clock.o(.text.CLOCK_SetExternalRefClkConfig)
+    CLOCK_SetInternalRefClkConfig            0x00000dd9   Thumb Code   120  fsl_clock.o(.text.CLOCK_SetInternalRefClkConfig)
+    CLOCK_SetPbeMode                         0x00000e51   Thumb Code    72  fsl_clock.o(.text.CLOCK_SetPbeMode)
+    CLOCK_SetSimConfig                       0x00000e9d   Thumb Code    32  fsl_clock.o(.text.CLOCK_SetSimConfig)
+    DbgConsole_Init                          0x00000f01   Thumb Code    52  fsl_debug_console.o(.text.DbgConsole_Init)
+    DbgConsole_Printf                        0x00000f41   Thumb Code    24  fsl_debug_console.o(.text.DbgConsole_Printf)
+    DbgConsole_Putchar                       0x00000f79   Thumb Code    32  fsl_debug_console.o(.text.DbgConsole_Putchar)
+    DbgConsole_Vprintf                       0x00000f99   Thumb Code   532  fsl_debug_console.o(.text.DbgConsole_Vprintf)
+    GPIO_PinInit                             0x000011dd   Thumb Code    44  fsl_gpio.o(.text.GPIO_PinInit)
+    GPIO_PortClearInterruptFlags             0x00001209   Thumb Code    24  fsl_gpio.o(.text.GPIO_PortClearInterruptFlags)
+    HAL_UartInit                             0x00001225   Thumb Code   144  fsl_adapter_uart.o(.text.HAL_UartInit)
+    HAL_UartReceiveBlocking                  0x000012b5   Thumb Code    24  fsl_adapter_uart.o(.text.HAL_UartReceiveBlocking)
+    HAL_UartSendBlocking                     0x000012cd   Thumb Code    20  fsl_adapter_uart.o(.text.HAL_UartSendBlocking)
+    PORTB_IRQHandler                         0x00001301   Thumb Code   112  adc16_interrupt.o(.text.PORTB_IRQHandler)
+    SystemInit                               0x000013d5   Thumb Code    36  system_mk64f12.o(.text.SystemInit)
+    SystemInitHook                           0x00001401   Thumb Code     2  system_mk64f12.o(.text.SystemInitHook)
+    UART0_RX_TX_DriverIRQHandler             0x00001405   Thumb Code    20  fsl_uart.o(.text.UART0_RX_TX_DriverIRQHandler)
+    UART1_RX_TX_DriverIRQHandler             0x0000141d   Thumb Code    20  fsl_uart.o(.text.UART1_RX_TX_DriverIRQHandler)
+    UART2_RX_TX_DriverIRQHandler             0x00001435   Thumb Code    20  fsl_uart.o(.text.UART2_RX_TX_DriverIRQHandler)
+    UART3_RX_TX_DriverIRQHandler             0x0000144d   Thumb Code    20  fsl_uart.o(.text.UART3_RX_TX_DriverIRQHandler)
+    UART4_RX_TX_DriverIRQHandler             0x00001465   Thumb Code    20  fsl_uart.o(.text.UART4_RX_TX_DriverIRQHandler)
+    UART5_RX_TX_DriverIRQHandler             0x0000147d   Thumb Code    20  fsl_uart.o(.text.UART5_RX_TX_DriverIRQHandler)
+    UART_ClearStatusFlags                    0x0000149d   Thumb Code    54  fsl_uart.o(.text.UART_ClearStatusFlags)
+    UART_GetDefaultConfig                    0x000014d3   Thumb Code    32  fsl_uart.o(.text.UART_GetDefaultConfig)
+    UART_GetInstance                         0x000014f5   Thumb Code    24  fsl_uart.o(.text.UART_GetInstance)
+    UART_GetStatusFlags                      0x00001525   Thumb Code    22  fsl_uart.o(.text.UART_GetStatusFlags)
+    UART_Init                                0x0000153d   Thumb Code   256  fsl_uart.o(.text.UART_Init)
+    UART_ReadBlocking                        0x00001645   Thumb Code   138  fsl_uart.o(.text.UART_ReadBlocking)
+    UART_WriteBlocking                       0x000016cf   Thumb Code    32  fsl_uart.o(.text.UART_WriteBlocking)
+    delay                                    0x000016f1   Thumb Code    32  adc16_interrupt.o(.text.delay)
+    main                                     0x00001715   Thumb Code   180  adc16_interrupt.o(.text.main)
+    __scatterload_copy                       0x00001875   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00001883   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00001885   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    mcgConfig_BOARD_BootClockRUN             0x0000189c   Data          11  clock_config.o(.rodata.mcgConfig_BOARD_BootClockRUN)
+    oscConfig_BOARD_BootClockRUN             0x000018a8   Data           8  clock_config.o(.rodata.oscConfig_BOARD_BootClockRUN)
+    simConfig_BOARD_BootClockRUN             0x000018f4   Data           8  clock_config.o(.rodata.simConfig_BOARD_BootClockRUN)
+    Region$$Table$$Base                      0x00001934   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001954   Number         0  anon$$obj.o(Region$$Table)
+    SystemCoreClock                          0x20000008   Data           4  system_mk64f12.o(.data.SystemCoreClock)
+    s_uartIsr                                0x2000000c   Data           4  fsl_uart.o(.data.s_uartIsr)
+    g_xtal0Freq                              0x20000010   Data           4  fsl_clock.o(.bss..L_MergedGlobals.1)
+    g_xtal32Freq                             0x20000014   Data           4  fsl_clock.o(.bss..L_MergedGlobals.1)
+    g_Adc16InterruptCounter                  0x20000018   Data           4  adc16_interrupt.o(.bss.g_Adc16InterruptCounter)
+    s_uartHandle                             0x20000030   Data          24  fsl_uart.o(.bss.s_uartHandle)
+    Image$$ARM_LIB_HEAP$$ZI$$Base            0x20000048   Number         0  anon$$obj.o ABSOLUTE
+    Image$$ARM_LIB_HEAP$$ZI$$Limit           0x20000448   Number         0  anon$$obj.o ABSOLUTE
+    Image$$ARM_LIB_STACK$$ZI$$Limit          0x20030000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000425
+
+  Load Region LR_m_text (Base: 0x00000000, Size: 0x00001964, Max: 0x00100000, ABSOLUTE)
+
+    Execution Region VECTOR_ROM (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000400   Data   RO          523    .isr_vector         startup_mk64f12.o
+
+
+    Execution Region ER_m_flash_config (Exec base: 0x00000400, Load base: 0x00000400, Size: 0x00000010, Max: 0x00000010, ABSOLUTE, FIXED)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000400   0x00000400   0x00000010   Data   RO          524    .FlashConfig        startup_mk64f12.o
+
+
+    Execution Region ER_m_text (Exec base: 0x00000410, Load base: 0x00000410, Size: 0x00001544, Max: 0x000ffbf0, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000410   0x00000410   0x00000000   Code   RO          525  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000410   0x00000410   0x00000004   Code   RO          552    .ARM.Collect$$$$00000003  mc_w.l(entry4.o)
+    0x00000414   0x00000414   0x00000004   Code   RO          555    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000418   0x00000418   0x00000000   Code   RO          557    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000418   0x00000418   0x00000000   Code   RO          559    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000418   0x00000418   0x00000008   Code   RO          560    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000420   0x00000420   0x00000000   Code   RO          562    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000420   0x00000420   0x00000000   Code   RO          564    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000420   0x00000420   0x00000004   Code   RO          553    .ARM.Collect$$$$00002714  mc_w.l(entry4.o)
+    0x00000424   0x00000424   0x000001c8   Code   RO          522  * .text               startup_mk64f12.o
+    0x000005ec   0x000005ec   0x00000028   Code   RO          529    .text               mc_w.l(memcpy.o)
+    0x00000614   0x00000614   0x00000012   Code   RO          530    .text               mc_w.l(memset.o)
+    0x00000626   0x00000626   0x0000000e   Code   RO          532    .text               mc_w.l(strlen.o)
+    0x00000634   0x00000634   0x000000e4   Code   RO          548    .text               mf_w.l(dmul.o)
+    0x00000718   0x00000718   0x0000001a   Code   RO          549    .text               mf_w.l(dfltui.o)
+    0x00000732   0x00000732   0x00000026   Code   RO          550    .text               mf_w.l(f2d.o)
+    0x00000758   0x00000758   0x00000038   Code   RO          551    .text               mf_w.l(d2f.o)
+    0x00000790   0x00000790   0x0000001e   Code   RO          566    .text               mc_w.l(llshl.o)
+    0x000007ae   0x000007ae   0x00000020   Code   RO          567    .text               mc_w.l(llushr.o)
+    0x000007ce   0x000007ce   0x00000000   Code   RO          572    .text               mc_w.l(iusefp.o)
+    0x000007ce   0x000007ce   0x0000006e   Code   RO          573    .text               mf_w.l(fepilogue.o)
+    0x0000083c   0x0000083c   0x000000ba   Code   RO          574    .text               mf_w.l(depilogue.o)
+    0x000008f6   0x000008f6   0x00000002   PAD
+    0x000008f8   0x000008f8   0x00000030   Code   RO          575    .text               mc_w.l(init.o)
+    0x00000928   0x00000928   0x00000084   Code   RO           85    .text.ADC16_DoAutoCalibration  fsl_adc16.o
+    0x000009ac   0x000009ac   0x0000000a   Code   RO           87    .text.ADC16_GetChannelStatusFlags  fsl_adc16.o
+    0x000009b6   0x000009b6   0x00000002   PAD
+    0x000009b8   0x000009b8   0x00000024   Code   RO           83    .text.ADC16_GetDefaultConfig  fsl_adc16.o
+    0x000009dc   0x000009dc   0x00000020   Code   RO           77    .text.ADC16_GetInstance  fsl_adc16.o
+    0x000009fc   0x000009fc   0x00000098   Code   RO           75    .text.ADC16_Init    fsl_adc16.o
+    0x00000a94   0x00000a94   0x0000001e   Code   RO           97    .text.ADC16_SetChannelConfig  fsl_adc16.o
+    0x00000ab2   0x00000ab2   0x00000018   Code   RO           79    .text.ADC16_SetHardwareAverage  fsl_adc16.o
+    0x00000aca   0x00000aca   0x00000002   PAD
+    0x00000acc   0x00000acc   0x00000064   Code   RO           25    .text.BOARD_BootClockRUN  clock_config.o
+    0x00000b30   0x00000b30   0x00000004   Code   RO           23    .text.BOARD_InitBootClocks  clock_config.o
+    0x00000b34   0x00000b34   0x00000004   Code   RO           15    .text.BOARD_InitBootPins  pin_mux.o
+    0x00000b38   0x00000b38   0x00000018   Code   RO           20    .text.BOARD_InitDebugConsole  board.o
+    0x00000b50   0x00000b50   0x00000054   Code   RO           17    .text.BOARD_InitPins  pin_mux.o
+    0x00000ba4   0x00000ba4   0x00000028   Code   RO          197    .text.CLOCK_BootToPeeMode  fsl_clock.o
+    0x00000bcc   0x00000bcc   0x00000030   Code   RO          145    .text.CLOCK_EnablePll0  fsl_clock.o
+    0x00000bfc   0x00000bfc   0x00000010   Code   RO          121    .text.CLOCK_GetCoreSysClkFreq  fsl_clock.o
+    0x00000c0c   0x00000c0c   0x00000048   Code   RO          107    .text.CLOCK_GetFllFreq  fsl_clock.o
+    0x00000c54   0x00000c54   0x00000044   Code   RO          137    .text.CLOCK_GetFllRefClkFreq  fsl_clock.o
+    0x00000c98   0x00000c98   0x00000024   Code   RO          133    .text.CLOCK_GetInternalRefClkSelectFreq  fsl_clock.o
+    0x00000cbc   0x00000cbc   0x00000030   Code   RO          135    .text.CLOCK_GetMcgExtClkFreq  fsl_clock.o
+    0x00000cec   0x00000cec   0x00000024   Code   RO          113    .text.CLOCK_GetOutClkFreq  fsl_clock.o
+    0x00000d10   0x00000d10   0x00000030   Code   RO          109    .text.CLOCK_GetPll0Freq  fsl_clock.o
+    0x00000d40   0x00000d40   0x00000064   Code   RO          157    .text.CLOCK_InitOsc0  fsl_clock.o
+    0x00000da4   0x00000da4   0x00000034   Code   RO          139    .text.CLOCK_SetExternalRefClkConfig  fsl_clock.o
+    0x00000dd8   0x00000dd8   0x00000078   Code   RO          141    .text.CLOCK_SetInternalRefClkConfig  fsl_clock.o
+    0x00000e50   0x00000e50   0x0000004c   Code   RO          181    .text.CLOCK_SetPbeMode  fsl_clock.o
+    0x00000e9c   0x00000e9c   0x00000028   Code   RO          129    .text.CLOCK_SetSimConfig  fsl_clock.o
+    0x00000ec4   0x00000ec4   0x0000003c   Code   RO          515    .text.DbgConsole_ConvertRadixNumToString  fsl_debug_console.o
+    0x00000f00   0x00000f00   0x00000040   Code   RO          501    .text.DbgConsole_Init  fsl_debug_console.o
+    0x00000f40   0x00000f40   0x00000018   Code   RO          505    .text.DbgConsole_Printf  fsl_debug_console.o
+    0x00000f58   0x00000f58   0x0000001e   Code   RO          517    .text.DbgConsole_PrintfPaddingCharacter  fsl_debug_console.o
+    0x00000f76   0x00000f76   0x00000002   PAD
+    0x00000f78   0x00000f78   0x00000020   Code   RO          509    .text.DbgConsole_Putchar  fsl_debug_console.o
+    0x00000f98   0x00000f98   0x00000218   Code   RO          507    .text.DbgConsole_Vprintf  fsl_debug_console.o
+    0x000011b0   0x000011b0   0x0000002c   Code   RO          340    .text.GPIO_GetInstance  fsl_gpio.o
+    0x000011dc   0x000011dc   0x0000002c   Code   RO          336    .text.GPIO_PinInit  fsl_gpio.o
+    0x00001208   0x00001208   0x0000001c   Code   RO          342    .text.GPIO_PortClearInterruptFlags  fsl_gpio.o
+    0x00001224   0x00001224   0x00000090   Code   RO           61    .text.HAL_UartInit  fsl_adapter_uart.o
+    0x000012b4   0x000012b4   0x00000018   Code   RO           65    .text.HAL_UartReceiveBlocking  fsl_adapter_uart.o
+    0x000012cc   0x000012cc   0x00000018   Code   RO           67    .text.HAL_UartSendBlocking  fsl_adapter_uart.o
+    0x000012e4   0x000012e4   0x0000000e   Code   RO          203    .text.OUTLINED_FUNCTION_0  fsl_clock.o
+    0x000012f2   0x000012f2   0x0000000a   Code   RO          467    .text.OUTLINED_FUNCTION_0  fsl_uart.o
+    0x000012fc   0x000012fc   0x00000004   PAD
+    0x00001300   0x00001300   0x000000d4   Code   RO            6    .text.PORTB_IRQHandler  adc16_interrupt.o
+    0x000013d4   0x000013d4   0x0000002c   Code   RO          492    .text.SystemInit    system_mk64f12.o
+    0x00001400   0x00001400   0x00000002   Code   RO          494    .text.SystemInitHook  system_mk64f12.o
+    0x00001402   0x00001402   0x00000002   PAD
+    0x00001404   0x00001404   0x00000018   Code   RO          445    .text.UART0_RX_TX_DriverIRQHandler  fsl_uart.o
+    0x0000141c   0x0000141c   0x00000018   Code   RO          449    .text.UART1_RX_TX_DriverIRQHandler  fsl_uart.o
+    0x00001434   0x00001434   0x00000018   Code   RO          453    .text.UART2_RX_TX_DriverIRQHandler  fsl_uart.o
+    0x0000144c   0x0000144c   0x00000018   Code   RO          457    .text.UART3_RX_TX_DriverIRQHandler  fsl_uart.o
+    0x00001464   0x00001464   0x00000018   Code   RO          461    .text.UART4_RX_TX_DriverIRQHandler  fsl_uart.o
+    0x0000147c   0x0000147c   0x00000020   Code   RO          465    .text.UART5_RX_TX_DriverIRQHandler  fsl_uart.o
+    0x0000149c   0x0000149c   0x00000036   Code   RO          407    .text.UART_ClearStatusFlags  fsl_uart.o
+    0x000014d2   0x000014d2   0x00000020   Code   RO          391    .text.UART_GetDefaultConfig  fsl_uart.o
+    0x000014f2   0x000014f2   0x00000002   PAD
+    0x000014f4   0x000014f4   0x00000030   Code   RO          383    .text.UART_GetInstance  fsl_uart.o
+    0x00001524   0x00001524   0x00000016   Code   RO          405    .text.UART_GetStatusFlags  fsl_uart.o
+    0x0000153a   0x0000153a   0x00000002   PAD
+    0x0000153c   0x0000153c   0x00000108   Code   RO          387    .text.UART_Init     fsl_uart.o
+    0x00001644   0x00001644   0x0000008a   Code   RO          411    .text.UART_ReadBlocking  fsl_uart.o
+    0x000016ce   0x000016ce   0x00000020   Code   RO          409    .text.UART_WriteBlocking  fsl_uart.o
+    0x000016ee   0x000016ee   0x00000002   PAD
+    0x000016f0   0x000016f0   0x00000024   Code   RO            4    .text.delay         adc16_interrupt.o
+    0x00001714   0x00001714   0x00000160   Code   RO            8    .text.main          adc16_interrupt.o
+    0x00001874   0x00001874   0x0000000e   Code   RO          578    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00001882   0x00001882   0x00000002   Code   RO          579    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00001884   0x00001884   0x0000000e   Code   RO          580    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00001892   0x00001892   0x00000002   PAD
+    0x00001894   0x00001894   0x00000008   Data   RO           99    .rodata.cst8        fsl_adc16.o
+    0x0000189c   0x0000189c   0x0000000b   Data   RO           29    .rodata.mcgConfig_BOARD_BootClockRUN  clock_config.o
+    0x000018a7   0x000018a7   0x00000001   PAD
+    0x000018a8   0x000018a8   0x00000008   Data   RO           31    .rodata.oscConfig_BOARD_BootClockRUN  clock_config.o
+    0x000018b0   0x000018b0   0x00000018   Data   RO           73    .rodata.s_UartAdapterBase  fsl_adapter_uart.o
+    0x000018c8   0x000018c8   0x00000014   Data   RO          344    .rodata.s_portBases  fsl_gpio.o
+    0x000018dc   0x000018dc   0x00000018   Data   RO          489    .rodata.s_uartClock  fsl_uart.o
+    0x000018f4   0x000018f4   0x00000008   Data   RO           30    .rodata.simConfig_BOARD_BootClockRUN  clock_config.o
+    0x000018fc   0x000018fc   0x00000035   Data   RO           12    .rodata.str1.1      adc16_interrupt.o
+    0x00001931   0x00001931   0x00000003   PAD
+    0x00001934   0x00001934   0x00000020   Data   RO          577    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_m_data (Exec base: 0x1fff0000, Load base: 0x00001954, Size: 0x00000000, Max: 0x00010000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region RW_m_data_2 (Exec base: 0x20000000, Load base: 0x00001954, Size: 0x00000048, Max: 0x0002f800, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00001954   0x00000008   Data   RW          212    .data..L_MergedGlobals  fsl_clock.o
+    0x20000008   0x0000195c   0x00000004   Data   RW          498    .data.SystemCoreClock  system_mk64f12.o
+    0x2000000c   0x00001960   0x00000004   Data   RW          488    .data.s_uartIsr     fsl_uart.o
+    0x20000010        -       0x00000008   Zero   RW          213    .bss..L_MergedGlobals.1  fsl_clock.o
+    0x20000018        -       0x00000004   Zero   RW           11    .bss.g_Adc16InterruptCounter  adc16_interrupt.o
+    0x2000001c        -       0x00000014   Zero   RW          521    .bss.s_debugConsole  fsl_debug_console.o
+    0x20000030        -       0x00000018   Zero   RW          490    .bss.s_uartHandle   fsl_uart.o
+
+
+    Execution Region ARM_LIB_HEAP (Exec base: 0x20000048, Load base: 0x00001964, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000048        -       0x00000400   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
+
+
+    Execution Region ARM_LIB_STACK (Exec base: 0x2002fc00, Load base: 0x00001964, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2002fc00        -       0x00000400   Zero   RW            2    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       600        276         53          0          4          0   adc16_interrupt.o
+        24          0          0          0          0          0   board.o
+       104         28         27          0          0          0   clock_config.o
+       192          4         24          0          0          0   fsl_adapter_uart.o
+       416         20          8          0          0          0   fsl_adc16.o
+       814         80          0          8          8          0   fsl_clock.o
+       746         40          0          0         20          0   fsl_debug_console.o
+       116         24         20          0          0          0   fsl_gpio.o
+       752         64         24          4         24          0   fsl_uart.o
+        88          8          0          0          0          0   pin_mux.o
+       456        212       1040          0          0          0   startup_mk64f12.o
+        46          8          0          4          0          0   system_mk64f12.o
+
+    ----------------------------------------------------------------------
+      4372        764       1232         16       2104          0   Object Totals
+         0          0         32          0       2048          0   (incl. Generated)
+        18          0          4          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry4.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        48         10          0          0          0          0   init.o
+         0          0          0          0          0          0   iusefp.o
+        30          0          0          0          0          0   llshl.o
+        32          0          0          0          0          0   llushr.o
+        40          0          0          0          0          0   memcpy.o
+        18          0          0          0          0          0   memset.o
+        14          0          0          0          0          0   strlen.o
+        56          0          0          0          0          0   d2f.o
+       186          0          0          0          0          0   depilogue.o
+        26          0          0          0          0          0   dfltui.o
+       228          0          0          0          0          0   dmul.o
+        38          0          0          0          0          0   f2d.o
+       110          0          0          0          0          0   fepilogue.o
+
+    ----------------------------------------------------------------------
+       880         18          0          0          0          0   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       232         18          0          0          0          0   mc_w.l
+       644          0          0          0          0          0   mf_w.l
+
+    ----------------------------------------------------------------------
+       880         18          0          0          0          0   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      5252        782       1232         16       2104          0   Grand Totals
+      5252        782       1232         16       2104          0   ELF Image Totals
+      5252        782       1232         16          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 6484 (   6.33kB)
+    Total RW  Size (RW Data + ZI Data)              2120 (   2.07kB)
+    Total ROM Size (Code + RO Data + RW Data)       6500 (   6.35kB)
+
+==============================================================================
+
