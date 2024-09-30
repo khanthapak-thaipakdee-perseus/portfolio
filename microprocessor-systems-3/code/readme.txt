@@ -1,5 +1,7 @@
 Overview
 ========
+This part of the assignment is built using the GPIO example as the base code, with the installation of required drivers to fulfill the program's requirements.
+
 The GPIO Example project is a demonstration program that uses the KSDK software to manipulate the general-purpose
 outputs.
 The example is supported by the set, clear, and toggle write-only registers for each port output data register. The 
