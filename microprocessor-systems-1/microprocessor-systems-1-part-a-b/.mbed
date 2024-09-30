@@ -1,0 +1,5 @@
+ROOT=.
+DEVICE_ID[/home/studio/workspace/mbed-os-digitalin2]=02400b0140214e4500371019c892004c9e11000097969900
+DEVICE_TYPE[/home/studio/workspace/mbed-os-digitalin2]=connected
+TARGET=K64F
+TARGET_CODE=0240
