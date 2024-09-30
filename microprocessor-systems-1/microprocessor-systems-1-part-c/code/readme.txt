@@ -1,6 +1,8 @@
 Overview
 ========
 
+This part of the assignment is built using the ADC interrupt example as the base code, with the installation of required drivers to fulfill the program's requirements.
+
 The adc16_interrupt example shows how to use interrupt with ADC16 driver.
 
 In this example, user should indicate a channel to provide a voltage signal (can be controlled by user) as the ADC16's
