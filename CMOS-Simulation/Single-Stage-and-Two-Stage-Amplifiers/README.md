@@ -1,0 +1,4 @@
+# Design and Simulation of Single-Stage and Two-Stage Amplifiers in 1.2 μm CMOS Technology
+Design a single-stage operational amplifier (op-amp) using 1.2 μm CMOS technology, calculating the aspect ratios of all transistors to satisfy specified input and output conditions. Simulate the design using MultiSim and verify key performance metrics, including slew rate, rise/fall time response, gain, gain-bandwidth product, and phase margin. Additionally, design and simulate a two-stage op-amp incorporating a common-source stage and a compensation capacitor. Finally, investigate amplifier circuits with closed-loop gain, analyzing both inverting and non-inverting configurations through parameter sweeps. 
+
+This assignment was part of the ELEC472 course, "Integrated Circuit Design" , in the Department of Electrical Engineering and Electronics at the University of Liverpool.
