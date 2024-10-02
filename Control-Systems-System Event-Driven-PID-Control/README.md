@@ -1,0 +1,3 @@
+# System Event-Driven PID Control for DC Servo Drive & Model Reference Adaptive Control in a DC Electrical Drive.
+This project involves designing MATLAB+SIMULINK programs. Part A focuses on simulating a robotic system for picking and dropping chocolate boxes, including PID tuning, random event handling, and continuous PID control. Part B uses MATLAB+SIMULINK to verify the controller, adjust the adaptation gain (𝛾), and compare Lyapunov and MIT MRAC models to assess their advantages and disadvantages.
+This assignment was part of the ELEC476 course, "Advanced Systems Modelling & Control" , in the Department of Electrical Engineering and Electronics at the University of Liverpool.
