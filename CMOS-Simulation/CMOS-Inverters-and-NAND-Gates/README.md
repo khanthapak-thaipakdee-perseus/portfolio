@@ -1,0 +1,3 @@
+# Design and Simulation of CMOS Inverters and NAND Gates: DC, Transient Response, and Power Dissipation
+This assignment relates to the simulation, verification, and analysis of CMOS gate performance, with a focus on speed and power efficiency. It includes the design and comprehensive analysis of the DC and transient responses of a CMOS inverter, the evaluation of power dissipation in a loaded CMOS inverter, and the design and analysis of the DC and transient responses of a 2-input NAND gate.
+This assignment was part of the ELEC472 course, "Integrated Circuit Design" , in the Department of Electrical Engineering and Electronics at the University of Liverpool.
