@@ -1,0 +1,320 @@
+Simulator report for PWM
+Wed Mar 20 23:30:51 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 50.0 us      ;
+; Simulation Netlist Size     ; 129 nodes    ;
+; Simulation Coverage         ;      75.19 % ;
+; Total Number of Transitions ; 58196        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                                            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                                         ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                               ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                                ;               ;
+; Vector input source                                                                        ; C:/Users/User/Desktop/Microelec/Digital Systems Design/Assignment 3/MIPS_System_Students_Part_C_loop2/PWM/pwm3.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                                 ; On            ;
+; Check outputs                                                                              ; Off                                                                                                                ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                                ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                                         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                               ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      75.19 % ;
+; Total nodes checked                                 ; 129          ;
+; Total output ports checked                          ; 129          ;
+; Total output ports with complete 1/0-value coverage ; 97           ;
+; Total output ports with no 1/0-value coverage       ; 29           ;
+; Total output ports with no 1-value coverage         ; 29           ;
+; Total output ports with no 0-value coverage         ; 32           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++-----------------------------+-----------------------------+------------------+
+; Node Name                   ; Output Port Name            ; Output Port Type ;
++-----------------------------+-----------------------------+------------------+
+; |PWM|always0~0              ; |PWM|always0~0              ; out0             ;
+; |PWM|pwm_register~0         ; |PWM|pwm_register~0         ; out              ;
+; |PWM|pwm_register~1         ; |PWM|pwm_register~1         ; out              ;
+; |PWM|pwm_register~2         ; |PWM|pwm_register~2         ; out              ;
+; |PWM|pwm_register~4         ; |PWM|pwm_register~4         ; out              ;
+; |PWM|pwm_register~5         ; |PWM|pwm_register~5         ; out              ;
+; |PWM|pwm_register~6         ; |PWM|pwm_register~6         ; out              ;
+; |PWM|pwm_register~7         ; |PWM|pwm_register~7         ; out              ;
+; |PWM|pwm_register~8         ; |PWM|pwm_register~8         ; out              ;
+; |PWM|pwm_register~9         ; |PWM|pwm_register~9         ; out              ;
+; |PWM|pwm_register~10        ; |PWM|pwm_register~10        ; out              ;
+; |PWM|pwm_register~12        ; |PWM|pwm_register~12        ; out              ;
+; |PWM|pwm_register~13        ; |PWM|pwm_register~13        ; out              ;
+; |PWM|pwm_register~14        ; |PWM|pwm_register~14        ; out              ;
+; |PWM|pwm_register~15        ; |PWM|pwm_register~15        ; out              ;
+; |PWM|pwm_register~16        ; |PWM|pwm_register~16        ; out              ;
+; |PWM|pwm_register~17        ; |PWM|pwm_register~17        ; out              ;
+; |PWM|pwm_register~18        ; |PWM|pwm_register~18        ; out              ;
+; |PWM|pwm_register~20        ; |PWM|pwm_register~20        ; out              ;
+; |PWM|pwm_register~21        ; |PWM|pwm_register~21        ; out              ;
+; |PWM|pwm_register~22        ; |PWM|pwm_register~22        ; out              ;
+; |PWM|pwm_register~23        ; |PWM|pwm_register~23        ; out              ;
+; |PWM|clk                    ; |PWM|clk                    ; out              ;
+; |PWM|reset                  ; |PWM|reset                  ; out              ;
+; |PWM|CS_N                   ; |PWM|CS_N                   ; out              ;
+; |PWM|WR_N                   ; |PWM|WR_N                   ; out              ;
+; |PWM|DataIn[0]              ; |PWM|DataIn[0]              ; out              ;
+; |PWM|DataIn[1]              ; |PWM|DataIn[1]              ; out              ;
+; |PWM|DataIn[2]              ; |PWM|DataIn[2]              ; out              ;
+; |PWM|DataIn[3]              ; |PWM|DataIn[3]              ; out              ;
+; |PWM|DataIn[5]              ; |PWM|DataIn[5]              ; out              ;
+; |PWM|DataIn[6]              ; |PWM|DataIn[6]              ; out              ;
+; |PWM|DataIn[7]              ; |PWM|DataIn[7]              ; out              ;
+; |PWM|LEDR5                  ; |PWM|LEDR5                  ; pin_out          ;
+; |PWM|flop:f|q               ; |PWM|flop:f|q               ; regout           ;
+; |PWM|counter:c|p_counter[7] ; |PWM|counter:c|p_counter[7] ; regout           ;
+; |PWM|counter:c|p_counter[6] ; |PWM|counter:c|p_counter[6] ; regout           ;
+; |PWM|counter:c|p_counter~0  ; |PWM|counter:c|p_counter~0  ; out              ;
+; |PWM|counter:c|p_counter~1  ; |PWM|counter:c|p_counter~1  ; out              ;
+; |PWM|counter:c|p_counter~2  ; |PWM|counter:c|p_counter~2  ; out              ;
+; |PWM|counter:c|p_counter~3  ; |PWM|counter:c|p_counter~3  ; out              ;
+; |PWM|counter:c|p_counter~4  ; |PWM|counter:c|p_counter~4  ; out              ;
+; |PWM|counter:c|p_counter~5  ; |PWM|counter:c|p_counter~5  ; out              ;
+; |PWM|counter:c|p_counter~6  ; |PWM|counter:c|p_counter~6  ; out              ;
+; |PWM|counter:c|p_counter~7  ; |PWM|counter:c|p_counter~7  ; out              ;
+; |PWM|counter:c|p_counter[5] ; |PWM|counter:c|p_counter[5] ; regout           ;
+; |PWM|counter:c|p_counter[4] ; |PWM|counter:c|p_counter[4] ; regout           ;
+; |PWM|counter:c|p_counter[3] ; |PWM|counter:c|p_counter[3] ; regout           ;
+; |PWM|counter:c|p_counter[2] ; |PWM|counter:c|p_counter[2] ; regout           ;
+; |PWM|counter:c|p_counter[1] ; |PWM|counter:c|p_counter[1] ; regout           ;
+; |PWM|counter:c|p_counter[0] ; |PWM|counter:c|p_counter[0] ; regout           ;
+; |PWM|counter:c|n_counter[7] ; |PWM|counter:c|n_counter[7] ; out              ;
+; |PWM|counter:c|n_counter[6] ; |PWM|counter:c|n_counter[6] ; out              ;
+; |PWM|counter:c|n_counter[5] ; |PWM|counter:c|n_counter[5] ; out              ;
+; |PWM|counter:c|n_counter[4] ; |PWM|counter:c|n_counter[4] ; out              ;
+; |PWM|counter:c|n_counter[3] ; |PWM|counter:c|n_counter[3] ; out              ;
+; |PWM|counter:c|n_counter[2] ; |PWM|counter:c|n_counter[2] ; out              ;
+; |PWM|counter:c|n_counter[1] ; |PWM|counter:c|n_counter[1] ; out              ;
+; |PWM|counter:c|n_counter[0] ; |PWM|counter:c|n_counter[0] ; out              ;
+; |PWM|LessThan0~1            ; |PWM|LessThan0~1            ; out0             ;
+; |PWM|LessThan0~2            ; |PWM|LessThan0~2            ; out0             ;
+; |PWM|LessThan0~4            ; |PWM|LessThan0~4            ; out0             ;
+; |PWM|LessThan0~5            ; |PWM|LessThan0~5            ; out0             ;
+; |PWM|LessThan0~6            ; |PWM|LessThan0~6            ; out0             ;
+; |PWM|LessThan0~8            ; |PWM|LessThan0~8            ; out0             ;
+; |PWM|LessThan0~9            ; |PWM|LessThan0~9            ; out0             ;
+; |PWM|LessThan0~10           ; |PWM|LessThan0~10           ; out0             ;
+; |PWM|LessThan0~12           ; |PWM|LessThan0~12           ; out0             ;
+; |PWM|LessThan0~13           ; |PWM|LessThan0~13           ; out0             ;
+; |PWM|LessThan0~14           ; |PWM|LessThan0~14           ; out0             ;
+; |PWM|LessThan0~15           ; |PWM|LessThan0~15           ; out0             ;
+; |PWM|LessThan0~16           ; |PWM|LessThan0~16           ; out0             ;
+; |PWM|LessThan0~17           ; |PWM|LessThan0~17           ; out0             ;
+; |PWM|LessThan0~18           ; |PWM|LessThan0~18           ; out0             ;
+; |PWM|LessThan0~20           ; |PWM|LessThan0~20           ; out0             ;
+; |PWM|LessThan0~21           ; |PWM|LessThan0~21           ; out0             ;
+; |PWM|LessThan0~22           ; |PWM|LessThan0~22           ; out0             ;
+; |PWM|LessThan0~24           ; |PWM|LessThan0~24           ; out0             ;
+; |PWM|LessThan0~25           ; |PWM|LessThan0~25           ; out0             ;
+; |PWM|LessThan0~26           ; |PWM|LessThan0~26           ; out0             ;
+; |PWM|LessThan0~28           ; |PWM|LessThan0~28           ; out0             ;
+; |PWM|LessThan0~29           ; |PWM|LessThan0~29           ; out0             ;
+; |PWM|LessThan0~30           ; |PWM|LessThan0~30           ; out0             ;
+; |PWM|counter:c|Add0~0       ; |PWM|counter:c|Add0~0       ; out0             ;
+; |PWM|counter:c|Add0~1       ; |PWM|counter:c|Add0~1       ; out0             ;
+; |PWM|counter:c|Add0~2       ; |PWM|counter:c|Add0~2       ; out0             ;
+; |PWM|counter:c|Add0~3       ; |PWM|counter:c|Add0~3       ; out0             ;
+; |PWM|counter:c|Add0~4       ; |PWM|counter:c|Add0~4       ; out0             ;
+; |PWM|counter:c|Add0~5       ; |PWM|counter:c|Add0~5       ; out0             ;
+; |PWM|counter:c|Add0~6       ; |PWM|counter:c|Add0~6       ; out0             ;
+; |PWM|counter:c|Add0~7       ; |PWM|counter:c|Add0~7       ; out0             ;
+; |PWM|counter:c|Add0~8       ; |PWM|counter:c|Add0~8       ; out0             ;
+; |PWM|counter:c|Add0~9       ; |PWM|counter:c|Add0~9       ; out0             ;
+; |PWM|counter:c|Add0~10      ; |PWM|counter:c|Add0~10      ; out0             ;
+; |PWM|counter:c|Add0~11      ; |PWM|counter:c|Add0~11      ; out0             ;
+; |PWM|counter:c|Add0~12      ; |PWM|counter:c|Add0~12      ; out0             ;
+; |PWM|counter:c|Equal0~0     ; |PWM|counter:c|Equal0~0     ; out0             ;
++-----------------------------+-----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------+
+; Missing 1-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |PWM|pwm_register[0] ; |PWM|pwm_register[0] ; regout           ;
+; |PWM|pwm_register~3  ; |PWM|pwm_register~3  ; out              ;
+; |PWM|pwm_register[1] ; |PWM|pwm_register[1] ; regout           ;
+; |PWM|pwm_register[2] ; |PWM|pwm_register[2] ; regout           ;
+; |PWM|pwm_register[3] ; |PWM|pwm_register[3] ; regout           ;
+; |PWM|pwm_register[5] ; |PWM|pwm_register[5] ; regout           ;
+; |PWM|pwm_register[6] ; |PWM|pwm_register[6] ; regout           ;
+; |PWM|pwm_register[7] ; |PWM|pwm_register[7] ; regout           ;
+; |PWM|Addr[0]         ; |PWM|Addr[0]         ; out              ;
+; |PWM|Addr[1]         ; |PWM|Addr[1]         ; out              ;
+; |PWM|Addr[2]         ; |PWM|Addr[2]         ; out              ;
+; |PWM|Addr[3]         ; |PWM|Addr[3]         ; out              ;
+; |PWM|Addr[4]         ; |PWM|Addr[4]         ; out              ;
+; |PWM|Addr[5]         ; |PWM|Addr[5]         ; out              ;
+; |PWM|Addr[6]         ; |PWM|Addr[6]         ; out              ;
+; |PWM|Addr[7]         ; |PWM|Addr[7]         ; out              ;
+; |PWM|Addr[8]         ; |PWM|Addr[8]         ; out              ;
+; |PWM|Addr[9]         ; |PWM|Addr[9]         ; out              ;
+; |PWM|Addr[10]        ; |PWM|Addr[10]        ; out              ;
+; |PWM|Addr[11]        ; |PWM|Addr[11]        ; out              ;
+; |PWM|DataIn[4]       ; |PWM|DataIn[4]       ; out              ;
+; |PWM|LessThan0~0     ; |PWM|LessThan0~0     ; out0             ;
+; |PWM|LessThan0~3     ; |PWM|LessThan0~3     ; out0             ;
+; |PWM|LessThan0~7     ; |PWM|LessThan0~7     ; out0             ;
+; |PWM|LessThan0~11    ; |PWM|LessThan0~11    ; out0             ;
+; |PWM|LessThan0~19    ; |PWM|LessThan0~19    ; out0             ;
+; |PWM|LessThan0~23    ; |PWM|LessThan0~23    ; out0             ;
+; |PWM|LessThan0~27    ; |PWM|LessThan0~27    ; out0             ;
+; |PWM|Equal0~0        ; |PWM|Equal0~0        ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------+
+; Missing 0-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |PWM|pwm_register[0] ; |PWM|pwm_register[0] ; regout           ;
+; |PWM|pwm_register~3  ; |PWM|pwm_register~3  ; out              ;
+; |PWM|pwm_register~11 ; |PWM|pwm_register~11 ; out              ;
+; |PWM|pwm_register~19 ; |PWM|pwm_register~19 ; out              ;
+; |PWM|pwm_register[1] ; |PWM|pwm_register[1] ; regout           ;
+; |PWM|pwm_register[2] ; |PWM|pwm_register[2] ; regout           ;
+; |PWM|pwm_register[3] ; |PWM|pwm_register[3] ; regout           ;
+; |PWM|pwm_register[4] ; |PWM|pwm_register[4] ; regout           ;
+; |PWM|pwm_register[5] ; |PWM|pwm_register[5] ; regout           ;
+; |PWM|pwm_register[6] ; |PWM|pwm_register[6] ; regout           ;
+; |PWM|pwm_register[7] ; |PWM|pwm_register[7] ; regout           ;
+; |PWM|Addr[0]         ; |PWM|Addr[0]         ; out              ;
+; |PWM|Addr[1]         ; |PWM|Addr[1]         ; out              ;
+; |PWM|Addr[2]         ; |PWM|Addr[2]         ; out              ;
+; |PWM|Addr[3]         ; |PWM|Addr[3]         ; out              ;
+; |PWM|Addr[4]         ; |PWM|Addr[4]         ; out              ;
+; |PWM|Addr[5]         ; |PWM|Addr[5]         ; out              ;
+; |PWM|Addr[6]         ; |PWM|Addr[6]         ; out              ;
+; |PWM|Addr[7]         ; |PWM|Addr[7]         ; out              ;
+; |PWM|Addr[8]         ; |PWM|Addr[8]         ; out              ;
+; |PWM|Addr[9]         ; |PWM|Addr[9]         ; out              ;
+; |PWM|Addr[10]        ; |PWM|Addr[10]        ; out              ;
+; |PWM|Addr[11]        ; |PWM|Addr[11]        ; out              ;
+; |PWM|DataIn[4]       ; |PWM|DataIn[4]       ; out              ;
+; |PWM|LessThan0~0     ; |PWM|LessThan0~0     ; out0             ;
+; |PWM|LessThan0~3     ; |PWM|LessThan0~3     ; out0             ;
+; |PWM|LessThan0~7     ; |PWM|LessThan0~7     ; out0             ;
+; |PWM|LessThan0~11    ; |PWM|LessThan0~11    ; out0             ;
+; |PWM|LessThan0~19    ; |PWM|LessThan0~19    ; out0             ;
+; |PWM|LessThan0~23    ; |PWM|LessThan0~23    ; out0             ;
+; |PWM|LessThan0~27    ; |PWM|LessThan0~27    ; out0             ;
+; |PWM|Equal0~0        ; |PWM|Equal0~0        ; out0             ;
++----------------------+----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Wed Mar 20 23:30:51 2024
+Info: Command: quartus_sim --simulation_results_format=VWF PWM -c PWM
+Info (324025): Using vector source file "C:/Users/User/Desktop/Microelec/Digital Systems Design/Assignment 3/MIPS_System_Students_Part_C_loop2/PWM/pwm3.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      75.19 %
+Info (328052): Number of transitions in simulation is 58196
+Info (324045): Vector file PWM.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4455 megabytes
+    Info: Processing ended: Wed Mar 20 23:30:52 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

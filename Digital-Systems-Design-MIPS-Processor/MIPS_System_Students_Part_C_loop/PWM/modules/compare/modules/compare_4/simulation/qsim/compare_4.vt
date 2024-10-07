@@ -1,0 +1,424 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/12/2024 13:15:52"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    compare_4
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module compare_4_vlg_sample_tst(
+	A,
+	B,
+	sampler_tx
+);
+input [3:0] A;
+input [3:0] B;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(A or B)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module compare_4_vlg_check_tst (
+	A_equal_B,
+	A_greater_B,
+	A_less_B,
+	sampler_rx
+);
+input  A_equal_B;
+input  A_greater_B;
+input  A_less_B;
+input sampler_rx;
+
+reg  A_equal_B_expected;
+reg  A_greater_B_expected;
+reg  A_less_B_expected;
+
+reg  A_equal_B_prev;
+reg  A_greater_B_prev;
+reg  A_less_B_prev;
+
+reg  A_equal_B_expected_prev;
+reg  A_greater_B_expected_prev;
+reg  A_less_B_expected_prev;
+
+reg  last_A_equal_B_exp;
+reg  last_A_greater_B_exp;
+reg  last_A_less_B_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	A_equal_B_prev = A_equal_B;
+	A_greater_B_prev = A_greater_B;
+	A_less_B_prev = A_less_B;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	A_equal_B_expected_prev = A_equal_B_expected;
+	A_greater_B_expected_prev = A_greater_B_expected;
+	A_less_B_expected_prev = A_less_B_expected;
+end
+
+
+
+// expected A_equal_B
+initial
+begin
+	A_equal_B_expected = 1'bX;
+end 
+
+// expected A_greater_B
+initial
+begin
+	A_greater_B_expected = 1'bX;
+end 
+
+// expected A_less_B
+initial
+begin
+	A_less_B_expected = 1'bX;
+end 
+// generate trigger
+always @(A_equal_B_expected or A_equal_B or A_greater_B_expected or A_greater_B or A_less_B_expected or A_less_B)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected A_equal_B = %b | expected A_greater_B = %b | expected A_less_B = %b | ",A_equal_B_expected_prev,A_greater_B_expected_prev,A_less_B_expected_prev);
+	$display("| real A_equal_B = %b | real A_greater_B = %b | real A_less_B = %b | ",A_equal_B_prev,A_greater_B_prev,A_less_B_prev);
+`endif
+	if (
+		( A_equal_B_expected_prev !== 1'bx ) && ( A_equal_B_prev !== A_equal_B_expected_prev )
+		&& ((A_equal_B_expected_prev !== last_A_equal_B_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port A_equal_B :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", A_equal_B_expected_prev);
+		$display ("     Real value = %b", A_equal_B_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_A_equal_B_exp = A_equal_B_expected_prev;
+	end
+	if (
+		( A_greater_B_expected_prev !== 1'bx ) && ( A_greater_B_prev !== A_greater_B_expected_prev )
+		&& ((A_greater_B_expected_prev !== last_A_greater_B_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port A_greater_B :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", A_greater_B_expected_prev);
+		$display ("     Real value = %b", A_greater_B_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_A_greater_B_exp = A_greater_B_expected_prev;
+	end
+	if (
+		( A_less_B_expected_prev !== 1'bx ) && ( A_less_B_prev !== A_less_B_expected_prev )
+		&& ((A_less_B_expected_prev !== last_A_less_B_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port A_less_B :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", A_less_B_expected_prev);
+		$display ("     Real value = %b", A_less_B_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_A_less_B_exp = A_less_B_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module compare_4_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [3:0] A;
+reg [3:0] B;
+// wires                                               
+wire A_equal_B;
+wire A_greater_B;
+wire A_less_B;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+compare_4 i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.A_equal_B(A_equal_B),
+	.A_greater_B(A_greater_B),
+	.A_less_B(A_less_B),
+	.B(B)
+);
+// A[ 3 ]
+initial
+begin
+	A[3] = 1'b0;
+	A[3] = #160000 1'b1;
+	A[3] = #160000 1'b0;
+	A[3] = #160000 1'b1;
+	A[3] = #160000 1'b0;
+	A[3] = #160000 1'b1;
+	A[3] = #160000 1'b0;
+end 
+// A[ 2 ]
+initial
+begin
+	repeat(2)
+	begin
+		A[2] = 1'b0;
+		A[2] = #80000 1'b1;
+		# 80000;
+	end
+	repeat(2)
+	begin
+		A[2] = 1'b0;
+		A[2] = #80000 1'b1;
+		# 80000;
+	end
+	repeat(2)
+	begin
+		A[2] = 1'b0;
+		A[2] = #80000 1'b1;
+		# 80000;
+	end
+	A[2] = 1'b0;
+end 
+// A[ 1 ]
+initial
+begin
+	repeat(4)
+	begin
+		A[1] = 1'b0;
+		A[1] = #40000 1'b1;
+		# 40000;
+	end
+	repeat(4)
+	begin
+		A[1] = 1'b0;
+		A[1] = #40000 1'b1;
+		# 40000;
+	end
+	repeat(4)
+	begin
+		A[1] = 1'b0;
+		A[1] = #40000 1'b1;
+		# 40000;
+	end
+	A[1] = 1'b0;
+end 
+// A[ 0 ]
+initial
+begin
+	repeat(8)
+	begin
+		A[0] = 1'b0;
+		A[0] = #20000 1'b1;
+		# 20000;
+	end
+	repeat(8)
+	begin
+		A[0] = 1'b0;
+		A[0] = #20000 1'b1;
+		# 20000;
+	end
+	repeat(8)
+	begin
+		A[0] = 1'b0;
+		A[0] = #20000 1'b1;
+		# 20000;
+	end
+	A[0] = 1'b0;
+end 
+// B[ 3 ]
+initial
+begin
+	B[3] = 1'b0;
+	B[3] = #140000 1'b1;
+	B[3] = #160000 1'b0;
+	B[3] = #20000 1'b1;
+	B[3] = #20000 1'b0;
+	B[3] = #160000 1'b1;
+	B[3] = #140000 1'b0;
+	B[3] = #160000 1'b1;
+	B[3] = #160000 1'b0;
+end 
+// B[ 2 ]
+initial
+begin
+	B[2] = 1'b0;
+	B[2] = #60000 1'b1;
+	B[2] = #80000 1'b0;
+	B[2] = #80000 1'b1;
+	B[2] = #80000 1'b0;
+	B[2] = #20000 1'b1;
+	B[2] = #20000 1'b0;
+	B[2] = #80000 1'b1;
+	B[2] = #80000 1'b0;
+	B[2] = #80000 1'b1;
+	# 60000;
+	repeat(2)
+	begin
+		B[2] = 1'b0;
+		B[2] = #80000 1'b1;
+		# 80000;
+	end
+	B[2] = 1'b0;
+end 
+// B[ 1 ]
+initial
+begin
+	B[1] = 1'b0;
+	# 20000;
+	repeat(3)
+	begin
+		B[1] = 1'b1;
+		B[1] = #40000 1'b0;
+		# 40000;
+	end
+	B[1] = 1'b1;
+	B[1] = #40000 1'b0;
+	B[1] = #20000 1'b1;
+	B[1] = #20000 1'b0;
+	B[1] = #40000 1'b1;
+	# 40000;
+	repeat(2)
+	begin
+		B[1] = 1'b0;
+		B[1] = #40000 1'b1;
+		# 40000;
+	end
+	B[1] = 1'b0;
+	B[1] = #40000 1'b1;
+	# 20000;
+	repeat(4)
+	begin
+		B[1] = 1'b0;
+		B[1] = #40000 1'b1;
+		# 40000;
+	end
+	B[1] = 1'b0;
+end 
+// B[ 0 ]
+initial
+begin
+	repeat(7)
+	begin
+		B[0] = 1'b1;
+		B[0] = #20000 1'b0;
+		# 20000;
+	end
+	B[0] = 1'b1;
+	B[0] = #20000 1'b0;
+	B[0] = #20000 1'b1;
+	B[0] = #20000 1'b0;
+	B[0] = #20000 1'b1;
+	# 20000;
+	repeat(6)
+	begin
+		B[0] = 1'b0;
+		B[0] = #20000 1'b1;
+		# 20000;
+	end
+	B[0] = 1'b0;
+	B[0] = #40000 1'b1;
+	# 20000;
+	repeat(7)
+	begin
+		B[0] = 1'b0;
+		B[0] = #20000 1'b1;
+		# 20000;
+	end
+	B[0] = 1'b0;
+end 
+
+compare_4_vlg_sample_tst tb_sample (
+	.A(A),
+	.B(B),
+	.sampler_tx(sampler)
+);
+
+compare_4_vlg_check_tst tb_out(
+	.A_equal_B(A_equal_B),
+	.A_greater_B(A_greater_B),
+	.A_less_B(A_less_B),
+	.sampler_rx(sampler)
+);
+endmodule
+

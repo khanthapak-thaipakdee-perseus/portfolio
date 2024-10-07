@@ -1,0 +1,561 @@
+Partition Merge report for MIPS_System
+Thu Feb 22 13:55:58 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Partition Merge Summary                                                               ;
++------------------------------------+--------------------------------------------------+
+; Partition Merge Status             ; Successful - Thu Feb 22 13:55:58 2024            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; MIPS_System                                      ;
+; Top-level Entity Name              ; MIPS_System                                      ;
+; Family                             ; Cyclone II                                       ;
+; Total logic elements               ; 6,135                                            ;
+;     Total combinational functions  ; 3,288                                            ;
+;     Dedicated logic registers      ; 3,891                                            ;
+; Total registers                    ; 3891                                             ;
+; Total pins                         ; 106                                              ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 87,424                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 1                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                        ;
++--------------------------------------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------------------------------------------------------------+---------+
+; Name                                             ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                       ; Details ;
++--------------------------------------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------------------------------------------------------------+---------+
+; HEX0[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[0]                                                                                    ; N/A     ;
+; HEX0[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[0]                                                                                    ; N/A     ;
+; HEX0[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[1]                                                                                    ; N/A     ;
+; HEX0[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[1]                                                                                    ; N/A     ;
+; HEX0[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[2]                                                                                    ; N/A     ;
+; HEX0[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[2]                                                                                    ; N/A     ;
+; HEX0[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[3]                                                                                    ; N/A     ;
+; HEX0[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[3]                                                                                    ; N/A     ;
+; HEX0[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[4]                                                                                    ; N/A     ;
+; HEX0[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[4]                                                                                    ; N/A     ;
+; HEX0[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[5]                                                                                    ; N/A     ;
+; HEX0[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[5]                                                                                    ; N/A     ;
+; HEX0[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[6]                                                                                    ; N/A     ;
+; HEX0[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX0_R[6]                                                                                    ; N/A     ;
+; HEX1[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[0]                                                                                    ; N/A     ;
+; HEX1[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[0]                                                                                    ; N/A     ;
+; HEX1[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[1]                                                                                    ; N/A     ;
+; HEX1[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[1]                                                                                    ; N/A     ;
+; HEX1[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[2]                                                                                    ; N/A     ;
+; HEX1[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[2]                                                                                    ; N/A     ;
+; HEX1[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[3]                                                                                    ; N/A     ;
+; HEX1[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[3]                                                                                    ; N/A     ;
+; HEX1[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[4]                                                                                    ; N/A     ;
+; HEX1[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[4]                                                                                    ; N/A     ;
+; HEX1[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[5]                                                                                    ; N/A     ;
+; HEX1[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[5]                                                                                    ; N/A     ;
+; HEX1[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[6]                                                                                    ; N/A     ;
+; HEX1[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX1_R[6]                                                                                    ; N/A     ;
+; HEX2[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[0]                                                                                    ; N/A     ;
+; HEX2[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[0]                                                                                    ; N/A     ;
+; HEX2[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[1]                                                                                    ; N/A     ;
+; HEX2[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[1]                                                                                    ; N/A     ;
+; HEX2[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[2]                                                                                    ; N/A     ;
+; HEX2[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[2]                                                                                    ; N/A     ;
+; HEX2[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[3]                                                                                    ; N/A     ;
+; HEX2[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[3]                                                                                    ; N/A     ;
+; HEX2[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[4]                                                                                    ; N/A     ;
+; HEX2[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[4]                                                                                    ; N/A     ;
+; HEX2[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[5]                                                                                    ; N/A     ;
+; HEX2[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[5]                                                                                    ; N/A     ;
+; HEX2[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[6]                                                                                    ; N/A     ;
+; HEX2[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX2_R[6]                                                                                    ; N/A     ;
+; HEX3[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[0]                                                                                    ; N/A     ;
+; HEX3[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[0]                                                                                    ; N/A     ;
+; HEX3[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[1]                                                                                    ; N/A     ;
+; HEX3[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[1]                                                                                    ; N/A     ;
+; HEX3[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[2]                                                                                    ; N/A     ;
+; HEX3[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[2]                                                                                    ; N/A     ;
+; HEX3[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[3]                                                                                    ; N/A     ;
+; HEX3[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[3]                                                                                    ; N/A     ;
+; HEX3[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[4]                                                                                    ; N/A     ;
+; HEX3[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[4]                                                                                    ; N/A     ;
+; HEX3[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[5]                                                                                    ; N/A     ;
+; HEX3[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[5]                                                                                    ; N/A     ;
+; HEX3[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[6]                                                                                    ; N/A     ;
+; HEX3[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX3_R[6]                                                                                    ; N/A     ;
+; HEX4[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[0]                                                                                    ; N/A     ;
+; HEX4[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[0]                                                                                    ; N/A     ;
+; HEX4[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[1]                                                                                    ; N/A     ;
+; HEX4[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[1]                                                                                    ; N/A     ;
+; HEX4[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[2]                                                                                    ; N/A     ;
+; HEX4[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[2]                                                                                    ; N/A     ;
+; HEX4[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[3]                                                                                    ; N/A     ;
+; HEX4[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[3]                                                                                    ; N/A     ;
+; HEX4[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[4]                                                                                    ; N/A     ;
+; HEX4[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[4]                                                                                    ; N/A     ;
+; HEX4[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[5]                                                                                    ; N/A     ;
+; HEX4[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[5]                                                                                    ; N/A     ;
+; HEX4[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[6]                                                                                    ; N/A     ;
+; HEX4[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX4_R[6]                                                                                    ; N/A     ;
+; HEX5[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[0]                                                                                    ; N/A     ;
+; HEX5[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[0]                                                                                    ; N/A     ;
+; HEX5[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[1]                                                                                    ; N/A     ;
+; HEX5[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[1]                                                                                    ; N/A     ;
+; HEX5[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[2]                                                                                    ; N/A     ;
+; HEX5[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[2]                                                                                    ; N/A     ;
+; HEX5[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[3]                                                                                    ; N/A     ;
+; HEX5[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[3]                                                                                    ; N/A     ;
+; HEX5[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[4]                                                                                    ; N/A     ;
+; HEX5[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[4]                                                                                    ; N/A     ;
+; HEX5[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[5]                                                                                    ; N/A     ;
+; HEX5[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[5]                                                                                    ; N/A     ;
+; HEX5[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[6]                                                                                    ; N/A     ;
+; HEX5[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX5_R[6]                                                                                    ; N/A     ;
+; HEX6[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[0]                                                                                    ; N/A     ;
+; HEX6[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[0]                                                                                    ; N/A     ;
+; HEX6[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[1]                                                                                    ; N/A     ;
+; HEX6[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[1]                                                                                    ; N/A     ;
+; HEX6[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[2]                                                                                    ; N/A     ;
+; HEX6[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[2]                                                                                    ; N/A     ;
+; HEX6[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[3]                                                                                    ; N/A     ;
+; HEX6[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[3]                                                                                    ; N/A     ;
+; HEX6[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[4]                                                                                    ; N/A     ;
+; HEX6[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[4]                                                                                    ; N/A     ;
+; HEX6[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[5]                                                                                    ; N/A     ;
+; HEX6[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[5]                                                                                    ; N/A     ;
+; HEX6[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[6]                                                                                    ; N/A     ;
+; HEX6[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX6_R[6]                                                                                    ; N/A     ;
+; HEX7[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[0]                                                                                    ; N/A     ;
+; HEX7[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[0]                                                                                    ; N/A     ;
+; HEX7[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[1]                                                                                    ; N/A     ;
+; HEX7[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[1]                                                                                    ; N/A     ;
+; HEX7[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[2]                                                                                    ; N/A     ;
+; HEX7[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[2]                                                                                    ; N/A     ;
+; HEX7[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[3]                                                                                    ; N/A     ;
+; HEX7[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[3]                                                                                    ; N/A     ;
+; HEX7[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[4]                                                                                    ; N/A     ;
+; HEX7[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[4]                                                                                    ; N/A     ;
+; HEX7[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[5]                                                                                    ; N/A     ;
+; HEX7[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[5]                                                                                    ; N/A     ;
+; HEX7[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[6]                                                                                    ; N/A     ;
+; HEX7[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|HEX7_R[6]                                                                                    ; N/A     ;
+; LEDR[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[0]                                                                                    ; N/A     ;
+; LEDR[0]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[0]                                                                                    ; N/A     ;
+; LEDR[10]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[10]                                                                                   ; N/A     ;
+; LEDR[10]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[10]                                                                                   ; N/A     ;
+; LEDR[11]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[11]                                                                                   ; N/A     ;
+; LEDR[11]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[11]                                                                                   ; N/A     ;
+; LEDR[12]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[12]                                                                                   ; N/A     ;
+; LEDR[12]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[12]                                                                                   ; N/A     ;
+; LEDR[13]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[13]                                                                                   ; N/A     ;
+; LEDR[13]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[13]                                                                                   ; N/A     ;
+; LEDR[14]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[14]                                                                                   ; N/A     ;
+; LEDR[14]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[14]                                                                                   ; N/A     ;
+; LEDR[15]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[15]                                                                                   ; N/A     ;
+; LEDR[15]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[15]                                                                                   ; N/A     ;
+; LEDR[16]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[16]                                                                                   ; N/A     ;
+; LEDR[16]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[16]                                                                                   ; N/A     ;
+; LEDR[17]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[17]                                                                                   ; N/A     ;
+; LEDR[17]                                         ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[17]                                                                                   ; N/A     ;
+; LEDR[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[1]                                                                                    ; N/A     ;
+; LEDR[1]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[1]                                                                                    ; N/A     ;
+; LEDR[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[2]                                                                                    ; N/A     ;
+; LEDR[2]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[2]                                                                                    ; N/A     ;
+; LEDR[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[3]                                                                                    ; N/A     ;
+; LEDR[3]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[3]                                                                                    ; N/A     ;
+; LEDR[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[4]                                                                                    ; N/A     ;
+; LEDR[4]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[4]                                                                                    ; N/A     ;
+; LEDR[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[5]                                                                                    ; N/A     ;
+; LEDR[5]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[5]                                                                                    ; N/A     ;
+; LEDR[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[6]                                                                                    ; N/A     ;
+; LEDR[6]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[6]                                                                                    ; N/A     ;
+; LEDR[7]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[7]                                                                                    ; N/A     ;
+; LEDR[7]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[7]                                                                                    ; N/A     ;
+; LEDR[8]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[8]                                                                                    ; N/A     ;
+; LEDR[8]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[8]                                                                                    ; N/A     ;
+; LEDR[9]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[9]                                                                                    ; N/A     ;
+; LEDR[9]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GPIO:uGPIO|LEDR_R[9]                                                                                    ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[0]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux31~2                                                               ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[0]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux31~2                                                               ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[10]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux21                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[10]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux21                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[11]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux20                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[11]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux20                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[12]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux19                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[12]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux19                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[13]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux18                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[13]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux18                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[14]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux17                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[14]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux17                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[15]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux16                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[15]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux16                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[16]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux15                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[16]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux15                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[17]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux14                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[17]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux14                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[18]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux13                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[18]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux13                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[19]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux12                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[19]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux12                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[1]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux30                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[1]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux30                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[20]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux11                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[20]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux11                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[21]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux10                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[21]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux10                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[22]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux9                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[22]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux9                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[23]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux8                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[23]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux8                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[24]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux7                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[24]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux7                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[25]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux6                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[25]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux6                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[26]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux5                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[26]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux5                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[27]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux4                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[27]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux4                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[28]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux3                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[28]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux3                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[29]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux2                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[29]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux2                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[2]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux29                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[2]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux29                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[30]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux1                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[30]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux1                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[31]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux0                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[31]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux0                                                                  ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[3]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux28                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[3]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux28                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[4]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux27                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[4]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux27                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[5]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux26                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[5]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux26                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[6]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux25                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[6]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux25                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[7]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux24                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[7]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux24                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[8]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux23                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[8]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux23                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[9]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux22                                                                 ; N/A     ;
+; mips:mips_cpu|datapath:dp|aluout[9]              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|alu:alu|Mux22                                                                 ; N/A     ;
+; mips:mips_cpu|instr[0]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[0]  ; N/A     ;
+; mips:mips_cpu|instr[0]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[0]  ; N/A     ;
+; mips:mips_cpu|instr[10]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[10] ; N/A     ;
+; mips:mips_cpu|instr[10]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[10] ; N/A     ;
+; mips:mips_cpu|instr[11]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[11] ; N/A     ;
+; mips:mips_cpu|instr[11]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[11] ; N/A     ;
+; mips:mips_cpu|instr[12]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[12] ; N/A     ;
+; mips:mips_cpu|instr[12]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[12] ; N/A     ;
+; mips:mips_cpu|instr[13]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[13] ; N/A     ;
+; mips:mips_cpu|instr[13]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[13] ; N/A     ;
+; mips:mips_cpu|instr[14]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[14] ; N/A     ;
+; mips:mips_cpu|instr[14]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[14] ; N/A     ;
+; mips:mips_cpu|instr[15]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[15] ; N/A     ;
+; mips:mips_cpu|instr[15]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[15] ; N/A     ;
+; mips:mips_cpu|instr[16]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[16] ; N/A     ;
+; mips:mips_cpu|instr[16]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[16] ; N/A     ;
+; mips:mips_cpu|instr[17]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[17] ; N/A     ;
+; mips:mips_cpu|instr[17]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[17] ; N/A     ;
+; mips:mips_cpu|instr[18]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[18] ; N/A     ;
+; mips:mips_cpu|instr[18]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[18] ; N/A     ;
+; mips:mips_cpu|instr[19]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[19] ; N/A     ;
+; mips:mips_cpu|instr[19]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[19] ; N/A     ;
+; mips:mips_cpu|instr[1]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[1]  ; N/A     ;
+; mips:mips_cpu|instr[1]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[1]  ; N/A     ;
+; mips:mips_cpu|instr[20]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[20] ; N/A     ;
+; mips:mips_cpu|instr[20]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[20] ; N/A     ;
+; mips:mips_cpu|instr[21]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[21] ; N/A     ;
+; mips:mips_cpu|instr[21]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[21] ; N/A     ;
+; mips:mips_cpu|instr[22]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[22] ; N/A     ;
+; mips:mips_cpu|instr[22]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[22] ; N/A     ;
+; mips:mips_cpu|instr[23]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[23] ; N/A     ;
+; mips:mips_cpu|instr[23]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[23] ; N/A     ;
+; mips:mips_cpu|instr[24]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[24] ; N/A     ;
+; mips:mips_cpu|instr[24]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[24] ; N/A     ;
+; mips:mips_cpu|instr[25]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[25] ; N/A     ;
+; mips:mips_cpu|instr[25]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[25] ; N/A     ;
+; mips:mips_cpu|instr[26]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[26] ; N/A     ;
+; mips:mips_cpu|instr[26]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[26] ; N/A     ;
+; mips:mips_cpu|instr[27]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[27] ; N/A     ;
+; mips:mips_cpu|instr[27]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[27] ; N/A     ;
+; mips:mips_cpu|instr[28]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[28] ; N/A     ;
+; mips:mips_cpu|instr[28]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[28] ; N/A     ;
+; mips:mips_cpu|instr[29]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[29] ; N/A     ;
+; mips:mips_cpu|instr[29]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[29] ; N/A     ;
+; mips:mips_cpu|instr[2]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[2]  ; N/A     ;
+; mips:mips_cpu|instr[2]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[2]  ; N/A     ;
+; mips:mips_cpu|instr[30]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[30] ; N/A     ;
+; mips:mips_cpu|instr[30]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[30] ; N/A     ;
+; mips:mips_cpu|instr[31]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[31] ; N/A     ;
+; mips:mips_cpu|instr[31]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[31] ; N/A     ;
+; mips:mips_cpu|instr[3]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[3]  ; N/A     ;
+; mips:mips_cpu|instr[3]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[3]  ; N/A     ;
+; mips:mips_cpu|instr[4]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[4]  ; N/A     ;
+; mips:mips_cpu|instr[4]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[4]  ; N/A     ;
+; mips:mips_cpu|instr[5]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[5]  ; N/A     ;
+; mips:mips_cpu|instr[5]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[5]  ; N/A     ;
+; mips:mips_cpu|instr[6]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[6]  ; N/A     ;
+; mips:mips_cpu|instr[6]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[6]  ; N/A     ;
+; mips:mips_cpu|instr[7]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[7]  ; N/A     ;
+; mips:mips_cpu|instr[7]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[7]  ; N/A     ;
+; mips:mips_cpu|instr[8]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[8]  ; N/A     ;
+; mips:mips_cpu|instr[8]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[8]  ; N/A     ;
+; mips:mips_cpu|instr[9]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[9]  ; N/A     ;
+; mips:mips_cpu|instr[9]                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|q_a[9]  ; N/A     ;
+; mips:mips_cpu|pc[0]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GND                                                                                                     ; N/A     ;
+; mips:mips_cpu|pc[0]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GND                                                                                                     ; N/A     ;
+; mips:mips_cpu|pc[10]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[10]                                                             ; N/A     ;
+; mips:mips_cpu|pc[10]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[10]                                                             ; N/A     ;
+; mips:mips_cpu|pc[11]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[11]                                                             ; N/A     ;
+; mips:mips_cpu|pc[11]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[11]                                                             ; N/A     ;
+; mips:mips_cpu|pc[12]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[12]                                                             ; N/A     ;
+; mips:mips_cpu|pc[12]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[12]                                                             ; N/A     ;
+; mips:mips_cpu|pc[13]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[13]                                                             ; N/A     ;
+; mips:mips_cpu|pc[13]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[13]                                                             ; N/A     ;
+; mips:mips_cpu|pc[14]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[14]                                                             ; N/A     ;
+; mips:mips_cpu|pc[14]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[14]                                                             ; N/A     ;
+; mips:mips_cpu|pc[15]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[15]                                                             ; N/A     ;
+; mips:mips_cpu|pc[15]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[15]                                                             ; N/A     ;
+; mips:mips_cpu|pc[16]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[16]                                                             ; N/A     ;
+; mips:mips_cpu|pc[16]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[16]                                                             ; N/A     ;
+; mips:mips_cpu|pc[17]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[17]                                                             ; N/A     ;
+; mips:mips_cpu|pc[17]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[17]                                                             ; N/A     ;
+; mips:mips_cpu|pc[18]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[18]                                                             ; N/A     ;
+; mips:mips_cpu|pc[18]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[18]                                                             ; N/A     ;
+; mips:mips_cpu|pc[19]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[19]                                                             ; N/A     ;
+; mips:mips_cpu|pc[19]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[19]                                                             ; N/A     ;
+; mips:mips_cpu|pc[1]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GND                                                                                                     ; N/A     ;
+; mips:mips_cpu|pc[1]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; GND                                                                                                     ; N/A     ;
+; mips:mips_cpu|pc[20]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[20]                                                             ; N/A     ;
+; mips:mips_cpu|pc[20]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[20]                                                             ; N/A     ;
+; mips:mips_cpu|pc[21]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[21]                                                             ; N/A     ;
+; mips:mips_cpu|pc[21]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[21]                                                             ; N/A     ;
+; mips:mips_cpu|pc[22]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[22]                                                             ; N/A     ;
+; mips:mips_cpu|pc[22]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[22]                                                             ; N/A     ;
+; mips:mips_cpu|pc[23]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[23]                                                             ; N/A     ;
+; mips:mips_cpu|pc[23]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[23]                                                             ; N/A     ;
+; mips:mips_cpu|pc[24]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[24]                                                             ; N/A     ;
+; mips:mips_cpu|pc[24]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[24]                                                             ; N/A     ;
+; mips:mips_cpu|pc[25]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[25]                                                             ; N/A     ;
+; mips:mips_cpu|pc[25]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[25]                                                             ; N/A     ;
+; mips:mips_cpu|pc[26]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[26]                                                             ; N/A     ;
+; mips:mips_cpu|pc[26]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[26]                                                             ; N/A     ;
+; mips:mips_cpu|pc[27]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[27]                                                             ; N/A     ;
+; mips:mips_cpu|pc[27]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[27]                                                             ; N/A     ;
+; mips:mips_cpu|pc[28]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[28]                                                             ; N/A     ;
+; mips:mips_cpu|pc[28]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[28]                                                             ; N/A     ;
+; mips:mips_cpu|pc[29]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[29]                                                             ; N/A     ;
+; mips:mips_cpu|pc[29]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[29]                                                             ; N/A     ;
+; mips:mips_cpu|pc[2]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[2]                                                              ; N/A     ;
+; mips:mips_cpu|pc[2]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[2]                                                              ; N/A     ;
+; mips:mips_cpu|pc[30]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[30]                                                             ; N/A     ;
+; mips:mips_cpu|pc[30]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[30]                                                             ; N/A     ;
+; mips:mips_cpu|pc[31]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[31]                                                             ; N/A     ;
+; mips:mips_cpu|pc[31]                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[31]                                                             ; N/A     ;
+; mips:mips_cpu|pc[3]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[3]                                                              ; N/A     ;
+; mips:mips_cpu|pc[3]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[3]                                                              ; N/A     ;
+; mips:mips_cpu|pc[4]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[4]                                                              ; N/A     ;
+; mips:mips_cpu|pc[4]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[4]                                                              ; N/A     ;
+; mips:mips_cpu|pc[5]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[5]                                                              ; N/A     ;
+; mips:mips_cpu|pc[5]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[5]                                                              ; N/A     ;
+; mips:mips_cpu|pc[6]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[6]                                                              ; N/A     ;
+; mips:mips_cpu|pc[6]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[6]                                                              ; N/A     ;
+; mips:mips_cpu|pc[7]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[7]                                                              ; N/A     ;
+; mips:mips_cpu|pc[7]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[7]                                                              ; N/A     ;
+; mips:mips_cpu|pc[8]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[8]                                                              ; N/A     ;
+; mips:mips_cpu|pc[8]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[8]                                                              ; N/A     ;
+; mips:mips_cpu|pc[9]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[9]                                                              ; N/A     ;
+; mips:mips_cpu|pc[9]                              ; pre-synthesis ; connected ; Top            ; post-synthesis    ; mips:mips_cpu|datapath:dp|flopr:pcreg|q[9]                                                              ; N/A     ;
+; ALTPLL_clkgen:pll0|altpll:altpll_component|_clk0 ; post-fitting  ; connected ; Top            ; post-synthesis    ; ALTPLL_clkgen:pll0|altpll:altpll_component|_clk0                                                        ; N/A     ;
+; KEY[0]                                           ; post-fitting  ; connected ; Top            ; post-synthesis    ; KEY[0]                                                                                                  ; N/A     ;
+; KEY[0]                                           ; post-fitting  ; connected ; Top            ; post-synthesis    ; KEY[0]                                                                                                  ; N/A     ;
++--------------------------------------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                     ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top   ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 3451  ; 144              ; 2573                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total combinational functions               ; 2394  ; 120              ; 774                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;       ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 1735  ; 52               ; 499                            ; 0                              ;
+;     -- 3 input functions                    ; 497   ; 32               ; 216                            ; 0                              ;
+;     -- <=2 input functions                  ; 162   ; 36               ; 59                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Logic elements by mode                      ;       ;                  ;                                ;                                ;
+;     -- normal mode                          ; 2273  ; 112              ; 736                            ; 0                              ;
+;     -- arithmetic mode                      ; 121   ; 8                ; 38                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total registers                             ; 1539  ; 86               ; 2266                           ; 0                              ;
+;     -- Dedicated logic registers            ; 1539  ; 86               ; 2266                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Virtual pins                                ; 0     ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 106   ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0     ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 65536 ; 0                ; 21888                          ; 0                              ;
+; Total RAM block bits                        ; 0     ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1     ; 0                ; 0                              ; 0                              ;
+; PLL                                         ; 0     ; 0                ; 0                              ; 1                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Connections                                 ;       ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 1605  ; 128              ; 3237                           ; 1                              ;
+;     -- Registered Input Connections         ; 1539  ; 97               ; 2626                           ; 0                              ;
+;     -- Output Connections                   ; 1434  ; 292              ; 2                              ; 3243                           ;
+;     -- Registered Output Connections        ; 208   ; 291              ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Internal Connections                        ;       ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 15504 ; 943              ; 12178                          ; 3244                           ;
+;     -- Registered Connections               ; 5175  ; 724              ; 9595                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; External Connections                        ;       ;                  ;                                ;                                ;
+;     -- Top                                  ; 0     ; 119              ; 1315                           ; 1605                           ;
+;     -- sld_hub:auto_hub                     ; 119   ; 16               ; 285                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 1315  ; 285              ; 0                              ; 1639                           ;
+;     -- hard_block:auto_generated_inst       ; 1605  ; 0                ; 1639                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Partition Interface                         ;       ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 26    ; 19               ; 399                            ; 1                              ;
+;     -- Output Ports                         ; 180   ; 37               ; 352                            ; 4                              ;
+;     -- Bidir Ports                          ; 0     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Registered Ports                            ;       ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0     ; 4                ; 347                            ; 0                              ;
+;     -- Registered Output Ports              ; 0     ; 26               ; 343                            ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Port Connectivity                           ;       ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0     ; 1                ; 4                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0     ; 1                ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0     ; 1                ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0     ; 2                ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0     ; 15               ; 343                            ; 0                              ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++------------------------------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                                         ;
++---------------------------------------------+--------------------------------------------------+
+; Resource                                    ; Usage                                            ;
++---------------------------------------------+--------------------------------------------------+
+; Estimated Total logic elements              ; 6,135                                            ;
+;                                             ;                                                  ;
+; Total combinational functions               ; 3288                                             ;
+; Logic element usage by number of LUT inputs ;                                                  ;
+;     -- 4 input functions                    ; 2286                                             ;
+;     -- 3 input functions                    ; 745                                              ;
+;     -- <=2 input functions                  ; 257                                              ;
+;                                             ;                                                  ;
+; Logic elements by mode                      ;                                                  ;
+;     -- normal mode                          ; 3121                                             ;
+;     -- arithmetic mode                      ; 167                                              ;
+;                                             ;                                                  ;
+; Total registers                             ; 3891                                             ;
+;     -- Dedicated logic registers            ; 3891                                             ;
+;     -- I/O registers                        ; 0                                                ;
+;                                             ;                                                  ;
+; I/O pins                                    ; 106                                              ;
+; Total memory bits                           ; 87424                                            ;
+; Embedded Multiplier 9-bit elements          ; 0                                                ;
+; Total PLLs                                  ; 1                                                ;
+;     -- PLLs                                 ; 1                                                ;
+;                                             ;                                                  ;
+; Maximum fan-out node                        ; ALTPLL_clkgen:pll0|altpll:altpll_component|_clk0 ;
+; Maximum fan-out                             ; 3211                                             ;
+; Total fan-out                               ; 26691                                            ;
+; Average fan-out                             ; 3.56                                             ;
++---------------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                          ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+----------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF            ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+----------------+
+; ram2port_inst_data:Inst_Data_Mem|altsyncram:altsyncram_component|altsyncram_i9b2:auto_generated|ALTSYNCRAM                                                                                            ; AUTO ; True Dual Port   ; 2048         ; 32           ; 2048         ; 32           ; 65536 ; insts_data.mif ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_0t14:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 171          ; 128          ; 171          ; 21888 ; None           ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+----------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Feb 22 13:55:55 2024
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off MIPS_System -c MIPS_System --merge=on
+Warning (35010): Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
+    Info (35011): Set the option to Ignore source file changes to force the Quartus II software to always use a previously generated Fitter netlist
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 343 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 6540 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 26 input pins
+    Info (21059): Implemented 84 output pins
+    Info (21061): Implemented 6225 logic cells
+    Info (21064): Implemented 203 RAM segments
+    Info (21065): Implemented 1 PLLs
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4658 megabytes
+    Info: Processing ended: Thu Feb 22 13:55:58 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

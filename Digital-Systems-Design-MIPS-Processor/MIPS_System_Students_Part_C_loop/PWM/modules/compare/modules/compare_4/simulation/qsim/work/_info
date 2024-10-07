@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dM:\ELEC473\Assignment3\MIPS_System_Students_Part_C\PWM\modules\compare\modules\compare_4\simulation\qsim
+vcompare_4
+Z1 !s100 noSVZU6^@^QMkP3>21PRT0
+Z2 I7l=8LzHI>gmd1d5GLoP6U2
+Z3 VHQRM0e@1=<eWJke<eEedl2
+Z4 dM:\ELEC473\Assignment3\MIPS_System_Students_Part_C\PWM\modules\compare\modules\compare_4\simulation\qsim
+Z5 w1710249358
+Z6 8compare_4.vo
+Z7 Fcompare_4.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|compare_4.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1710249355.613000
+Z12 !s107 compare_4.vo|
+!s101 -O0
+vcompare_4_vlg_check_tst
+!i10b 1
+Z13 !s100 AlegX2X@RIf9milR7eHB51
+Z14 IR>]CH93o;QjZUC`ECdjao0
+Z15 V`bj:6Zo?3fKLA``H1YQTB1
+R4
+Z16 w1710249357
+Z17 8compare_4.vt
+Z18 Fcompare_4.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1710249355.977000
+Z20 !s107 compare_4.vt|
+Z21 !s90 -work|work|compare_4.vt|
+!s101 -O0
+R10
+vcompare_4_vlg_sample_tst
+!i10b 1
+Z22 !s100 Ec?MP>MZiJ;of1RI<zcK91
+Z23 I7hZ1:CK4Z?CeSA:UEFTSA2
+Z24 V0C9j@J;_O;D>988>S6fZ>1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vcompare_4_vlg_vec_tst
+!i10b 1
+!s100 ;;`_knXb@ZC3ZVShnga7e1
+I]PVElgm`4146Gg9BbDTh[3
+Z25 Vn3X022YRoW;0:4dc9g1U[0
+R4
+R16
+R17
+R18
+Z26 L0 208
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
