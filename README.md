@@ -14,7 +14,7 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
      - Feature 1: Determining the ideal parameters for producing LIG from PI involves optimizing laser power, scanning speed, and sensor patterns.
      - Feature 2: Identifying the optimal substrate for the LIG sensor involves evaluating various materials such as PI film, polyurethane (PU) tape, protection tape, bandage, and polyethylene (PE) nonwoven tape. The goal is to select a substrate that exhibits mechanical and electrical properties suitable for biomedical sensing applications.
      - Feature 3: Developing the capability for the strain sensor to detect physiological signals such as arterial pulse and human motion (finger bending, hand gripping, elbow bending) is the primary goal. If feasible, the sensor will also be designed to study other signals, including electrocardiography (ECG).
-   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/MSc-Project-Laser-induced-graphene-based-wearable-sensors-for-health-monitoring/MScProject_Final_Report.pdf)
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/MSc-Project-Laser-induced-graphene-based-wearable-sensors-for-health-monitoring/blob/main/MScProject_Final_Report.pdf)
  
   ---
      
