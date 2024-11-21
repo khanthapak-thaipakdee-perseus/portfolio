@@ -61,6 +61,20 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
      - Part 1: Write a MIPS assembly language program to display the last 8 digits of the student’s university ID on the 7-segment displays of the DE2 board.
      - Part 2: Extend the MIPS processor by implementing additional instructions: XOR, XORI, and LBU.
      - Part 3: Include a PWM unit to drive an LED.
-   - **Repository**: [View Code-PartA](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_A) [View Code-PartB](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_B) [View Code-PartC](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_C_loop)
-   - **Report**: [Download Report]([https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Real-Time-Operating-System-Implementation-on-FRDM-K64F/blob/main/Microprocessor-Systems-Assignment-3-Report.pdf](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/blob/main/MIPS-Processor-Report.pdf)
+   - **Repository**: [View Code-PartA](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_A)   [View Code-PartB](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_B)   [View Code-PartC](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_C_loop)
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/blob/main/MIPS-Processor-Report.pdf)
 
+  ---
+  
+### 6. [Microprocessor Programming with MBED and Kinetis SDK on FRDM-K64F](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Microprocessor-Programming-with-MBED-and-Kinetis-SDK-on-FRDM-K64F)
+   - **Description**: This project enhances embedded systems programming on the FRDM-K64F using MBED. It involves displaying the user’s name and ID on an LCD, implementing square root subroutines with and without the FPU, and using KSDK to read ADC values from Pot 1 and Pot 2, transmitting data to a PC via serial communication.
+   - **Date**: Feb 2024 – Mar 2024
+   - **Tech Stack**: Keil µVision
+   - **Parts**:
+     - Part 1: Write a program that interacts with the Application Shield to display the user's name and ID on an LCD screen. The program also allows incrementing or decrementing a displayed number using cursor keys.
+     - Part 2: Develope assembly language programming for the Cortex M4 processor by implementing two subroutines to calculate the square root of a positive integer. One subroutine utilizes the Floating-Point Unit (FPU), while the other does not.
+     - Part 3:Focus on reading values from the analog-to-digital converter (ADC) inputs connected to Pot 1 and Pot 2 on the Application Shield. These values are then transmitted to a PC via the serial port for display in a terminal program. Pot 1's value is sampled at a user-defined rate, while Pot 2's value is sampled when the joystick up button is pressed. This approach emphasizes the use of Freescale libraries to ensure efficient peripheral access and communication in embedded systems development.
+   - **Repository**: [View Code-PartA&B](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Microprocessor-Programming-with-MBED-and-Kinetis-SDK-on-FRDM-K64F/tree/main/microprocessor-systems-1-part-a-b)   [View Code-PartC](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Microprocessor-Programming-with-MBED-and-Kinetis-SDK-on-FRDM-K64F/tree/main/microprocessor-systems-1-part-c)
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Microprocessor-Programming-with-MBED-and-Kinetis-SDK-on-FRDM-K64F/blob/main/Microprocessor-Systems-Assignment-1-Report.pdf)
+   - **Screenshots**:
+     ![Screenshot](assets/images/project-screenshot.png)
