@@ -128,3 +128,57 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
    - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Control-Systems-Event-Driven-PID-Control/blob/main/PID-DC-Servo-Control-%26-MRAC-Simulink-Report.pdf)
    - **Screenshots**:
      ![Screenshot](assets/images/project-screenshot.png)
+
+---
+  
+### 11. [Design and Develop Shell Script to Receive Temperature and Humidity Using MQTT Protocol](https://github.com/khanthapak-thaipakdee-perseus/IOT-1-Design-and-Develop-Shell-Script-to-Receive-Temperature-and-Humidity-Using-MQTT-Protocol)
+   - **Description**: In this assignment, an IoT solution based on M2M communications was designed and developed using the MQTT protocol. This solution enables an MQTT subscriber to independently acquire information from an MQTT publisher via an MQTT broker. The message comprised temperature and humidity values from the DHT11 sensor module. A shell script was created using shell commands to ensure that the program completed all tasks in the assignment and to prevent users from executing the program with invalid inputs.
+   - **Date**: Oct 2023 - Nov 2023
+   - **Tech Stack**: MobaXTerm
+   - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/IOT-1-Design-and-Develop-Shell-Script-to-Receive-Temperature-and-Humidity-Using-MQTT-Protocol/blob/main/launcher.sh)
+   - **Report**: [Download Report]()
+   - **Screenshots**:
+     ![Screenshot](assets/images/project-screenshot.png)
+
+---
+  
+### 12. [BEng Research Project: Design and Development of Application for managing diabetes : mobile and web applications]()
+   - **Description**: My thesis project is developing software for tracking diabetes patients by collecting data and encouraging them to improve their lifestyle. This project is divided into 2 parts; mobile application for patients and web application for medical staff which data is linked by database. Mobile application was designed by systemic data structure and proper software engineering tools for cross-platform application. Mobile application has 5 features which are 1 input process and 4 output processes. One of the features that added on the input process is image classification section that satisfy user to classify cuisine name.
+   - **Date**: Sep 2020 - May 2021
+   - **Tech Stack**: Python
+   - **Repository**: [View Code]()
+   - **Report**: [Download Report]()
+   - **Screenshots**:
+     ![Screenshot](assets/images/project-screenshot.png)
+
+---
+  
+### 13. [PID Simulink: Design Simulation]()
+   - **Description**: Designed lag-lead compensated systems and analogue circuits by Root-Locus method and the frequency response approach and applying Ziegler-Nichols rules for PID controller tuning.
+   - **Date**: Mar 2020 - May 2020
+   - **Tech Stack**: MATLAB
+   - **Repository**: [View Code]()
+   - **Report**: [Download Report]()
+
+---
+  
+### 14. [Non-Invasive Blood Pressure Monitoring Device with Mobile Application]()
+   - **Description**: Developed non-invasive blood pressure monitoring device which consists of pump, valves, sensors and electronic components. 
+      - Designed and developed controller part which is RTOS system using ESP32.
+      - Launched its mobile application which can received blood pressures through Bluetooth and had its clouding system to store data.
+   - **Date**: Sep 2019 - Nov 2019
+   - **Tech Stack**: Arduino IDE
+   - **Repository**: [View Code]()
+   - **Report**: [Download Report]()
+
+---
+  
+### 15. [Electrocardiogram(ECG) and Phonocardiogram(PCG) Monitoring Device]()
+   - **Description**: Developed ECG and PCG Monitoring Device. 
+      - Designed analogue circuits with TL064 operational amplifiers.
+      - Drew and designed a PCB Schematic.
+     - Displayed signals on an oscilloscope and a computer using MATLAB interface.
+   - **Date**: Feb 2019 - Apr 2019
+   - **Tech Stack**: Proteus, MATLAB
+   - **Repository**: [View Code]()
+   - **Report**: [Download Report]()
