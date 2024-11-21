@@ -78,3 +78,53 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
    - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Microprocessor-Programming-with-MBED-and-Kinetis-SDK-on-FRDM-K64F/blob/main/Microprocessor-Systems-Assignment-1-Report.pdf)
    - **Screenshots**:
      ![Screenshot](assets/images/project-screenshot.png)
+     
+  ---
+  
+### 7. [Design and Implementation of Serial Communications Using Verilog](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-Verilog-Serial-Communications)
+   - **Description**: This project focuses on designing UART and IR communication systems in Verilog on the DE2 board, utilizing the RS232 interface. UART, a crucial component in serial communication, is implemented using Verilog to manage tasks such as data transmission, reception, and precise timing. Key components like counters, shift registers, baud rate generators, RX-TX controllers, and a 7-segment display are employed to ensure seamless data transfer between the DE2 board and external devices, with the 7-segment display used for both sending and receiving parts to verify the accuracy of the results. Additionally, IR communication is integrated using the HSDL-3201 module for wireless transmission, enhancing the system's versatility. The project also includes parity check and framing error detection, which are displayed using LEDs on the DE2 board, ensuring robust error handling and communication reliability. The system is tested and validated using terminal software like "Putty" to display transmitted ASCII values.
+   - **Date**: Dec 2023 - Feb 2024
+   - **Tech Stack**: Altera Quartus II
+   - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-Verilog-Serial-Communications/tree/main/code)
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-Verilog-Serial-Communications/blob/main/Digital-Systems-Design-Verilog-Serial-Communications-Report.pdf)
+   - **Screenshots**:
+     ![Screenshot](assets/images/project-screenshot.png)
+
+  ---
+  
+### 8. [Design-and-Implementation-of-LoRaWAN-Based-IOT-Application](https://github.com/khanthapak-thaipakdee-perseus/IOT-2-Design-and-Implementation-of-LoRaWAN-Based-IOT-Application)
+   - **Description**: In this assignment, an IoT solution will be crafted using the IoT kit with Raspberry Pi OS. The emphasis lies in employing the LoRa physical layer protocol for long-distance communication, alongside the LoRaWAN protocol executed by TTN. The chosen activation method is ABP, ensuring a secure activation process. Messages will be formatted using Cayenne LPP for efficient sensor data encapsulation. This IoT solution will seamlessly transmit temperature and humidity values from the DHT11 sensor module, along with a specific numerical output, over the LoRaWAN network.
+   - **Date**: Nov 2023 - Dec 2023
+   - **Tech Stack**: MobaXTerm
+   - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/IOT-2-Design-and-Implementation-of-LoRaWAN-Based-IOT-Application/blob/main/IOT_Prototype_tx_rx_assignment2.py)
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/IOT-2-Design-and-Implementation-of-LoRaWAN-Based-IOT-Application/blob/main/IOT_2_IOT_Prototype_Report.pdf)
+   - **Screenshots**:
+     ![Screenshot](assets/images/project-screenshot.png)
+
+---
+  
+### 9. [MATLAB Graphic User Interface (GUI) of electrical data](https://github.com/khanthapak-thaipakdee-perseus/MATLAB-GUI)
+   - **Description**: In this assignment, it is imperative to develop a MATLAB GUI program designed to extract coordinate values from a text file and perform the necessary processing.
+   - **Date**: Oct 2023 - Dec 2023
+   - **Tech Stack**: MATLAB
+   - **Features**:
+     - Feature 1: Prompt the user to specify the file name from which the data will be retrieved.
+     - Feature 2: Graphically represent two time-resolved electrical signals, namely the high voltage signal "Uapp" extracted from the "Uapp.txt" file and the charge "Q," extracted from the "Uc.txt" with the x-axis and y-axis.
+     - Feature 3: Calculate various parameters for both signals, including peak-to-peak amplitude, root mean square (RMS) value, frequency, minimum value, and maximum value.
+     - Feature 4: Illustrate the Lissajous figure (Q-U) and apply a smoothing operation.
+     - Feature 5: Compute and present the discharge power.
+   - **Repository**: [View Code]()
+   - **Report**: [Download Report]()
+   - **Screenshots**:
+     ![Screenshot](assets/images/project-screenshot.png)
+
+---
+  
+### 10. [System Event-Driven PID Control for DC Servo Drive & Model Reference Adaptive Control in a DC Electrical Drive](https://github.com/khanthapak-thaipakdee-perseus/Control-Systems-Event-Driven-PID-Control)
+   - **Description**: This project involves designing MATLAB+SIMULINK programs. Part A focuses on simulating a robotic system for picking and dropping chocolate boxes, including PID tuning, random event handling, and continuous PID control. Part B uses MATLAB+SIMULINK to verify the controller, adjust the adaptation gain (𝛾), and compare Lyapunov and MIT MRAC models to assess their advantages and disadvantages.
+   - **Date**: Oct 2023 - Dec 2023
+   - **Tech Stack**: MATLAB, Simulink
+   - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/Control-Systems-Event-Driven-PID-Control/blob/main/Control-Systems-Part-1/Assignment_1_full_system.slx)
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Control-Systems-Event-Driven-PID-Control/blob/main/PID-DC-Servo-Control-%26-MRAC-Simulink-Report.pdf)
+   - **Screenshots**:
+     ![Screenshot](assets/images/project-screenshot.png)
