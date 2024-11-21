@@ -61,8 +61,6 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
      - Part 1: Write a MIPS assembly language program to display the last 8 digits of the student’s university ID on the 7-segment displays of the DE2 board.
      - Part 2: Extend the MIPS processor by implementing additional instructions: XOR, XORI, and LBU.
      - Part 3: Include a PWM unit to drive an LED.
-   - **Repository**: [View Code-PartA](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_A)
-   - [View Code-PartB](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_B)
-   - [View Code-PartC](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_C_loop)
+   - **Repository**: [View Code-PartA](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_A) [View Code-PartB](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_B) [View Code-PartC](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/tree/main/MIPS_System_Students_Part_C_loop)
    - **Report**: [Download Report]([https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Real-Time-Operating-System-Implementation-on-FRDM-K64F/blob/main/Microprocessor-Systems-Assignment-3-Report.pdf](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-MIPS-Processor/blob/main/MIPS-Processor-Report.pdf)
 
