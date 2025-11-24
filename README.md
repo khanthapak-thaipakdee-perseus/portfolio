@@ -41,7 +41,7 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
    - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Real-Time-Operating-System-Implementation-on-FRDM-K64F/tree/main/code)
    - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Real-Time-Operating-System-Implementation-on-FRDM-K64F/blob/main/Microprocessor-Systems-Assignment-3-Report.pdf)
    - **Screenshots**:
-     ![Screenshot](assets/images/project-screenshot.png)
+   
 
   ---
      
@@ -77,7 +77,7 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
    - **Repository**: [View Code-PartA&B](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Microprocessor-Programming-with-MBED-and-Kinetis-SDK-on-FRDM-K64F/tree/main/microprocessor-systems-1-part-a-b)   [View Code-PartC](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Microprocessor-Programming-with-MBED-and-Kinetis-SDK-on-FRDM-K64F/tree/main/microprocessor-systems-1-part-c)
    - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Microprocessor-Programming-with-MBED-and-Kinetis-SDK-on-FRDM-K64F/blob/main/Microprocessor-Systems-Assignment-1-Report.pdf)
    - **Screenshots**:
-     ![Screenshot](assets/images/project-screenshot.png)
+   
      
   ---
   
@@ -88,7 +88,7 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
    - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-Verilog-Serial-Communications/tree/main/code)
    - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Digital-System-Design-Verilog-Serial-Communications/blob/main/Digital-Systems-Design-Verilog-Serial-Communications-Report.pdf)
    - **Screenshots**:
-     ![Screenshot](assets/images/project-screenshot.png)
+ 
 
   ---
   
@@ -99,7 +99,7 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
    - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/IOT-2-Design-and-Implementation-of-LoRaWAN-Based-IOT-Application/blob/main/IOT_Prototype_tx_rx_assignment2.py)
    - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/IOT-2-Design-and-Implementation-of-LoRaWAN-Based-IOT-Application/blob/main/IOT_2_IOT_Prototype_Report.pdf)
    - **Screenshots**:
-     ![Screenshot](assets/images/project-screenshot.png)
+   
 
 ---
   
@@ -114,9 +114,9 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
      - Feature 4: Illustrate the Lissajous figure (Q-U) and apply a smoothing operation.
      - Feature 5: Compute and present the discharge power.
    - **Repository**: [View Code]()
-   - **Report**: [Download Report]()
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/MATLAB-GUI/blob/main/GUI_MATLAB_Electrical_Data.pdf)
    - **Screenshots**:
-     ![Screenshot](assets/images/project-screenshot.png)
+   
 
 ---
   
