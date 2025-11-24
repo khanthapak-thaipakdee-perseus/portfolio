@@ -140,23 +140,23 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
 
 ---
   
-### 12. [BEng Research Project: Design and Development of Application for managing diabetes : mobile and web applications]()
+### 12. [BEng Research Project: Design and Development of Application for managing diabetes : mobile and web applications](https://github.com/khanthapak-thaipakdee-perseus/Design-and-Development-of-Application-for-managing-diabetes-mobile-and-web-applications/tree/main)
    - **Description**: My thesis project is developing software for tracking diabetes patients by collecting data and encouraging them to improve their lifestyle. This project is divided into 2 parts; mobile application for patients and web application for medical staff which data is linked by database. Mobile application was designed by systemic data structure and proper software engineering tools for cross-platform application. Mobile application has 5 features which are 1 input process and 4 output processes. One of the features that added on the input process is image classification section that satisfy user to classify cuisine name.
    - **Date**: Sep 2020 - May 2021
    - **Tech Stack**: Python
    - **Repository**: [View Code]()
-   - **Report**: [Download Report]()
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Design-and-Development-of-Application-for-managing-diabetes-mobile-and-web-applications/blob/main/Thesis%20Paper.pdf)
    - **Screenshots**:
      ![Screenshot](assets/images/project-screenshot.png)
 
 ---
   
-### 13. [PID Simulink: Design Simulation]()
+### 13. [PID Design](https://github.com/khanthapak-thaipakdee-perseus/PID-Design)
    - **Description**: Designed lag-lead compensated systems and analogue circuits by Root-Locus method and the frequency response approach and applying Ziegler-Nichols rules for PID controller tuning.
    - **Date**: Mar 2020 - May 2020
    - **Tech Stack**: MATLAB
    - **Repository**: [View Code]()
-   - **Report**: [Download Report]()
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/PID-Design/blob/main/Project%20report.pdf)
 
 ---
   
@@ -171,7 +171,7 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
 
 ---
   
-### 15. [Electrocardiogram(ECG) and Phonocardiogram(PCG) Monitoring Device]()
+### 15. [Electrocardiogram(ECG) and Phonocardiogram(PCG) Monitoring Device](https://github.com/khanthapak-thaipakdee-perseus/Develope-ECG-and-PCG-measurement-using-TL064)
    - **Description**: Developed ECG and PCG Monitoring Device. 
       - Designed analogue circuits with TL064 operational amplifiers.
       - Drew and designed a PCB Schematic.
@@ -179,4 +179,4 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
    - **Date**: Feb 2019 - Apr 2019
    - **Tech Stack**: Proteus, MATLAB
    - **Repository**: [View Code]()
-   - **Report**: [Download Report]()
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Develope-ECG-and-PCG-measurement-using-TL064/blob/main/Developing%20ECG%20and%20PCG%20measurement%20using%20TL064.pdf)
