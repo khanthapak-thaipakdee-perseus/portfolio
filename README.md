@@ -40,7 +40,6 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
      - Feature 3: Feature 3 introduces Thread 6 for periodic ADC readings from Pot 1 and Thread 7 for on-demand ADC readings from Pot 2. Thread 1 coordinates the sampling rate of Thread 6 and requests readings from Thread 7. Inter-thread communication is facilitated using flags and message passing.
    - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Real-Time-Operating-System-Implementation-on-FRDM-K64F/tree/main/code)
    - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Real-Time-Operating-System-Implementation-on-FRDM-K64F/blob/main/Microprocessor-Systems-Assignment-3-Report.pdf)
-   - **Screenshots**:
    
 
   ---
@@ -113,7 +112,7 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
      - Feature 3: Calculate various parameters for both signals, including peak-to-peak amplitude, root mean square (RMS) value, frequency, minimum value, and maximum value.
      - Feature 4: Illustrate the Lissajous figure (Q-U) and apply a smoothing operation.
      - Feature 5: Compute and present the discharge power.
-   - **Repository**: [View Code]()
+   - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/MATLAB-GUI/blob/main/code/UappQProgramming.mlapp)
    - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/MATLAB-GUI/blob/main/GUI_MATLAB_Electrical_Data.pdf)
    - **Screenshots**:
    
@@ -136,9 +135,8 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
    - **Date**: Oct 2023 - Nov 2023
    - **Tech Stack**: MobaXTerm
    - **Repository**: [View Code](https://github.com/khanthapak-thaipakdee-perseus/IOT-1-Design-and-Develop-Shell-Script-to-Receive-Temperature-and-Humidity-Using-MQTT-Protocol/blob/main/launcher.sh)
-   - **Report**: [Download Report]()
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/IOT-1-Design-and-Develop-Shell-Script-to-Receive-Temperature-and-Humidity-Using-MQTT-Protocol/blob/main/Assignment%201%20-%20MQTT%20Assignment%20-%20Instructions.pdf)
    - **Screenshots**:
-     ![Screenshot](assets/images/project-screenshot.png)
 
 ---
   
