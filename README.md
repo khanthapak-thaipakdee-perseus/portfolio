@@ -26,7 +26,7 @@ Welcome to the GitHub portfolio of **Khanthapak Thaipakdee**, showcasing academi
      - Feature 1: Design and simulate a single-stage op-amp, verifying key performance metrics such as slew rate, rise/fall time response, gain, gain-bandwidth product, and phase margin.
      - Feature 2: Design and simulate a two-stage op-amp incorporating a common-source stage and a compensation capacitor.
      - Feature 3: Investigate amplifier circuits with closed-loop gain by analyzing both inverting and non-inverting configurations through parameter sweeps.
-   - **Report**: [Download Report]([https://github.com/khanthapak-thaipakdee-perseus/Microprocessor-Systems-Real-Time-Operating-System-Implementation-on-FRDM-K64F/blob/main/Microprocessor-Systems-Assignment-3-Report.pdf](https://github.com/khanthapak-thaipakdee-perseus/CMOS/blob/main/Single-Stage-and-Two-Stage-Amplifiers/Single-Stage-and-Two-Stage-Amplifiers-Report.pdf))
+   - **Report**: [Download Report](https://github.com/khanthapak-thaipakdee-perseus/CMOS/blob/main/Single-Stage-and-Two-Stage-Amplifiers/Single-Stage-and-Two-Stage-Amplifiers-Report.pdf)
 
   ---
      
